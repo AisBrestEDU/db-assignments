@@ -1,0 +1,15 @@
+{
+  "name": "sql-training",
+  "version": "0.0.1",
+  "description": "SQL training tasks",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "test-debug": "./node_modules/.bin/mocha --debug"
+  },
+  "author": "ilya mokin",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^8.0.1",
+    "mysql2": "^2.1.0"
+  }
+}
