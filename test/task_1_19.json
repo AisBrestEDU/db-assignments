@@ -30,11 +30,6 @@
     "TotalOrdersAmount, $": 12892
   },
   {
-    "CustomerID": "WANDK",
-    "CompanyName": "Die Wandernde Kuh",
-    "TotalOrdersAmount, $": 10652
-  },
-  {
     "CustomerID": "EASTC",
     "CompanyName": "Eastern Connection",
     "TotalOrdersAmount, $": 15056
@@ -193,6 +188,11 @@
     "CustomerID": "VAFFE",
     "CompanyName": "Vaffeljernet",
     "TotalOrdersAmount, $": 16655
+  },
+  {
+    "CustomerID": "WANDK",
+    "CompanyName": "Die Wandernde Kuh",
+    "TotalOrdersAmount, $": 10652
   },
   {
     "CustomerID": "WARTH",

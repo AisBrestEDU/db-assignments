@@ -217,6 +217,8 @@ async function task_1_16(db) {
  *
  * @return {array}
  *
+ * Order by AvgPrice descending then by CategoryName
+ *
  */
 async function task_1_17(db) {
     throw new Error("Not implemented");
@@ -238,6 +240,7 @@ async function task_1_18(db) {
  * Create a SQL query to display customer details whose total orders amount is more than 10000$:
  * | CustomerID | CompanyName | TotalOrdersAmount, $ |
  *
+ * Order by "TotalOrdersAmount, $" descending then by CustomerID
  * @return {array}
  *
  */
@@ -271,7 +274,7 @@ async function task_1_21(db) {
  * Create a SQL query to display the name of each customer along with their most expensive purchased product:
  * | CompanyName | ProductName | PricePerItem |
  *
- * order by PricePerItem descending and them by CompanyName acceding
+ * order by PricePerItem descending and them by CompanyName and ProductName acceding
  * @return {array}
  */
 async function task_1_22(db) {
