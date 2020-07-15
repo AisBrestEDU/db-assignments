@@ -9,7 +9,7 @@ The database is quite popular for Teaching Cases. You'll find the DB scheme in t
  
 ![Northwind database schema](Northwind_A4_size_for_Print.png "Northwind database schema")
 
-## DB Assignments  [![Build Status](https://travis-ci.org/IlyaMokin/db-assignments.svg?branch=master)](https://travis-ci.org/IlyaMokin/db-assignments)
+## DB Assignments  [![Build Status](https://travis-ci.org/AisBrestEdu/db-assignments.svg?branch=master)](https://travis-ci.org/AisBrestEdu/db-assignments)
 
 To start DB Assignments please follow the next steps:
 *  [Fork this repo](#user-content-how-to-fork-this-repo)
