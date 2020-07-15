@@ -2,6 +2,14 @@ language: node_js
 services:
   - mysql
 before_install:
+  - wget https://repo.mysql.com//mysql-apt-config_0.8.10-1_all.deb
+  - sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb
+  - sudo apt-get update -q
+  - sudo apt-get install -q -y --allow-unauthenticated -o Dpkg::Options::=--force-confnew mysql-server
+  - sudo systemctl restart mysql
+  - sudo mysql_upgrade
+  - mysql --version
+  #You can remove step above if you want to run tests on MySQL 5.7
   - sudo mysql -e "SET PASSWORD FOR 'root'@'localhost' = PASSWORD('password');"
   - sudo mysql -ppassword -e "GRANT ALL ON northwind.* TO 'root'@'localhost';"
   - sudo mysql -ppassword < northwind.sql
