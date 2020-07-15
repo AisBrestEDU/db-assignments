@@ -10,7 +10,7 @@ before_install:
   - sudo mysql_upgrade
   - mysql --version
   #You can remove step above if you want to run tests on MySQL 5.7
-  - sudo mysql -e "SET PASSWORD FOR 'root'@'localhost' = 'password'; # it should be "PASSWORD('password') for MySQL5.7
+  - sudo mysql -e "SET PASSWORD FOR 'root'@'localhost' = 'password';" # it should be "PASSWORD('password') for MySQL5.7
   - sudo mysql -ppassword -e "GRANT ALL ON northwind.* TO 'root'@'localhost';"
   - sudo mysql -ppassword < northwind.sql
 node_js:
