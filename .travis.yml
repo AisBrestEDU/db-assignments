@@ -1,0 +1,11 @@
+language: node_js
+services:
+  - mysql
+before_install:
+  - sudo mysql -e "SET PASSWORD FOR 'root'@'localhost' = PASSWORD('password');"
+  - sudo mysql -ppassword -e "GRANT ALL ON northwind.* TO 'root'@'localhost';"
+  - sudo mysql -ppassword < northwind.sql
+node_js:
+  - "10.19.0"
+script:
+  - npm run test
