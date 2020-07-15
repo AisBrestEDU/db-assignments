@@ -1,6 +1,6 @@
 language: node_js
 services:
-  - mysql
+  - mysql #travis provides the service with mysql 5.7 on july 2020
 before_install:
   - wget https://repo.mysql.com//mysql-apt-config_0.8.10-1_all.deb
   - sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb
@@ -9,7 +9,7 @@ before_install:
   - sudo systemctl restart mysql
   - sudo mysql_upgrade
   - mysql --version
-  #You can remove step above if you want to run tests on MySQL 5.7
+  #You can remove all steps above if you want to run tests on MySQL 5.7
   - sudo mysql -e "SET PASSWORD FOR 'root'@'localhost' = 'password';" # it should be "PASSWORD('password') for MySQL5.7
   - sudo mysql -ppassword -e "GRANT ALL ON northwind.* TO 'root'@'localhost';"
   - sudo mysql -ppassword < northwind.sql
