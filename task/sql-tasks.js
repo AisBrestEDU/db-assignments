@@ -38,6 +38,7 @@ async function task_1_1(db) {
  *  Create a query to return an Order list ordered by order id descending:
  * | Order Id | Order Total Price | Total Order Discount, % |
  *
+ * NOTES: Discount in OrderDetails is a discount($) per Unit.
  * @return {array}
  *
  */
