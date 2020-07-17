@@ -8,11 +8,11 @@
     "UnitPrice": 6
   },
   {
-    "ProductName": "Tourtiere",
+    "ProductName": "Filo Mix",
     "UnitPrice": 7
   },
   {
-    "ProductName": "Filo Mix",
+    "ProductName": "Tourtiere",
     "UnitPrice": 7
   },
   {
@@ -28,11 +28,7 @@
     "UnitPrice": 9
   },
   {
-    "ProductName": "Sir Rodney's Scones",
-    "UnitPrice": 10
-  },
-  {
-    "ProductName": "Longlife Tofu",
+    "ProductName": "Aniseed Syrup",
     "UnitPrice": 10
   },
   {
@@ -40,11 +36,15 @@
     "UnitPrice": 10
   },
   {
+    "ProductName": "Longlife Tofu",
+    "UnitPrice": 10
+  },
+  {
     "ProductName": "Rogede sild",
     "UnitPrice": 10
   },
   {
-    "ProductName": "Aniseed Syrup",
+    "ProductName": "Sir Rodney's Scones",
     "UnitPrice": 10
   },
   {
@@ -64,10 +64,6 @@
     "UnitPrice": 13
   },
   {
-    "ProductName": "Scottish Longbreads",
-    "UnitPrice": 13
-  },
-  {
     "ProductName": "Gorgonzola Telino",
     "UnitPrice": 13
   },
@@ -76,12 +72,8 @@
     "UnitPrice": 13
   },
   {
-    "ProductName": "Singaporean Hokkien Fried Mee",
-    "UnitPrice": 14
-  },
-  {
-    "ProductName": "Sasquatch Ale",
-    "UnitPrice": 14
+    "ProductName": "Scottish Longbreads",
+    "UnitPrice": 13
   },
   {
     "ProductName": "Laughing Lumberjack Lager",
@@ -89,6 +81,14 @@
   },
   {
     "ProductName": "NuNuCa Nue-Nougat-Creme",
+    "UnitPrice": 14
+  },
+  {
+    "ProductName": "Sasquatch Ale",
+    "UnitPrice": 14
+  },
+  {
+    "ProductName": "Singaporean Hokkien Fried Mee",
     "UnitPrice": 14
   },
   {

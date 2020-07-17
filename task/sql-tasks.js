@@ -148,6 +148,8 @@ async function task_1_10(db) {
  * Create a SQL query to get Product list (name, unit price) where products cost between $5 and $15:
  * | ProductName | UnitPrice |
  *
+ * Order by UnitPrice then by ProductName
+ *
  * @return {array}
  *
  */
