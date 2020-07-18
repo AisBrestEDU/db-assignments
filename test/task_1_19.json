@@ -1,158 +1,8 @@
 [
   {
-    "CustomerID": "AROUT",
-    "CompanyName": "Around the Horn",
-    "TotalOrdersAmount, $": 13918
-  },
-  {
-    "CustomerID": "BERGS",
-    "CompanyName": "Berglunds snabbkep",
-    "TotalOrdersAmount, $": 27011
-  },
-  {
-    "CustomerID": "BLONP",
-    "CompanyName": "Blondesddsl pere et fils",
-    "TotalOrdersAmount, $": 19108
-  },
-  {
-    "CustomerID": "BONAP",
-    "CompanyName": "Bon app'",
-    "TotalOrdersAmount, $": 23835
-  },
-  {
-    "CustomerID": "BOTTM",
-    "CompanyName": "Bottom-Dollar Markets",
-    "TotalOrdersAmount, $": 22649
-  },
-  {
-    "CustomerID": "CHOPS",
-    "CompanyName": "Chop-suey Chinese",
-    "TotalOrdersAmount, $": 12892
-  },
-  {
-    "CustomerID": "EASTC",
-    "CompanyName": "Eastern Connection",
-    "TotalOrdersAmount, $": 15056
-  },
-  {
-    "CustomerID": "ERNSH",
-    "CompanyName": "Ernst Handel",
-    "TotalOrdersAmount, $": 113561
-  },
-  {
-    "CustomerID": "FOLIG",
-    "CompanyName": "Folies gourmandes",
-    "TotalOrdersAmount, $": 11730
-  },
-  {
-    "CustomerID": "FOLKO",
-    "CompanyName": "Folk och fe HB",
-    "TotalOrdersAmount, $": 32662
-  },
-  {
-    "CustomerID": "FRANK",
-    "CompanyName": "Frankenversand",
-    "TotalOrdersAmount, $": 28699
-  },
-  {
-    "CustomerID": "GODOS",
-    "CompanyName": "Godos Cocina Tepica",
-    "TotalOrdersAmount, $": 11855
-  },
-  {
-    "CustomerID": "GREAL",
-    "CompanyName": "Great Lakes Food Market",
-    "TotalOrdersAmount, $": 19718
-  },
-  {
-    "CustomerID": "HANAR",
-    "CompanyName": "Hanari Carnes",
-    "TotalOrdersAmount, $": 34188
-  },
-  {
-    "CustomerID": "HILAA",
-    "CompanyName": "HILARION-Abastos",
-    "TotalOrdersAmount, $": 23636
-  },
-  {
-    "CustomerID": "HUNGO",
-    "CompanyName": "Hungry Owl All-Night Grocers",
-    "TotalOrdersAmount, $": 57393
-  },
-  {
-    "CustomerID": "KOENE",
-    "CompanyName": "Keniglich Essen",
-    "TotalOrdersAmount, $": 31729
-  },
-  {
-    "CustomerID": "LAMAI",
-    "CompanyName": "La maison d'Asie",
-    "TotalOrdersAmount, $": 10259
-  },
-  {
-    "CustomerID": "LEHMS",
-    "CompanyName": "Lehmanns Marktstand",
-    "TotalOrdersAmount, $": 21307
-  },
-  {
-    "CustomerID": "LILAS",
-    "CompanyName": "LILA-Supermercado",
-    "TotalOrdersAmount, $": 17833
-  },
-  {
-    "CustomerID": "LINOD",
-    "CompanyName": "LINO-Delicateses",
-    "TotalOrdersAmount, $": 17907
-  },
-  {
-    "CustomerID": "MAISD",
-    "CompanyName": "Maison Dewey",
-    "TotalOrdersAmount, $": 10455
-  },
-  {
-    "CustomerID": "MEREP",
-    "CompanyName": "Mere Paillarde",
-    "TotalOrdersAmount, $": 32182
-  },
-  {
-    "CustomerID": "OLDWO",
-    "CompanyName": "Old World Delicatessen",
-    "TotalOrdersAmount, $": 16261
-  },
-  {
-    "CustomerID": "OTTIK",
-    "CompanyName": "Ottilies Keseladen",
-    "TotalOrdersAmount, $": 13206
-  },
-  {
-    "CustomerID": "PICCO",
-    "CompanyName": "Piccolo und mehr",
-    "TotalOrdersAmount, $": 26363
-  },
-  {
-    "CustomerID": "QUEEN",
-    "CompanyName": "Queen Cozinha",
-    "TotalOrdersAmount, $": 30270
-  },
-  {
     "CustomerID": "QUICK",
     "CompanyName": "QUICK-Stop",
     "TotalOrdersAmount, $": 117420
-  },
-  {
-    "CustomerID": "RATTC",
-    "CompanyName": "Rattlesnake Canyon Grocery",
-    "TotalOrdersAmount, $": 52241
-  },
-  {
-    "CustomerID": "RICAR",
-    "CompanyName": "Ricardo Adocicados",
-    "TotalOrdersAmount, $": 12933
-  },
-  {
-    "CustomerID": "RICSU",
-    "CompanyName": "Richter Supermarkt",
-    "TotalOrdersAmount, $": 20083
   },
   {
     "CustomerID": "SAVEA",
@@ -160,19 +10,64 @@
     "TotalOrdersAmount, $": 116116
   },
   {
-    "CustomerID": "SEVES",
-    "CompanyName": "Seven Seas Imports",
-    "TotalOrdersAmount, $": 17195
+    "CustomerID": "ERNSH",
+    "CompanyName": "Ernst Handel",
+    "TotalOrdersAmount, $": 113561
   },
   {
-    "CustomerID": "SIMOB",
-    "CompanyName": "Simons bistro",
-    "TotalOrdersAmount, $": 18145
+    "CustomerID": "HUNGO",
+    "CompanyName": "Hungry Owl All-Night Grocers",
+    "TotalOrdersAmount, $": 57393
   },
   {
-    "CustomerID": "SPLIR",
-    "CompanyName": "Split Rail Beer & Ale",
-    "TotalOrdersAmount, $": 12499
+    "CustomerID": "RATTC",
+    "CompanyName": "Rattlesnake Canyon Grocery",
+    "TotalOrdersAmount, $": 52241
+  },
+  {
+    "CustomerID": "HANAR",
+    "CompanyName": "Hanari Carnes",
+    "TotalOrdersAmount, $": 34188
+  },
+  {
+    "CustomerID": "FOLKO",
+    "CompanyName": "Folk och fe HB",
+    "TotalOrdersAmount, $": 32662
+  },
+  {
+    "CustomerID": "MEREP",
+    "CompanyName": "Mere Paillarde",
+    "TotalOrdersAmount, $": 32182
+  },
+  {
+    "CustomerID": "KOENE",
+    "CompanyName": "Keniglich Essen",
+    "TotalOrdersAmount, $": 31729
+  },
+  {
+    "CustomerID": "QUEEN",
+    "CompanyName": "Queen Cozinha",
+    "TotalOrdersAmount, $": 30270
+  },
+  {
+    "CustomerID": "WHITC",
+    "CompanyName": "White Clover Markets",
+    "TotalOrdersAmount, $": 29100
+  },
+  {
+    "CustomerID": "FRANK",
+    "CompanyName": "Frankenversand",
+    "TotalOrdersAmount, $": 28699
+  },
+  {
+    "CustomerID": "BERGS",
+    "CompanyName": "Berglunds snabbkep",
+    "TotalOrdersAmount, $": 27011
+  },
+  {
+    "CustomerID": "PICCO",
+    "CompanyName": "Piccolo und mehr",
+    "TotalOrdersAmount, $": 26363
   },
   {
     "CustomerID": "SUPRD",
@@ -180,9 +75,59 @@
     "TotalOrdersAmount, $": 24667
   },
   {
-    "CustomerID": "TORTU",
-    "CompanyName": "Tortuga Restaurante",
-    "TotalOrdersAmount, $": 10816
+    "CustomerID": "BONAP",
+    "CompanyName": "Bon app'",
+    "TotalOrdersAmount, $": 23835
+  },
+  {
+    "CustomerID": "HILAA",
+    "CompanyName": "HILARION-Abastos",
+    "TotalOrdersAmount, $": 23636
+  },
+  {
+    "CustomerID": "BOTTM",
+    "CompanyName": "Bottom-Dollar Markets",
+    "TotalOrdersAmount, $": 22649
+  },
+  {
+    "CustomerID": "LEHMS",
+    "CompanyName": "Lehmanns Marktstand",
+    "TotalOrdersAmount, $": 21307
+  },
+  {
+    "CustomerID": "RICSU",
+    "CompanyName": "Richter Supermarkt",
+    "TotalOrdersAmount, $": 20083
+  },
+  {
+    "CustomerID": "GREAL",
+    "CompanyName": "Great Lakes Food Market",
+    "TotalOrdersAmount, $": 19718
+  },
+  {
+    "CustomerID": "BLONP",
+    "CompanyName": "Blondesddsl pere et fils",
+    "TotalOrdersAmount, $": 19108
+  },
+  {
+    "CustomerID": "SIMOB",
+    "CompanyName": "Simons bistro",
+    "TotalOrdersAmount, $": 18145
+  },
+  {
+    "CustomerID": "LINOD",
+    "CompanyName": "LINO-Delicateses",
+    "TotalOrdersAmount, $": 17907
+  },
+  {
+    "CustomerID": "LILAS",
+    "CompanyName": "LILA-Supermercado",
+    "TotalOrdersAmount, $": 17833
+  },
+  {
+    "CustomerID": "SEVES",
+    "CompanyName": "Seven Seas Imports",
+    "TotalOrdersAmount, $": 17195
   },
   {
     "CustomerID": "VAFFE",
@@ -190,18 +135,73 @@
     "TotalOrdersAmount, $": 16655
   },
   {
-    "CustomerID": "WANDK",
-    "CompanyName": "Die Wandernde Kuh",
-    "TotalOrdersAmount, $": 10652
-  },
-  {
     "CustomerID": "WARTH",
     "CompanyName": "Wartian Herkku",
     "TotalOrdersAmount, $": 16614
   },
   {
-    "CustomerID": "WHITC",
-    "CompanyName": "White Clover Markets",
-    "TotalOrdersAmount, $": 29100
+    "CustomerID": "OLDWO",
+    "CompanyName": "Old World Delicatessen",
+    "TotalOrdersAmount, $": 16261
+  },
+  {
+    "CustomerID": "EASTC",
+    "CompanyName": "Eastern Connection",
+    "TotalOrdersAmount, $": 15056
+  },
+  {
+    "CustomerID": "AROUT",
+    "CompanyName": "Around the Horn",
+    "TotalOrdersAmount, $": 13918
+  },
+  {
+    "CustomerID": "OTTIK",
+    "CompanyName": "Ottilies Keseladen",
+    "TotalOrdersAmount, $": 13206
+  },
+  {
+    "CustomerID": "RICAR",
+    "CompanyName": "Ricardo Adocicados",
+    "TotalOrdersAmount, $": 12933
+  },
+  {
+    "CustomerID": "CHOPS",
+    "CompanyName": "Chop-suey Chinese",
+    "TotalOrdersAmount, $": 12892
+  },
+  {
+    "CustomerID": "SPLIR",
+    "CompanyName": "Split Rail Beer & Ale",
+    "TotalOrdersAmount, $": 12499
+  },
+  {
+    "CustomerID": "GODOS",
+    "CompanyName": "Godos Cocina Tepica",
+    "TotalOrdersAmount, $": 11855
+  },
+  {
+    "CustomerID": "FOLIG",
+    "CompanyName": "Folies gourmandes",
+    "TotalOrdersAmount, $": 11730
+  },
+  {
+    "CustomerID": "TORTU",
+    "CompanyName": "Tortuga Restaurante",
+    "TotalOrdersAmount, $": 10816
+  },
+  {
+    "CustomerID": "WANDK",
+    "CompanyName": "Die Wandernde Kuh",
+    "TotalOrdersAmount, $": 10652
+  },
+  {
+    "CustomerID": "MAISD",
+    "CompanyName": "Maison Dewey",
+    "TotalOrdersAmount, $": 10455
+  },
+  {
+    "CustomerID": "LAMAI",
+    "CompanyName": "La maison d'Asie",
+    "TotalOrdersAmount, $": 10259
   }
 ]
