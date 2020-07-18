@@ -63,7 +63,13 @@ async function task_1_2(db) {
  *
  */
 async function task_1_3(db) {
-    throw new Error("Not implemented");
+    let result = await db.query(`
+    SELECT
+	    CustomerId,CompanyName 
+	from customers
+    where Country = 'USA' and Fax is null 
+    `);
+    return result[0];
 }
 
 /**
