@@ -126,9 +126,9 @@ async function task_1_5(db) {
 async function task_1_6(db) {
     let result = await db.query(`
     select
-	    products.ProductName ,
-	    categories.CategoryName ,
-	    suppliers.CompanyName as 'SupplierCompanyName'
+	    Products.ProductName ,
+	    Categories.CategoryName ,
+	    Suppliers.CompanyName as 'SupplierCompanyName'
     from Products
     join Categories on Products.CategoryID = Categories.CategoryID 
     join Suppliers on Products.SupplierID = Suppliers.SupplierID 
