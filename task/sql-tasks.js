@@ -48,7 +48,7 @@ async function task_1_2(db) {
 	    OrderID as "Order Id",
 	    sum(UnitPrice * Quantity) as "Order Total Price",
 	    round( (sum(Discount * Quantity)/sum(UnitPrice * Quantity))*100,3) as "Total Order Discount, %"
-    FROM orderdetails
+    FROM OrderDetails
     group by OrderID 
     order BY OrderID desc
     `);
@@ -66,7 +66,7 @@ async function task_1_3(db) {
     let result = await db.query(`
     SELECT
 	    CustomerId,CompanyName 
-	from customers
+	from Customers
     where Country = 'USA' and Fax is null 
     `);
     return result[0];
@@ -86,8 +86,8 @@ async function task_1_4(db) {
     SELECT
 	    CustomerId as 'Customer Id',
 	    count(OrderID) as 'Total number of Orders',
-	    round((select count(OrderID) from orders where CustomerID = o.CustomerID )*100/(select count(*) from orders),5) as '% of all orders'
-    from orders as o
+	    round((select count(OrderID) from Orders where CustomerID = o.CustomerID )*100/(select count(*) from Orders),5) as '% of all orders'
+    from Orders as o
     group by CustomerID
     order by 3 desc, CustomerId asc
     `);
@@ -107,7 +107,7 @@ async function task_1_5(db) {
 	    ProductId as 'ProductId',
 	    ProductName ,
 	    QuantityPerUnit 
-    from products
+    from Products
     where ProductName >= 'A' and ProductName <= 'G'
     order by ProductName asc
     `);
@@ -129,10 +129,10 @@ async function task_1_6(db) {
 	    products.ProductName ,
 	    categories.CategoryName ,
 	    suppliers.CompanyName as 'SupplierCompanyName'
-    from products
-    join categories on products.CategoryID = categories.CategoryID 
-    join suppliers on products.SupplierID = suppliers.SupplierID 
-    order by products.ProductName, suppliers.CompanyName
+    from Products
+    join Categories on Products.CategoryID = Categories.CategoryID 
+    join Suppliers on Products.SupplierID = Suppliers.SupplierID 
+    order by Products.ProductName, Suppliers.CompanyName
     `);
     return result[0];
 }
@@ -154,7 +154,7 @@ async function task_1_7(db) {
 	    e1.EmployeeID as "EmployeeId",
 	    CONCAT(e1.FirstName, ' ', e1.LastName) AS "FullName",
 	    IFNULL(CONCAT(e2.FirstName, ' ', e2.LastName),"-") AS "ReportsTo"
-    from employees e1 left join employees e2 on e1.ReportsTo = e2.EmployeeID 
+    from Employees e1 left join Employees e2 on e1.ReportsTo = e2.EmployeeID 
     order by e1.EmployeeID 
     `);
     return result[0];
@@ -173,7 +173,7 @@ async function task_1_8(db) {
     select
 	    c.CategoryName,
 	    count(p.ProductName) as 'TotalNumberOfProducts' 
-    from categories c left join products p on c.CategoryID = p.CategoryID 
+    from Categories c left join Products p on c.CategoryID = p.CategoryID 
     group by c.CategoryName
     `);
     return result[0];
@@ -192,7 +192,7 @@ async function task_1_9(db) {
     select
 	    CustomerID ,
 	    ContactName 
-    from customers c 
+    from Customers c 
     where ContactName like 'F__n%'
     `);
     return result[0];
@@ -210,7 +210,7 @@ async function task_1_10(db) {
     select
 	    ProductID ,
 	    ProductName 
-    from products p where Discontinued != 0
+    from Products p where Discontinued != 0
     `);
     return result[0];
 }
@@ -229,7 +229,7 @@ async function task_1_11(db) {
     select
 	    ProductName,
 	    UnitPrice 
-    from products p where UnitPrice between 5 and 15
+    from Products p where UnitPrice between 5 and 15
     order by UnitPrice , ProductName 
     `);
     return result[0];
@@ -262,7 +262,7 @@ async function task_1_13(db) {
     select 
 	    count(ProductId) as 'TotalOfCurrentProducts',
 	    sum(case when Discontinued = 1 then 1 else 0 end) as "TotalOfDiscontinuedProducts"
-    from products
+    from Products
     `);
     return result[0];
 }
@@ -280,7 +280,7 @@ async function task_1_14(db) {
 	    ProductName ,
 	    UnitsOnOrder as 'UnitsOnOrder',
 	    UnitsInStock 
-    from products where UnitsInStock < UnitsOnOrder 
+    from Products where UnitsInStock < UnitsOnOrder 
     `);
     return result[0];
 }
