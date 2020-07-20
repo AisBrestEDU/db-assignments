@@ -396,9 +396,9 @@ async function task_1_19(db) {
     from Customers c join Orders o on c.CustomerID = o.CustomerID join OrderDetails od on o.OrderID = od.OrderID
     where 3 is not null
     group by c.CustomerID 
+    having SUM(od.UnitPrice * od.Quantity)>10000
     order by 3 desc, c.CustomerID 
     `);
-    throw new Error("Not implemented");
     return result[0];
 }
 
@@ -449,17 +449,16 @@ async function task_1_21(db) {
  * @return {array}
  */
 async function task_1_22(db) {
-    throw new Error("Not implemented");
     let result = await db.query(`
-    select
-	    CompanyName ,
-	    p.ProductName ,
-	    max(od.UnitPrice) as "PricePerItem" 
-    from Customers c join Orders o on c.CustomerID = o.CustomerID 
-    join OrderDetails od on o.OrderID = od.OrderID 
-    join Products p on od.ProductID = p.ProductID 
-    group by CompanyName
-    order by 3 desc , 1 asc, 2 asc
+    select distinct 
+        c.CompanyName as "CompanyName",
+	    p.ProductName as "ProductName",
+	    od.UnitPrice as "PricePerItem"
+    from Products p 
+    join OrderDetails od on p.ProductID = od.ProductID 
+    join Orders o on od.OrderID = o.OrderID 
+    join Customers c on o.CustomerID = c.CustomerID 
+    order by od.UnitPrice desc, c.CompanyName asc, p.ProductName asc 
     `);
     return result[0];
 }
