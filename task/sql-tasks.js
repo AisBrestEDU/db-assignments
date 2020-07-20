@@ -448,6 +448,7 @@ async function task_1_21(db) {
  * @return {array}
  */
 async function task_1_22(db) {
+    throw new Error("Not implemented");
     let result = await db.query(`
     select
 	    CompanyName ,
@@ -459,7 +460,6 @@ async function task_1_22(db) {
     group by CompanyName
     order by 3 desc , 1 asc, 2 asc
     `);
-    throw new Error("Not implemented");
     return result[0];
 }
 
