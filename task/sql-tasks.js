@@ -183,7 +183,7 @@ async function task_1_13(db) {
 
 /**
  * Create a SQL query to get Product list of stock is less than the quantity on order:
- * | ProductName | UnitsInOrder| UnitsInStock |
+ * | ProductName | UnitsOnOrder| UnitsInStock |
  *
  * @return {array}
  *
