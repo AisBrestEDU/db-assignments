@@ -25,7 +25,7 @@ To start DB Assignments please follow the next steps:
 ### How to setup travis-ci
 * Open [https://travis-ci.org/](https://travis-ci.org/) and sign in with your github account.
 * Activate your forked repo **db-assignments**.
-* Edit local README.md file and update all links (just replace all occurrences of `'AisBresEdu'` with your account name).
+* Edit local README.md file and update all links (just replace all occurrences of `'mollyfox6996'` with your account name).
 * Commit and push updated README.md to github:
 ```bash
   git add README.md
