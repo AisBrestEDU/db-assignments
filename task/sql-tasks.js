@@ -48,7 +48,7 @@ async function task_1_2(db) {
             OrderID AS 'Order Id',
             SUM(UnitPrice * Quantity) AS 'Order Total Price',
             ROUND(SUM(Discount * Quantity) * 100 / SUM(UnitPrice * Quantity), 3) AS 'Total Order Discount, %'
-        FROM Orderdetails
+        FROM orderdetails
         GROUP BY OrderID
         ORDER BY OrderID DESC;
     `);
@@ -155,7 +155,7 @@ async function task_1_7(db) {
             DISTINCT a.EmployeeID AS 'EmployeeId',
             CONCAT(a.FirstName, ' ', a.LastName) AS 'FullName',
             IF(a.reportsTo, CONCAT(b.FirstName, ' ', b.LastName), '-') AS 'ReportsTo'
-        FROM employees a, employees b
+        FROM Employees a, Employees b
         WHERE b.EmployeeID = a.reportsTo OR a.reportsTo IS NULL
         ORDER BY EmployeeId;
     `);
@@ -343,7 +343,7 @@ async function task_1_16(db) {
             OrderID AS 'OrderID',
             CustomerID AS 'CustomerID',
             ShipCountry AS 'ShipCountry'
-        FROM orders
+        FROM Orders
         WHERE ShipPostalCode IS NOT NULL;
     `);
     return result[0];
@@ -404,9 +404,9 @@ async function task_1_19(db) {
         SELECT 
             orders.CustomerID AS 'CustomerID',
             customers.CompanyName AS 'CompanyName',
-            SUM(orderdetails.UnitPrice * orderdetails.Quantity) AS 'TotalOrdersAmount, $'
+            SUM(Orderdetails.UnitPrice * Orderdetails.Quantity) AS 'TotalOrdersAmount, $'
         FROM Orders
-            INNER JOIN orderdetails ON orders.OrderID = orderdetails.OrderID
+            INNER JOIN Orderdetails ON orders.OrderID = Orderdetails.OrderID
             INNER JOIN customers ON customers.CustomerID = orders.CustomerID
         GROUP BY CustomerID 
         HAVING \`TotalOrdersAmount, $\` > 10000
@@ -450,7 +450,7 @@ async function task_1_21(db) {
         SELECT
             OrderID AS 'OrderID',
             SUM(UnitPrice * Quantity) AS 'Maximum Purchase Amount, $'
-        FROM Orderdetails
+        FROM orderdetails
         GROUP BY OrderID
         ORDER BY \`Maximum Purchase Amount, $\` DESC
         LIMIT 1;
