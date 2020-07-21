@@ -12,11 +12,14 @@ The database is quite popular for Teaching Cases. You'll find the DB scheme in t
 ## DB Assignments  [![Build Status](https://travis-ci.org/AisBrestEdu/db-assignments.svg?branch=master)](https://travis-ci.org/AisBrestEdu/db-assignments)
 
 To start DB Assignments please follow the next steps:
-*  [Fork this repo](#user-content-how-to-fork-this-repo)
-*  [Setup travis-ci to test the commits](#user-content-how-to-setup-travis-ci)
-*  [Setup the work environment](#user-content-how-to-setup-work-environment)
-*  [Implement assignments using TDD fashion](#user-content-how-to-implement-assignments-using-tdd-fashion)
-*  [How to debug tasks](#how-to-debug-tasks)
+- [Scheme of Northwind database](#scheme-of-northwind-database)
+- [DB Assignments  ![Build Status](https://travis-ci.org/AisBrestEdu/db-assignments)](#db-assignments-img-srchttpstravis-ciorgaisbrestedudb-assignmentssvgbranchmaster-altbuild-status)
+  - [How to fork this repo](#how-to-fork-this-repo)
+  - [How to setup travis-ci](#how-to-setup-travis-ci)
+  - [How to setup work environment](#how-to-setup-work-environment)
+  - [How to implement assignments using TDD fashion](#how-to-implement-assignments-using-tdd-fashion)
+  - [How to debug tasks](#how-to-debug-tasks)
+  - [How to debug (beginner's way)](#how-to-debug-beginners-way)
 
 ### How to fork this repo
 * Click the **Fork** button at the top-right corner of this page and the repository will be copied to your own account.
@@ -76,7 +79,7 @@ and run the unit tests again. Find one test failed (red). Now it's time to fix i
 * Implement the function by any way and verify your solution by running tests until the failed test become passed (green).
 * Your solution work, but now time to refactor it. Try to make your code as pretty and simple as possible keeping up the test green.
 * Once you can't improve your code and tests are passed you can commit your solution.
-* Push your updates to github server and check if tests passed on [travis-ci](https://travis-ci.org/AisBrestEDU/db-assignments/builds).
+* Push your updates to github server and check if tests passed on [travis-ci](https://travis-ci.org/ritaheav/db-assignments/builds).
 * If everything is OK you can try to resolve the next task.
 
 ### How to debug tasks
