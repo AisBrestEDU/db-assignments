@@ -403,11 +403,11 @@ async function task_1_19(db) {
     let result = await db.query(`
         SELECT 
             orders.CustomerID AS 'CustomerID',
-            customers.CompanyName AS 'CompanyName',
+            Customers.CompanyName AS 'CompanyName',
             SUM(OrderDetails.UnitPrice * OrderDetails.Quantity) AS 'TotalOrdersAmount, $'
         FROM Orders
             INNER JOIN OrderDetails ON orders.OrderID = OrderDetails.OrderID
-            INNER JOIN customers ON customers.CustomerID = orders.CustomerID
+            INNER JOIN Customers ON Customers.CustomerID = orders.CustomerID
         GROUP BY CustomerID 
         HAVING \`TotalOrdersAmount, $\` > 10000
         ORDER BY \`TotalOrdersAmount, $\` DESC, CustomerID
