@@ -48,7 +48,7 @@ async function task_1_2(db) {
             OrderID AS 'Order Id',
             SUM(UnitPrice * Quantity) AS 'Order Total Price',
             ROUND(SUM(Discount * Quantity) * 100 / SUM(UnitPrice * Quantity), 3) AS 'Total Order Discount, %'
-        FROM orderdetails
+        FROM Orderdetails
         GROUP BY OrderID
         ORDER BY OrderID DESC;
     `);
@@ -404,9 +404,9 @@ async function task_1_19(db) {
         SELECT 
             orders.CustomerID AS 'CustomerID',
             customers.CompanyName AS 'CompanyName',
-            SUM(Orderdetails.UnitPrice * Orderdetails.Quantity) AS 'TotalOrdersAmount, $'
+            SUM(orderdetails.UnitPrice * orderdetails.Quantity) AS 'TotalOrdersAmount, $'
         FROM Orders
-            INNER JOIN Orderdetails ON orders.OrderID = Orderdetails.OrderID
+            INNER JOIN orderdetails ON orders.OrderID = orderdetails.OrderID
             INNER JOIN customers ON customers.CustomerID = orders.CustomerID
         GROUP BY CustomerID 
         HAVING \`TotalOrdersAmount, $\` > 10000
@@ -428,10 +428,10 @@ async function task_1_20(db) {
         SELECT 
             Orders.EmployeeID,
             CONCAT(Employees.FirstName,' ',Employees.LastName) AS 'Employee Full Name',
-            SUM(Orderdetails.UnitPrice * Orderdetails.Quantity) AS 'Amount, $'
+            SUM(orderdetails.UnitPrice * orderdetails.Quantity) AS 'Amount, $'
         FROM Orders
             INNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
-            INNER JOIN Orderdetails ON Orders.OrderID = Orderdetails.OrderID
+            INNER JOIN orderdetails ON Orders.OrderID = orderdetails.OrderID
         GROUP BY Employees.EmployeeID
         ORDER BY \`Amount, $\` DESC
         LIMIT 1;
@@ -450,7 +450,7 @@ async function task_1_21(db) {
         SELECT
             OrderID AS 'OrderID',
             SUM(UnitPrice * Quantity) AS 'Maximum Purchase Amount, $'
-        FROM orderdetails
+        FROM Orderdetails
         GROUP BY OrderID
         ORDER BY \`Maximum Purchase Amount, $\` DESC
         LIMIT 1;
@@ -470,17 +470,17 @@ async function task_1_22(db) {
         SELECT DISTINCT
             ac.CompanyName,
             Products.ProductName AS 'ProductName',
-            Orderdetails.UnitPrice AS 'PricePerItem'
+            orderdetails.UnitPrice AS 'PricePerItem'
         FROM Customers ac
             INNER JOIN Orders ON Orders.CustomerID = ac.CustomerID
-            INNER JOIN Orderdetails ON Orderdetails.OrderID = Orders.OrderID
-            INNER JOIN Products ON Products.ProductID = Orderdetails.ProductID
+            INNER JOIN orderdetails ON orderdetails.OrderID = Orders.OrderID
+            INNER JOIN Products ON Products.ProductID = orderdetails.ProductID
         WHERE Orderdetails.UnitPrice = (
             SELECT 
                 MAX(Orderdetails.UnitPrice) 
             FROM Customers bc
                 INNER JOIN Orders ON Orders.CustomerID = bc.CustomerID
-                INNER JOIN Orderdetails ON Orderdetails.OrderID = Orders.OrderID
+                INNER JOIN orderdetails ON orderdetails.OrderID = Orders.OrderID
             WHERE bc.CompanyName = ac.CompanyName
 		)
         ORDER BY PricePerItem DESC, CompanyName, ProductName;
