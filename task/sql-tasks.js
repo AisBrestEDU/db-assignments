@@ -457,7 +457,15 @@ async function task_1_22(db) {
     from Products p 
     join OrderDetails od on p.ProductID = od.ProductID 
     join Orders o on od.OrderID = o.OrderID 
-    join Customers c on o.CustomerID = c.CustomerID 
+    join Customers c on o.CustomerID = c.CustomerID
+    where od.UnitPrice = (
+        select 
+            max(od2.UnitPrice )
+        from Customers c1
+        join Orders o2 on o2.CustomerID = c1.CustomerID 
+        join OrderDetails od2 on o2.OrderID = od2.OrderID 
+        where c1.CompanyName = c.CompanyName 
+    ) 
     order by od.UnitPrice desc, c.CompanyName asc, p.ProductName asc 
     `);
     return result[0];
