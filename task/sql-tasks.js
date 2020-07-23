@@ -43,7 +43,16 @@ async function task_1_1(db) {
  *
  */
 async function task_1_2(db) {
-    throw new Error("Not implemented");
+    let result = await db.query(`
+    SELECT
+        OrderID as "Order Id",
+        SUM(UnitPrice * Quantity) as "Order Total Price",
+        ROUND( (SUM(Discount * Quantity)/SUM(UnitPrice * Quantity))*100,3) as "Total Order Discount, %"
+    FROM OrderDetails
+    GROUP BY OrderID 
+    ORDER BY OrderID DESC
+    `);
+    return result[0];
 }
 
 /**
@@ -54,7 +63,14 @@ async function task_1_2(db) {
  *
  */
 async function task_1_3(db) {
-    throw new Error("Not implemented");
+    let result = await db.query(`
+        SELECT
+            CustomerId as "CustomerId",
+            CompanyName as "CompanyName"
+        FROM Customers
+        WHERE Country = 'USA' and Fax is null
+    `);
+    return result[0];
 }
 
 /**
@@ -67,7 +83,16 @@ async function task_1_3(db) {
  *
  */
 async function task_1_4(db) {
-    throw new Error("Not implemented");
+    let result = await db.query(`
+    SELECT
+        CustomerId as "Customer Id",
+        COUNT(OrderID) as "Total number of Orders",
+        ROUND((SELECT COUNT(OrderID) FROM Orders WHERE CustomerID = o.CustomerID )*100/(SELECT COUNT(*) FROM Orders),5) as "% of all orders"
+    FROM Orders as o
+    GROUP BY CustomerId  
+    ORDER BY 3 DESC, CustomerId ASC
+    `);
+    return result[0];
 }
 
 /**
@@ -78,7 +103,16 @@ async function task_1_4(db) {
  *
  */
 async function task_1_5(db) {
-    throw new Error("Not implemented");
+    let result = await db.query(`
+    SELECT
+        ProductId as "ProductId",
+        ProductName as "ProductName",
+        QuantityPerUnit as "QuantityPerUnit"
+    FROM Products
+    WHERE ProductName RLIKE '^[A-F]'
+    ORDER BY ProductName
+    `);
+    return result[0];
 }
 
 /**
