@@ -11,5 +11,8 @@
   "devDependencies": {
     "mocha": "^8.0.1",
     "mysql2": "^2.1.0"
+  },
+  "dependencies": {
+    "mongodb": "^3.5.9"
   }
 }
