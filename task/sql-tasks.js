@@ -125,7 +125,17 @@ async function task_1_5(db) {
  *
  */
 async function task_1_6(db) {
-    throw new Error("Not implemented");
+    let result = await db.query(`
+    SELECT
+        ProductName as "ProductName",
+        CategoryName as "CategoryName",
+        CompanyName as "SupplierCompanyName"
+    FROM Products
+    INNER JOIN Categories ON Products.CategoryID = Categories.CategoryID
+    INNER JOIN Suppliers ON Products.SupplierID = Suppliers.SupplierID
+    ORDER BY ProductName , SupplierCompanyName
+    `);
+    return result[0];
 }
 
 /**
@@ -140,7 +150,16 @@ async function task_1_6(db) {
  *
  */
 async function task_1_7(db) {
-    throw new Error("Not implemented");
+    let result = await db.query(`
+    SELECT
+        first.EmployeeId as "EmployeeId",
+        CONCAT(first.FirstName, ' ', first.LastName) as "FullName",
+        IFNULL(CONCAT(second.FirstName, ' ', second.LastName),"-") as "ReportsTo"
+    FROM Employees first 
+    LEFT JOIN Employees second ON first.ReportsTo = second.EmployeeID
+    ORDER BY first.EmployeeID 
+    `);
+    return result[0];
 }
 
 /**
@@ -152,7 +171,16 @@ async function task_1_7(db) {
  *
  */
 async function task_1_8(db) {
-    throw new Error("Not implemented");
+    let result = await db.query(`
+    SELECT 
+        CategoryName,
+        COUNT(Products.ProductID) AS TotalNumberOfProducts
+    FROM Categories
+    LEFT JOIN Products ON Categories.CategoryID = Products.CategoryID
+    GROUP BY Categories.CategoryID
+    ORDER BY CategoryName;
+    `);
+    return result[0];
 }
 
 /**
@@ -164,7 +192,14 @@ async function task_1_8(db) {
  *
  */
 async function task_1_9(db) {
-    throw new Error("Not implemented");
+    let result = await db.query(`
+    SELECT 
+        CustomerID as "CustomerID", 
+        ContactName as "ContactName"
+    FROM Customers
+    WHERE ContactName LIKE 'F__n%'
+`);
+return result[0];
 }
 
 /**
@@ -175,7 +210,14 @@ async function task_1_9(db) {
  *
  */
 async function task_1_10(db) {
-    throw new Error("Not implemented");
+    let result = await db.query(`
+    SELECT 
+        ProductID as "ProductID", 
+        ProductName as "ProductName"
+    FROM Products
+    WHERE Discontinued
+`);
+return result[0];
 }
 
 /**
@@ -188,7 +230,15 @@ async function task_1_10(db) {
  *
  */
 async function task_1_11(db) {
-    throw new Error("Not implemented");
+    let result = await db.query(`
+    SELECT 
+        ProductName as "ProductName", 
+        UnitPrice as "UnitPrice"
+    FROM Products
+    WHERE UnitPrice BETWEEN 5 AND 15
+    ORDER BY UnitPrice, ProductName
+    `);
+    return result[0];
 }
 
 /**
