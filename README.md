@@ -50,7 +50,7 @@ To start DB Assignments please follow the next steps:
 * **MongoDB**
   * Download and install [MongoDB community serrver](https://www.mongodb.com/try/download/community)
   * Restore dump using [mongorestore](https://docs.mongodb.com/manual/reference/program/mongorestore/#bin.mongorestore).
-    In our case, execute `mongorestore [pathToTheFolder]/dumps/northwind_mongodb`
+    In our case, execute `mongorestore [pathToTheFolder]/dumps/northwind_mongodb/`
   * To connect to database and edit queries you can use any GUI like [Robo3T](https://robomongo.org/download) or [Compass](https://www.mongodb.com/products/compass)
 * Open your favorite editor and complete tasks. Take an attention, tasks has notes and hints in comments.
 * Open your terminal and use `npm test` command to run all tests. You can run single file by passing it as argument `npm test ./test/sql-tasks.js`.
