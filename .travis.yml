@@ -4,10 +4,12 @@ services:
   - mongodb
 before_install:
   ## install mongodb
-  - wget https://repo.mongodb.org/apt/ubuntu/dists/xenial/mongodb-org/4.2/multiverse/binary-amd64/mongodb-org-server_4.2.8_amd64.deb
-  - sudo dpkg -i ./mongodb-org-server_4.2.8_amd64.deb
-  - sudo service mongodb start
-  - mongo --version
+  - sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 4B7C549A058F8B6B
+  - echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb.list
+  - sudo apt update
+  - sudo apt install mongodb-org
+  - sleep 5
+  - mongod --version
   - mongorestore dumps/northwind_mongodb/
   ## MySQL
   - wget https://repo.mysql.com//mysql-apt-config_0.8.10-1_all.deb
