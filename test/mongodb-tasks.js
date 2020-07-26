@@ -7,15 +7,17 @@ it.optional = require('../extensions/it-optional');
 describe('mongo-tasks', async function() {
     let dbconnection;
     let client;
-    
+
     before(async function() {
+        this.timeout(15000);
         const url = process.env.MONGO_HOST || 'mongodb://localhost:27017';
         const dbName = process.env.MONGO_DB || 'northwind';
 
         client = await MongoClient.connect(url);
         dbconnection = client.db(dbName);
+
+        await tasks.before(dbconnection);
     });
-    
 
     it.optional('task_1_1', async function() {
         assert.deepEqual(await tasks.task_1_1(dbconnection), require('./mongo_json/task_1_1.json'));
