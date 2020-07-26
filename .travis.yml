@@ -6,7 +6,7 @@ before_install:
   ## install mongodb
   - wget https://repo.mongodb.org/apt/ubuntu/dists/xenial/mongodb-org/4.2/multiverse/binary-amd64/mongodb-org-server_4.2.8_amd64.deb
   - sudo dpkg -i ./mongodb-org-server_4.2.8_amd64.deb
-  - sudo systemctl restart mongodb
+  - sudo service mongodb start
   - mongo --version
   - mongorestore dumps/northwind_mongodb/
   ## MySQL
