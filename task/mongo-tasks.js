@@ -16,6 +16,13 @@
  *                                                                                          *
  ********************************************************************************************/
 
+/**
+ * The function is to add indexes to optimize your queries.
+ * Test timeout is increased to 15sec for the function.
+ * */
+async function before(db) {
+    await db.collection('employees').ensureIndex({CustomerID: 1});
+}
 
 /**
  *  Create a query to return next data ordered by city and then by name:
