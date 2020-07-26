@@ -16,6 +16,13 @@
  *                                                                                          *
  ********************************************************************************************/
 
+/**
+ * The function is to add indexes to optimize your queries.
+ * Test timeout is increased to 15sec for the function.
+ * */
+async function before(db) {
+    await db.collection('employees').ensureIndex({CustomerID: 1});
+}
 
 /**
  *  Create a query to return next data ordered by city and then by name:
@@ -241,7 +248,7 @@ async function task_1_18(db) {
  *       - quite often you can solve performance issues just with adding PROJECTIONS.
  *         *** Use Projections to Return Only Necessary Data ***
  *         https://docs.mongodb.com/manual/tutorial/optimize-query-performance-with-indexes-and-projections/#use-projections-to-return-only-necessary-data
- *       - do not hesitate to ensureIndex before request if needed https://docs.mongodb.com/manual/reference/method/db.collection.ensureIndex/
+ *       - do not hesitate to "ensureIndex" in "before" function at the top if needed https://docs.mongodb.com/manual/reference/method/db.collection.ensureIndex/
  */
 async function task_1_19(db) {
     throw new Error("Not implemented");
@@ -278,6 +285,7 @@ async function task_1_22(db) {
 }
 
 module.exports = {
+    before: before,
     task_1_1: task_1_1,
     task_1_2: task_1_2,
     task_1_3: task_1_3,
