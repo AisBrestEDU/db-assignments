@@ -1,8 +1,11 @@
-The goal of the task is to get basic knowledge of SQL functions and approaches to work with data in SQL.                                                     
+The goal of the tasks is to get basic knowledge of SQL and MongoDB functions and approaches to work with data.                                                     
  https://dev.mysql.com/doc/refman/5.7/en/function-reference.html                          
                                                                                           
- The course do not includes basic syntax explanations. If you see the SQL first time please read W3S which has quite good basis to start.                                       
- https://www.w3schools.com/sql/sql_syntax.asp      
+ Start from scratch can be complex for the tasks, if it's the case, please check
+ - W3S which has quite good basis to start.                                       
+ https://www.w3schools.com/sql/sql_syntax.asp
+ - "MongoDB University"
+ https://university.mongodb.com/courses/M001/about 
  
 ## Scheme of Northwind database
 The database is quite popular for Teaching Cases. You'll find the DB scheme in the Readme bellow.
@@ -38,12 +41,18 @@ To start DB Assignments please follow the next steps:
 ### How to setup work environment
 * Download and install the latest [Nodejs](https://nodejs.org/en/download/stable/).
 * Run `npm install` from you repository folder to download the required modules. All dependent modules will be located in the  *node_modules* folder.
-* Install [MySQL](https://dev.mysql.com/downloads/mysql/5.5.html). **That's important:** The tests checked on Mysql 5.7 and Mysql 8.0 only.
-* Default mysql user and password which we use for the tasks is "**root / password**", but you can override these via environmet variables. 
-Example for linux: `USER_NAME=root PASSWORD=password HOST=localhost npm test`.
-* [Restore **dumps/northwind.sql** dump](https://john-dugan.com/dump-and-restore-mysql-databases-in-windows/). To do that, in general case, you need to execute the command `mysql < [pathToTheFolder]/dumps/northwind.sql`.
-* To connect to database and edit queries you can use any GUI like [dbeaver](https://dbeaver.io/) or [MySQL Workbench](https://www.mysql.com/products/workbench/).
-* Open your favorite editor and complete tasks.
+* **MySQL**
+  * Install [MySQL](https://dev.mysql.com/downloads/mysql/5.5.html). **That's important:** The tests checked on Mysql 5.7 and Mysql 8.0 only.
+  * Default mysql user and password which we use for the tasks is "**root / password**", but you can override these via environmet variables. 
+    Example for linux: `USER_NAME=root PASSWORD=password HOST=localhost npm test`.
+  * [Restore **dumps/northwind.sql** dump](https://john-dugan.com/dump-and-restore-mysql-databases-in-windows/). To do that, in general case, you need to execute the command `mysql < [pathToTheFolder]/dumps/northwind.sql`.
+  * To connect to database and edit queries you can use any GUI like [dbeaver](https://dbeaver.io/) or [MySQL Workbench](https://www.mysql.com/products/workbench/).
+* **MongoDB**
+  * Download and install [MongoDB community serrver](https://www.mongodb.com/try/download/community)
+  * Restore dump using [mongorestore](https://docs.mongodb.com/manual/reference/program/mongorestore/#bin.mongorestore).
+    In our case, execute `mongorestore [pathToTheFolder]/dumps/northwind_mongodb`
+  * To connect to database and edit queries you can use any GUI like [Robo3T](https://robomongo.org/download) or [Compass](https://www.mongodb.com/products/compass)
+* Open your favorite editor and complete tasks. Take an attention, tasks has notes and hints in comments.
 * Open your terminal and use `npm test` command to run all tests. You can run single file by passing it as argument `npm test ./test/sql-tasks.js`.
 * The local repo folder has the following structure: <pre>
     node_modules - app dependences restored by `npm install` command, you can delete this folder and restore later again.
@@ -106,7 +115,9 @@ There is an easier way to debug for beginners with free Visual Studio Code:
               "HOST": "localhost", 
               "USER_NAME": "root", 
               "PASSWORD": "password", 
-              "DATABASE": "northwind" 
+              "DATABASE": "northwind",
+              "MONGO_HOST": "mongodb://localhost:27017",
+              "MONGO_DB": "northwind"
            }
          },
          ...
