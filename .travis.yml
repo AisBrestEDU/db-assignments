@@ -11,8 +11,7 @@ before_install:
   - mysql --version
   ## install mongodb
   - wget https://repo.mongodb.org/apt/ubuntu/dists/xenial/mongodb-org/4.2/multiverse/binary-amd64/mongodb-org-server_4.2.8_amd64.deb
-  - sudo chmod +x mongodb-org-server_4.2.8_amd64.deb
-  - ./mongodb-org-server_4.2.8_amd64.deb
+  - sudo dpkg -i ./mongodb-org-server_4.2.8_amd64.deb
   - mongo --version
   #You can remove all steps above if you want to run tests on MySQL 5.7
   - sudo mysql -e "SET PASSWORD FOR 'root'@'localhost' = 'password';" # it should be "PASSWORD('password') for MySQL5.7
