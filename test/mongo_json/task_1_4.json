@@ -1,0 +1,447 @@
+[
+  {
+    "Customer Id": "SAVEA",
+    "Total number of Orders": 31,
+    "% of all orders": 3.735
+  },
+  {
+    "Customer Id": "ERNSH",
+    "Total number of Orders": 30,
+    "% of all orders": 3.614
+  },
+  {
+    "Customer Id": "QUICK",
+    "Total number of Orders": 28,
+    "% of all orders": 3.373
+  },
+  {
+    "Customer Id": "FOLKO",
+    "Total number of Orders": 19,
+    "% of all orders": 2.289
+  },
+  {
+    "Customer Id": "HUNGO",
+    "Total number of Orders": 19,
+    "% of all orders": 2.289
+  },
+  {
+    "Customer Id": "BERGS",
+    "Total number of Orders": 18,
+    "% of all orders": 2.169
+  },
+  {
+    "Customer Id": "HILAA",
+    "Total number of Orders": 18,
+    "% of all orders": 2.169
+  },
+  {
+    "Customer Id": "RATTC",
+    "Total number of Orders": 18,
+    "% of all orders": 2.169
+  },
+  {
+    "Customer Id": "BONAP",
+    "Total number of Orders": 17,
+    "% of all orders": 2.048
+  },
+  {
+    "Customer Id": "FRANK",
+    "Total number of Orders": 15,
+    "% of all orders": 1.807
+  },
+  {
+    "Customer Id": "LEHMS",
+    "Total number of Orders": 15,
+    "% of all orders": 1.807
+  },
+  {
+    "Customer Id": "WARTH",
+    "Total number of Orders": 15,
+    "% of all orders": 1.807
+  },
+  {
+    "Customer Id": "BOTTM",
+    "Total number of Orders": 14,
+    "% of all orders": 1.687
+  },
+  {
+    "Customer Id": "HANAR",
+    "Total number of Orders": 14,
+    "% of all orders": 1.687
+  },
+  {
+    "Customer Id": "KOENE",
+    "Total number of Orders": 14,
+    "% of all orders": 1.687
+  },
+  {
+    "Customer Id": "LAMAI",
+    "Total number of Orders": 14,
+    "% of all orders": 1.687
+  },
+  {
+    "Customer Id": "LILAS",
+    "Total number of Orders": 14,
+    "% of all orders": 1.687
+  },
+  {
+    "Customer Id": "WHITC",
+    "Total number of Orders": 14,
+    "% of all orders": 1.687
+  },
+  {
+    "Customer Id": "AROUT",
+    "Total number of Orders": 13,
+    "% of all orders": 1.566
+  },
+  {
+    "Customer Id": "MEREP",
+    "Total number of Orders": 13,
+    "% of all orders": 1.566
+  },
+  {
+    "Customer Id": "QUEEN",
+    "Total number of Orders": 13,
+    "% of all orders": 1.566
+  },
+  {
+    "Customer Id": "LINOD",
+    "Total number of Orders": 12,
+    "% of all orders": 1.446
+  },
+  {
+    "Customer Id": "REGGC",
+    "Total number of Orders": 12,
+    "% of all orders": 1.446
+  },
+  {
+    "Customer Id": "SUPRD",
+    "Total number of Orders": 12,
+    "% of all orders": 1.446
+  },
+  {
+    "Customer Id": "BLONP",
+    "Total number of Orders": 11,
+    "% of all orders": 1.325
+  },
+  {
+    "Customer Id": "GREAL",
+    "Total number of Orders": 11,
+    "% of all orders": 1.325
+  },
+  {
+    "Customer Id": "RICAR",
+    "Total number of Orders": 11,
+    "% of all orders": 1.325
+  },
+  {
+    "Customer Id": "VAFFE",
+    "Total number of Orders": 11,
+    "% of all orders": 1.325
+  },
+  {
+    "Customer Id": "BSBEV",
+    "Total number of Orders": 10,
+    "% of all orders": 1.205
+  },
+  {
+    "Customer Id": "GODOS",
+    "Total number of Orders": 10,
+    "% of all orders": 1.205
+  },
+  {
+    "Customer Id": "ISLAT",
+    "Total number of Orders": 10,
+    "% of all orders": 1.205
+  },
+  {
+    "Customer Id": "MAGAA",
+    "Total number of Orders": 10,
+    "% of all orders": 1.205
+  },
+  {
+    "Customer Id": "OLDWO",
+    "Total number of Orders": 10,
+    "% of all orders": 1.205
+  },
+  {
+    "Customer Id": "OTTIK",
+    "Total number of Orders": 10,
+    "% of all orders": 1.205
+  },
+  {
+    "Customer Id": "PICCO",
+    "Total number of Orders": 10,
+    "% of all orders": 1.205
+  },
+  {
+    "Customer Id": "RICSU",
+    "Total number of Orders": 10,
+    "% of all orders": 1.205
+  },
+  {
+    "Customer Id": "TORTU",
+    "Total number of Orders": 10,
+    "% of all orders": 1.205
+  },
+  {
+    "Customer Id": "VICTE",
+    "Total number of Orders": 10,
+    "% of all orders": 1.205
+  },
+  {
+    "Customer Id": "WANDK",
+    "Total number of Orders": 10,
+    "% of all orders": 1.205
+  },
+  {
+    "Customer Id": "GOURL",
+    "Total number of Orders": 9,
+    "% of all orders": 1.084
+  },
+  {
+    "Customer Id": "QUEDE",
+    "Total number of Orders": 9,
+    "% of all orders": 1.084
+  },
+  {
+    "Customer Id": "SEVES",
+    "Total number of Orders": 9,
+    "% of all orders": 1.084
+  },
+  {
+    "Customer Id": "SPLIR",
+    "Total number of Orders": 9,
+    "% of all orders": 1.084
+  },
+  {
+    "Customer Id": "WELLI",
+    "Total number of Orders": 9,
+    "% of all orders": 1.084
+  },
+  {
+    "Customer Id": "CHOPS",
+    "Total number of Orders": 8,
+    "% of all orders": 0.964
+  },
+  {
+    "Customer Id": "EASTC",
+    "Total number of Orders": 8,
+    "% of all orders": 0.964
+  },
+  {
+    "Customer Id": "FURIB",
+    "Total number of Orders": 8,
+    "% of all orders": 0.964
+  },
+  {
+    "Customer Id": "LONEP",
+    "Total number of Orders": 8,
+    "% of all orders": 0.964
+  },
+  {
+    "Customer Id": "ANTON",
+    "Total number of Orders": 7,
+    "% of all orders": 0.843
+  },
+  {
+    "Customer Id": "BLAUS",
+    "Total number of Orders": 7,
+    "% of all orders": 0.843
+  },
+  {
+    "Customer Id": "FAMIA",
+    "Total number of Orders": 7,
+    "% of all orders": 0.843
+  },
+  {
+    "Customer Id": "MAISD",
+    "Total number of Orders": 7,
+    "% of all orders": 0.843
+  },
+  {
+    "Customer Id": "SIMOB",
+    "Total number of Orders": 7,
+    "% of all orders": 0.843
+  },
+  {
+    "Customer Id": "WILMK",
+    "Total number of Orders": 7,
+    "% of all orders": 0.843
+  },
+  {
+    "Customer Id": "WOLZA",
+    "Total number of Orders": 7,
+    "% of all orders": 0.843
+  },
+  {
+    "Customer Id": "ALFKI",
+    "Total number of Orders": 6,
+    "% of all orders": 0.723
+  },
+  {
+    "Customer Id": "CACTU",
+    "Total number of Orders": 6,
+    "% of all orders": 0.723
+  },
+  {
+    "Customer Id": "DRACD",
+    "Total number of Orders": 6,
+    "% of all orders": 0.723
+  },
+  {
+    "Customer Id": "FRANS",
+    "Total number of Orders": 6,
+    "% of all orders": 0.723
+  },
+  {
+    "Customer Id": "PERIC",
+    "Total number of Orders": 6,
+    "% of all orders": 0.723
+  },
+  {
+    "Customer Id": "SANTG",
+    "Total number of Orders": 6,
+    "% of all orders": 0.723
+  },
+  {
+    "Customer Id": "TOMSP",
+    "Total number of Orders": 6,
+    "% of all orders": 0.723
+  },
+  {
+    "Customer Id": "TRADH",
+    "Total number of Orders": 6,
+    "% of all orders": 0.723
+  },
+  {
+    "Customer Id": "COMMI",
+    "Total number of Orders": 5,
+    "% of all orders": 0.602
+  },
+  {
+    "Customer Id": "FOLIG",
+    "Total number of Orders": 5,
+    "% of all orders": 0.602
+  },
+  {
+    "Customer Id": "GALED",
+    "Total number of Orders": 5,
+    "% of all orders": 0.602
+  },
+  {
+    "Customer Id": "HUNGC",
+    "Total number of Orders": 5,
+    "% of all orders": 0.602
+  },
+  {
+    "Customer Id": "MORGK",
+    "Total number of Orders": 5,
+    "% of all orders": 0.602
+  },
+  {
+    "Customer Id": "OCEAN",
+    "Total number of Orders": 5,
+    "% of all orders": 0.602
+  },
+  {
+    "Customer Id": "PRINI",
+    "Total number of Orders": 5,
+    "% of all orders": 0.602
+  },
+  {
+    "Customer Id": "RANCH",
+    "Total number of Orders": 5,
+    "% of all orders": 0.602
+  },
+  {
+    "Customer Id": "ROMEY",
+    "Total number of Orders": 5,
+    "% of all orders": 0.602
+  },
+  {
+    "Customer Id": "VINET",
+    "Total number of Orders": 5,
+    "% of all orders": 0.602
+  },
+  {
+    "Customer Id": "ANATR",
+    "Total number of Orders": 4,
+    "% of all orders": 0.482
+  },
+  {
+    "Customer Id": "DUMON",
+    "Total number of Orders": 4,
+    "% of all orders": 0.482
+  },
+  {
+    "Customer Id": "LACOR",
+    "Total number of Orders": 4,
+    "% of all orders": 0.482
+  },
+  {
+    "Customer Id": "LETSS",
+    "Total number of Orders": 4,
+    "% of all orders": 0.482
+  },
+  {
+    "Customer Id": "SPECD",
+    "Total number of Orders": 4,
+    "% of all orders": 0.482
+  },
+  {
+    "Customer Id": "THEBI",
+    "Total number of Orders": 4,
+    "% of all orders": 0.482
+  },
+  {
+    "Customer Id": "BOLID",
+    "Total number of Orders": 3,
+    "% of all orders": 0.361
+  },
+  {
+    "Customer Id": "CONSH",
+    "Total number of Orders": 3,
+    "% of all orders": 0.361
+  },
+  {
+    "Customer Id": "FRANR",
+    "Total number of Orders": 3,
+    "% of all orders": 0.361
+  },
+  {
+    "Customer Id": "LAUGB",
+    "Total number of Orders": 3,
+    "% of all orders": 0.361
+  },
+  {
+    "Customer Id": "NORTS",
+    "Total number of Orders": 3,
+    "% of all orders": 0.361
+  },
+  {
+    "Customer Id": "THECR",
+    "Total number of Orders": 3,
+    "% of all orders": 0.361
+  },
+  {
+    "Customer Id": "TRAIH",
+    "Total number of Orders": 3,
+    "% of all orders": 0.361
+  },
+  {
+    "Customer Id": "GROSR",
+    "Total number of Orders": 2,
+    "% of all orders": 0.241
+  },
+  {
+    "Customer Id": "LAZYK",
+    "Total number of Orders": 2,
+    "% of all orders": 0.241
+  },
+  {
+    "Customer Id": "CENTC",
+    "Total number of Orders": 1,
+    "% of all orders": 0.12
+  }
+]

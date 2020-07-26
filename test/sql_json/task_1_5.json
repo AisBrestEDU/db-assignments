@@ -1,0 +1,77 @@
+[
+  {
+    "ProductId": 17,
+    "ProductName": "Alice Mutton",
+    "QuantityPerUnit": "20 - 1 kg tins"
+  },
+  {
+    "ProductId": 3,
+    "ProductName": "Aniseed Syrup",
+    "QuantityPerUnit": "12 - 550 ml bottles"
+  },
+  {
+    "ProductId": 40,
+    "ProductName": "Boston Crab Meat",
+    "QuantityPerUnit": "24 - 4 oz tins"
+  },
+  {
+    "ProductId": 60,
+    "ProductName": "Camembert Pierrot",
+    "QuantityPerUnit": "15 - 300 g rounds"
+  },
+  {
+    "ProductId": 18,
+    "ProductName": "Carnarvon Tigers",
+    "QuantityPerUnit": "16 kg pkg."
+  },
+  {
+    "ProductId": 38,
+    "ProductName": "Cete de Blaye",
+    "QuantityPerUnit": "12 - 75 cl bottles"
+  },
+  {
+    "ProductId": 1,
+    "ProductName": "Chai",
+    "QuantityPerUnit": "10 boxes x 20 bags"
+  },
+  {
+    "ProductId": 2,
+    "ProductName": "Chang",
+    "QuantityPerUnit": "24 - 12 oz bottles"
+  },
+  {
+    "ProductId": 39,
+    "ProductName": "Chartreuse verte",
+    "QuantityPerUnit": "750 cc per bottle"
+  },
+  {
+    "ProductId": 4,
+    "ProductName": "Chef Anton's Cajun Seasoning",
+    "QuantityPerUnit": "48 - 6 oz jars"
+  },
+  {
+    "ProductId": 5,
+    "ProductName": "Chef Anton's Gumbo Mix",
+    "QuantityPerUnit": "36 boxes"
+  },
+  {
+    "ProductId": 48,
+    "ProductName": "Chocolade",
+    "QuantityPerUnit": "10 pkgs."
+  },
+  {
+    "ProductId": 58,
+    "ProductName": "Escargots de Bourgogne",
+    "QuantityPerUnit": "24 pieces"
+  },
+  {
+    "ProductId": 52,
+    "ProductName": "Filo Mix",
+    "QuantityPerUnit": "16 - 2 kg boxes"
+  },
+  {
+    "ProductId": 71,
+    "ProductName": "Flotemysost",
+    "QuantityPerUnit": "10 - 500 g pkgs."
+  }
+]
