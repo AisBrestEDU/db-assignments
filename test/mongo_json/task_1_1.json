@@ -1,0 +1,74 @@
+[
+  {
+    "EmployeeID": 2,
+    "Title": "Vice President",
+    "Employee Full Name": "Andrew Fuller",
+    "City": "908 W. Capital Way"
+  },
+  {
+    "EmployeeID": 3,
+    "Title": "Sales Representative",
+    "Employee Full Name": "Janet Leverling",
+    "City": "Kirkland"
+  },
+  {
+    "EmployeeID": 9,
+    "Title": "Sales Representative",
+    "Employee Full Name": "Anne Dodsworth",
+    "City": "London"
+  },
+  {
+    "EmployeeID": 5,
+    "Title": "Sales Manager",
+    "Employee Full Name": "Steven Buchanan",
+    "City": "London"
+  },
+  {
+    "EmployeeID": "Miner Rd.",
+    "Title": "EC2 7JR",
+    "Employee Full Name": "NULL London",
+    "City": "Michael is a graduate of Sussex University (MA"
+  },
+  {
+    "EmployeeID": 4,
+    "Title": "Sales Representative",
+    "Employee Full Name": "Margaret Peacock",
+    "City": "Redmond"
+  },
+  {
+    "EmployeeID": "Winchester Way",
+    "Title": "RG1 9SP",
+    "Employee Full Name": "NULL London",
+    "City": "Robert King served in the Peace Corps and traveled extensively before completing his degree in English at the University of Michigan in 1992"
+  },
+  {
+    "EmployeeID": 8,
+    "Title": "Inside Sales Coordinator",
+    "Employee Full Name": "Laura Callahan",
+    "City": "Seattle"
+  },
+  {
+    "EmployeeID": "Apt. 2A",
+    "Title": 98122,
+    "Employee Full Name": "WA Seattle",
+    "City": "The Art of the Cold Call."
+  },
+  {
+    "EmployeeID": 6,
+    "Title": "Sales Representative",
+    "Employee Full Name": "Michael Suyama",
+    "City": "Unspecified"
+  },
+  {
+    "EmployeeID": 1,
+    "Title": "Sales Representative",
+    "Employee Full Name": "Nancy Davolio",
+    "City": "Unspecified"
+  },
+  {
+    "EmployeeID": 7,
+    "Title": "Sales Representative",
+    "Employee Full Name": "Robert King",
+    "City": "Unspecified"
+  }
+]

@@ -1,0 +1,4152 @@
+[
+  {
+    "Order Id": 11077,
+    "Order Total Price": 1375,
+    "Total Order Discount, %": 0.412
+  },
+  {
+    "Order Id": 11076,
+    "Order Total Price": 1050,
+    "Total Order Discount, %": 1.19
+  },
+  {
+    "Order Id": 11075,
+    "Order Total Price": 586,
+    "Total Order Discount, %": 1.075
+  },
+  {
+    "Order Id": 11074,
+    "Order Total Price": 238,
+    "Total Order Discount, %": 0.294
+  },
+  {
+    "Order Id": 11073,
+    "Order Total Price": 310,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11072,
+    "Order Total Price": 5194,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11071,
+    "Order Total Price": 510,
+    "Total Order Discount, %": 0.245
+  },
+  {
+    "Order Id": 11070,
+    "Order Total Price": 1870,
+    "Total Order Discount, %": 0.722
+  },
+  {
+    "Order Id": 11069,
+    "Order Total Price": 360,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11068,
+    "Order Total Price": 2388,
+    "Total Order Discount, %": 0.452
+  },
+  {
+    "Order Id": 11067,
+    "Order Total Price": 90,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11066,
+    "Order Total Price": 919,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11065,
+    "Order Total Price": 244,
+    "Total Order Discount, %": 2.459
+  },
+  {
+    "Order Id": 11064,
+    "Order Total Price": 4759,
+    "Total Order Discount, %": 0.223
+  },
+  {
+    "Order Id": 11063,
+    "Order Total Price": 1440,
+    "Total Order Discount, %": 0.486
+  },
+  {
+    "Order Id": 11062,
+    "Order Total Price": 510,
+    "Total Order Discount, %": 0.863
+  },
+  {
+    "Order Id": 11061,
+    "Order Total Price": 510,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11060,
+    "Order Total Price": 266,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11059,
+    "Order Total Price": 1838,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11058,
+    "Order Total Price": 860,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11057,
+    "Order Total Price": 45,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11056,
+    "Order Total Price": 3740,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11055,
+    "Order Total Price": 1745,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11054,
+    "Order Total Price": 310,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11053,
+    "Order Total Price": 3670,
+    "Total Order Discount, %": 0.327
+  },
+  {
+    "Order Id": 11052,
+    "Order Total Price": 1670,
+    "Total Order Discount, %": 0.479
+  },
+  {
+    "Order Id": 11051,
+    "Order Total Price": 50,
+    "Total Order Discount, %": 4
+  },
+  {
+    "Order Id": 11050,
+    "Order Total Price": 900,
+    "Total Order Discount, %": 0.556
+  },
+  {
+    "Order Id": 11049,
+    "Order Total Price": 342,
+    "Total Order Discount, %": 0.819
+  },
+  {
+    "Order Id": 11048,
+    "Order Total Price": 546,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11047,
+    "Order Total Price": 1080,
+    "Total Order Discount, %": 1.273
+  },
+  {
+    "Order Id": 11046,
+    "Order Total Price": 1564,
+    "Total Order Discount, %": 0.169
+  },
+  {
+    "Order Id": 11045,
+    "Order Total Price": 1317,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11044,
+    "Order Total Price": 588,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11043,
+    "Order Total Price": 210,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11042,
+    "Order Total Price": 401,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11041,
+    "Order Total Price": 1890,
+    "Total Order Discount, %": 0.317
+  },
+  {
+    "Order Id": 11040,
+    "Order Total Price": 200,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11039,
+    "Order Total Price": 3112,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11038,
+    "Order Total Price": 764,
+    "Total Order Discount, %": 0.131
+  },
+  {
+    "Order Id": 11037,
+    "Order Total Price": 60,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11036,
+    "Order Total Price": 1692,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11035,
+    "Order Total Price": 1750,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11034,
+    "Order Total Price": 552,
+    "Total Order Discount, %": 0.272
+  },
+  {
+    "Order Id": 11033,
+    "Order Total Price": 3606,
+    "Total Order Discount, %": 0.294
+  },
+  {
+    "Order Id": 11032,
+    "Order Total Price": 8915,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11031,
+    "Order Total Price": 2407,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11030,
+    "Order Total Price": 16310,
+    "Total Order Discount, %": 0.399
+  },
+  {
+    "Order Id": 11029,
+    "Order Total Price": 1288,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11028,
+    "Order Total Price": 2160,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11027,
+    "Order Total Price": 1179,
+    "Total Order Discount, %": 1.081
+  },
+  {
+    "Order Id": 11026,
+    "Order Total Price": 1034,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11025,
+    "Order Total Price": 300,
+    "Total Order Discount, %": 1
+  },
+  {
+    "Order Id": 11024,
+    "Order Total Price": 2003,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11023,
+    "Order Total Price": 1500,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11022,
+    "Order Total Price": 1395,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11021,
+    "Order Total Price": 6934,
+    "Total Order Discount, %": 0.198
+  },
+  {
+    "Order Id": 11020,
+    "Order Total Price": 744,
+    "Total Order Discount, %": 0.484
+  },
+  {
+    "Order Id": 11019,
+    "Order Total Price": 76,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11018,
+    "Order Total Price": 1580,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11017,
+    "Order Total Price": 6750,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11016,
+    "Order Total Price": 499,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11015,
+    "Order Total Price": 624,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11014,
+    "Order Total Price": 280,
+    "Total Order Discount, %": 1
+  },
+  {
+    "Order Id": 11013,
+    "Order Total Price": 372,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11012,
+    "Order Total Price": 2994,
+    "Total Order Discount, %": 0.244
+  },
+  {
+    "Order Id": 11011,
+    "Order Total Price": 960,
+    "Total Order Discount, %": 0.208
+  },
+  {
+    "Order Id": 11010,
+    "Order Total Price": 650,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11009,
+    "Order Total Price": 708,
+    "Total Order Discount, %": 0.636
+  },
+  {
+    "Order Id": 11008,
+    "Order Total Price": 4942,
+    "Total Order Discount, %": 0.162
+  },
+  {
+    "Order Id": 11007,
+    "Order Total Price": 2636,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11006,
+    "Order Total Price": 392,
+    "Total Order Discount, %": 0.128
+  },
+  {
+    "Order Id": 11005,
+    "Order Total Price": 586,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11004,
+    "Order Total Price": 294,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11003,
+    "Order Total Price": 322,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11002,
+    "Order Total Price": 1902,
+    "Total Order Discount, %": 0.308
+  },
+  {
+    "Order Id": 11001,
+    "Order Total Price": 2769,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 11000,
+    "Order Total Price": 1090,
+    "Total Order Discount, %": 1.261
+  },
+  {
+    "Order Id": 10999,
+    "Order Total Price": 1268,
+    "Total Order Discount, %": 0.221
+  },
+  {
+    "Order Id": 10998,
+    "Order Total Price": 703,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10997,
+    "Order Total Price": 1980,
+    "Total Order Discount, %": 0.505
+  },
+  {
+    "Order Id": 10996,
+    "Order Total Price": 560,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10995,
+    "Order Total Price": 1196,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10994,
+    "Order Total Price": 990,
+    "Total Order Discount, %": 0.091
+  },
+  {
+    "Order Id": 10993,
+    "Order Total Price": 6550,
+    "Total Order Discount, %": 0.324
+  },
+  {
+    "Order Id": 10992,
+    "Order Total Price": 70,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10991,
+    "Order Total Price": 2870,
+    "Total Order Discount, %": 1.115
+  },
+  {
+    "Order Id": 10990,
+    "Order Total Price": 4964,
+    "Total Order Discount, %": 0.577
+  },
+  {
+    "Order Id": 10989,
+    "Order Total Price": 1355,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10988,
+    "Order Total Price": 3760,
+    "Total Order Discount, %": 0.106
+  },
+  {
+    "Order Id": 10987,
+    "Order Total Price": 2776,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10986,
+    "Order Total Price": 2220,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10985,
+    "Order Total Price": 2236,
+    "Total Order Discount, %": 0.353
+  },
+  {
+    "Order Id": 10984,
+    "Order Total Price": 1795,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10983,
+    "Order Total Price": 804,
+    "Total Order Discount, %": 1.567
+  },
+  {
+    "Order Id": 10982,
+    "Order Total Price": 1014,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10981,
+    "Order Total Price": 15840,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10980,
+    "Order Total Price": 320,
+    "Total Order Discount, %": 2.5
+  },
+  {
+    "Order Id": 10979,
+    "Order Total Price": 4872,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10978,
+    "Order Total Price": 1494,
+    "Total Order Discount, %": 0.663
+  },
+  {
+    "Order Id": 10977,
+    "Order Total Price": 2250,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10976,
+    "Order Total Price": 920,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10975,
+    "Order Total Price": 720,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10974,
+    "Order Total Price": 440,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10973,
+    "Order Total Price": 295,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10972,
+    "Order Total Price": 255,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10971,
+    "Order Total Price": 1736,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10970,
+    "Order Total Price": 280,
+    "Total Order Discount, %": 2.857
+  },
+  {
+    "Order Id": 10969,
+    "Order Total Price": 108,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10968,
+    "Order Total Price": 1422,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10967,
+    "Order Total Price": 908,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10966,
+    "Order Total Price": 1252,
+    "Total Order Discount, %": 0.288
+  },
+  {
+    "Order Id": 10965,
+    "Order Total Price": 848,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10964,
+    "Order Total Price": 2058,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10963,
+    "Order Total Price": 68,
+    "Total Order Discount, %": 0.441
+  },
+  {
+    "Order Id": 10962,
+    "Order Total Price": 3588,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10961,
+    "Order Total Price": 1122,
+    "Total Order Discount, %": 0.027
+  },
+  {
+    "Order Id": 10960,
+    "Order Total Price": 290,
+    "Total Order Discount, %": 0.862
+  },
+  {
+    "Order Id": 10959,
+    "Order Total Price": 160,
+    "Total Order Discount, %": 1.875
+  },
+  {
+    "Order Id": 10958,
+    "Order Total Price": 775,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10957,
+    "Order Total Price": 1764,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10956,
+    "Order Total Price": 684,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10955,
+    "Order Total Price": 96,
+    "Total Order Discount, %": 2.5
+  },
+  {
+    "Order Id": 10954,
+    "Order Total Price": 1917,
+    "Total Order Discount, %": 0.603
+  },
+  {
+    "Order Id": 10953,
+    "Order Total Price": 4700,
+    "Total Order Discount, %": 0.106
+  },
+  {
+    "Order Id": 10952,
+    "Order Total Price": 492,
+    "Total Order Discount, %": 0.163
+  },
+  {
+    "Order Id": 10951,
+    "Order Total Price": 505,
+    "Total Order Discount, %": 0.703
+  },
+  {
+    "Order Id": 10950,
+    "Order Total Price": 110,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10949,
+    "Order Total Price": 4404,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10948,
+    "Order Total Price": 2360,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10947,
+    "Order Total Price": 220,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10946,
+    "Order Total Price": 1420,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10945,
+    "Order Total Price": 250,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10944,
+    "Order Total Price": 1131,
+    "Total Order Discount, %": 0.508
+  },
+  {
+    "Order Id": 10943,
+    "Order Total Price": 711,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10942,
+    "Order Total Price": 560,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10941,
+    "Order Total Price": 4832,
+    "Total Order Discount, %": 0.797
+  },
+  {
+    "Order Id": 10940,
+    "Order Total Price": 360,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10939,
+    "Order Total Price": 750,
+    "Total Order Discount, %": 1
+  },
+  {
+    "Order Id": 10938,
+    "Order Total Price": 3660,
+    "Total Order Discount, %": 0.874
+  },
+  {
+    "Order Id": 10937,
+    "Order Total Price": 648,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10936,
+    "Order Total Price": 570,
+    "Total Order Discount, %": 1.053
+  },
+  {
+    "Order Id": 10935,
+    "Order Total Price": 702,
+    "Total Order Discount, %": 0.427
+  },
+  {
+    "Order Id": 10934,
+    "Order Total Price": 500,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10933,
+    "Order Total Price": 936,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10932,
+    "Order Total Price": 1916,
+    "Total Order Discount, %": 0.334
+  },
+  {
+    "Order Id": 10931,
+    "Order Total Price": 852,
+    "Total Order Discount, %": 0.739
+  },
+  {
+    "Order Id": 10930,
+    "Order Total Price": 2450,
+    "Total Order Discount, %": 0.449
+  },
+  {
+    "Order Id": 10929,
+    "Order Total Price": 1187,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10928,
+    "Order Total Price": 140,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10927,
+    "Order Total Price": 800,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10926,
+    "Order Total Price": 515,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10925,
+    "Order Total Price": 559,
+    "Total Order Discount, %": 0.993
+  },
+  {
+    "Order Id": 10924,
+    "Order Total Price": 2048,
+    "Total Order Discount, %": 0.244
+  },
+  {
+    "Order Id": 10923,
+    "Order Total Price": 936,
+    "Total Order Discount, %": 0.94
+  },
+  {
+    "Order Id": 10922,
+    "Order Total Price": 760,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10921,
+    "Order Total Price": 1940,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10920,
+    "Order Total Price": 384,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10919,
+    "Order Total Price": 1104,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10918,
+    "Order Total Price": 1930,
+    "Total Order Discount, %": 1.101
+  },
+  {
+    "Order Id": 10917,
+    "Order Total Price": 366,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10916,
+    "Order Total Price": 694,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10915,
+    "Order Total Price": 550,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10914,
+    "Order Total Price": 550,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10913,
+    "Order Total Price": 975,
+    "Total Order Discount, %": 1.795
+  },
+  {
+    "Order Id": 10912,
+    "Order Total Price": 8280,
+    "Total Order Discount, %": 0.302
+  },
+  {
+    "Order Id": 10911,
+    "Order Total Price": 858,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10910,
+    "Order Total Price": 453,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10909,
+    "Order Total Price": 665,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10908,
+    "Order Total Price": 698,
+    "Total Order Discount, %": 0.244
+  },
+  {
+    "Order Id": 10907,
+    "Order Total Price": 112,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10906,
+    "Order Total Price": 435,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10905,
+    "Order Total Price": 360,
+    "Total Order Discount, %": 0.278
+  },
+  {
+    "Order Id": 10904,
+    "Order Total Price": 1910,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10903,
+    "Order Total Price": 941,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10902,
+    "Order Total Price": 1014,
+    "Total Order Discount, %": 0.533
+  },
+  {
+    "Order Id": 10901,
+    "Order Total Price": 960,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10900,
+    "Order Total Price": 45,
+    "Total Order Discount, %": 1.667
+  },
+  {
+    "Order Id": 10899,
+    "Order Total Price": 144,
+    "Total Order Discount, %": 0.833
+  },
+  {
+    "Order Id": 10898,
+    "Order Total Price": 30,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10897,
+    "Order Total Price": 10856,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10896,
+    "Order Total Price": 758,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10895,
+    "Order Total Price": 6398,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10894,
+    "Order Total Price": 2928,
+    "Total Order Discount, %": 0.338
+  },
+  {
+    "Order Id": 10893,
+    "Order Total Price": 5516,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10892,
+    "Order Total Price": 2200,
+    "Total Order Discount, %": 0.091
+  },
+  {
+    "Order Id": 10891,
+    "Order Total Price": 390,
+    "Total Order Discount, %": 0.192
+  },
+  {
+    "Order Id": 10890,
+    "Order Total Price": 865,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10889,
+    "Order Total Price": 11400,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10888,
+    "Order Total Price": 614,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10887,
+    "Order Total Price": 70,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10886,
+    "Order Total Price": 3145,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10885,
+    "Order Total Price": 1215,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10884,
+    "Order Total Price": 1450,
+    "Total Order Discount, %": 0.252
+  },
+  {
+    "Order Id": 10883,
+    "Order Total Price": 40,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10882,
+    "Order Total Price": 974,
+    "Total Order Discount, %": 0.801
+  },
+  {
+    "Order Id": 10881,
+    "Order Total Price": 150,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10880,
+    "Order Total Price": 1890,
+    "Total Order Discount, %": 1.164
+  },
+  {
+    "Order Id": 10879,
+    "Order Total Price": 606,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10878,
+    "Order Total Price": 1620,
+    "Total Order Discount, %": 0.062
+  },
+  {
+    "Order Id": 10877,
+    "Order Total Price": 2085,
+    "Total Order Discount, %": 0.36
+  },
+  {
+    "Order Id": 10876,
+    "Order Total Price": 912,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10875,
+    "Order Total Price": 735,
+    "Total Order Discount, %": 0.286
+  },
+  {
+    "Order Id": 10874,
+    "Order Total Price": 310,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10873,
+    "Order Total Price": 338,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10872,
+    "Order Total Price": 2156,
+    "Total Order Discount, %": 0.153
+  },
+  {
+    "Order Id": 10871,
+    "Order Total Price": 2078,
+    "Total Order Discount, %": 0.188
+  },
+  {
+    "Order Id": 10870,
+    "Order Total Price": 160,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10869,
+    "Order Total Price": 1640,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10868,
+    "Order Total Price": 2000,
+    "Total Order Discount, %": 0.21
+  },
+  {
+    "Order Id": 10867,
+    "Order Total Price": 99,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10866,
+    "Order Total Price": 1469,
+    "Total Order Discount, %": 1.14
+  },
+  {
+    "Order Id": 10865,
+    "Order Total Price": 17280,
+    "Total Order Discount, %": 0.041
+  },
+  {
+    "Order Id": 10864,
+    "Order Total Price": 282,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10863,
+    "Order Total Price": 516,
+    "Total Order Discount, %": 0.93
+  },
+  {
+    "Order Id": 10862,
+    "Order Total Price": 581,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10861,
+    "Order Total Price": 3550,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10860,
+    "Order Total Price": 519,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10859,
+    "Order Total Price": 1435,
+    "Total Order Discount, %": 1.829
+  },
+  {
+    "Order Id": 10858,
+    "Order Total Price": 650,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10857,
+    "Order Total Price": 2625,
+    "Total Order Discount, %": 0.429
+  },
+  {
+    "Order Id": 10856,
+    "Order Total Price": 660,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10855,
+    "Order Total Price": 2259,
+    "Total Order Discount, %": 0.1
+  },
+  {
+    "Order Id": 10854,
+    "Order Total Price": 3490,
+    "Total Order Discount, %": 0.709
+  },
+  {
+    "Order Id": 10853,
+    "Order Total Price": 630,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10852,
+    "Order Total Price": 2969,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10851,
+    "Order Total Price": 2745,
+    "Total Order Discount, %": 0.122
+  },
+  {
+    "Order Id": 10850,
+    "Order Total Price": 742,
+    "Total Order Discount, %": 1.092
+  },
+  {
+    "Order Id": 10849,
+    "Order Total Price": 1048,
+    "Total Order Discount, %": 0.258
+  },
+  {
+    "Order Id": 10848,
+    "Order Total Price": 921,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10847,
+    "Order Total Price": 6208,
+    "Total Order Discount, %": 0.928
+  },
+  {
+    "Order Id": 10846,
+    "Order Total Price": 1112,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10845,
+    "Order Total Price": 4032,
+    "Total Order Discount, %": 0.489
+  },
+  {
+    "Order Id": 10844,
+    "Order Total Price": 735,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10843,
+    "Order Total Price": 212,
+    "Total Order Discount, %": 0.472
+  },
+  {
+    "Order Id": 10842,
+    "Order Total Price": 985,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10841,
+    "Order Total Price": 4581,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10840,
+    "Order Total Price": 264,
+    "Total Order Discount, %": 1.212
+  },
+  {
+    "Order Id": 10839,
+    "Order Total Price": 915,
+    "Total Order Discount, %": 0.492
+  },
+  {
+    "Order Id": 10838,
+    "Order Total Price": 2597,
+    "Total Order Discount, %": 0.76
+  },
+  {
+    "Order Id": 10837,
+    "Order Total Price": 1264,
+    "Total Order Discount, %": 1.206
+  },
+  {
+    "Order Id": 10836,
+    "Order Total Price": 4710,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10835,
+    "Order Total Price": 851,
+    "Total Order Discount, %": 0.047
+  },
+  {
+    "Order Id": 10834,
+    "Order Total Price": 1512,
+    "Total Order Discount, %": 0.093
+  },
+  {
+    "Order Id": 10833,
+    "Order Total Price": 1014,
+    "Total Order Discount, %": 0.375
+  },
+  {
+    "Order Id": 10832,
+    "Order Total Price": 561,
+    "Total Order Discount, %": 1.034
+  },
+  {
+    "Order Id": 10831,
+    "Order Total Price": 2688,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10830,
+    "Order Total Price": 1986,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10829,
+    "Order Total Price": 1764,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10828,
+    "Order Total Price": 933,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10827,
+    "Order Total Price": 843,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10826,
+    "Order Total Price": 755,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10825,
+    "Order Total Price": 1032,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10824,
+    "Order Total Price": 255,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10823,
+    "Order Total Price": 3115,
+    "Total Order Discount, %": 0.241
+  },
+  {
+    "Order Id": 10822,
+    "Order Total Price": 237,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10821,
+    "Order Total Price": 678,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10820,
+    "Order Total Price": 1140,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10819,
+    "Order Total Price": 482,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10818,
+    "Order Total Price": 840,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10817,
+    "Order Total Price": 11465,
+    "Total Order Discount, %": 0.164
+  },
+  {
+    "Order Id": 10816,
+    "Order Total Price": 8900,
+    "Total Order Discount, %": 0.028
+  },
+  {
+    "Order Id": 10815,
+    "Order Total Price": 48,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10814,
+    "Order Total Price": 2094,
+    "Total Order Discount, %": 0.415
+  },
+  {
+    "Order Id": 10813,
+    "Order Total Price": 648,
+    "Total Order Discount, %": 0.37
+  },
+  {
+    "Order Id": 10812,
+    "Order Total Price": 1868,
+    "Total Order Discount, %": 0.3
+  },
+  {
+    "Order Id": 10811,
+    "Order Total Price": 837,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10810,
+    "Order Total Price": 187,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10809,
+    "Order Total Price": 140,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10808,
+    "Order Total Price": 1660,
+    "Total Order Discount, %": 0.633
+  },
+  {
+    "Order Id": 10807,
+    "Order Total Price": 18,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10806,
+    "Order Total Price": 572,
+    "Total Order Discount, %": 1.53
+  },
+  {
+    "Order Id": 10805,
+    "Order Total Price": 2780,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10804,
+    "Order Total Price": 2300,
+    "Total Order Discount, %": 0.026
+  },
+  {
+    "Order Id": 10803,
+    "Order Total Price": 1251,
+    "Total Order Discount, %": 0.216
+  },
+  {
+    "Order Id": 10802,
+    "Order Total Price": 3925,
+    "Total Order Discount, %": 0.764
+  },
+  {
+    "Order Id": 10801,
+    "Order Total Price": 4040,
+    "Total Order Discount, %": 0.371
+  },
+  {
+    "Order Id": 10800,
+    "Order Total Price": 1629,
+    "Total Order Discount, %": 0.411
+  },
+  {
+    "Order Id": 10799,
+    "Order Total Price": 1595,
+    "Total Order Discount, %": 0.376
+  },
+  {
+    "Order Id": 10798,
+    "Order Total Price": 448,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10797,
+    "Order Total Price": 420,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10796,
+    "Order Total Price": 2860,
+    "Total Order Discount, %": 0.559
+  },
+  {
+    "Order Id": 10795,
+    "Order Total Price": 2470,
+    "Total Order Discount, %": 0.354
+  },
+  {
+    "Order Id": 10794,
+    "Order Total Price": 387,
+    "Total Order Discount, %": 1.085
+  },
+  {
+    "Order Id": 10793,
+    "Order Total Price": 196,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10792,
+    "Order Total Price": 406,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10791,
+    "Order Total Price": 1936,
+    "Total Order Discount, %": 0.088
+  },
+  {
+    "Order Id": 10790,
+    "Order Total Price": 850,
+    "Total Order Discount, %": 0.406
+  },
+  {
+    "Order Id": 10789,
+    "Order Total Price": 3714,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10788,
+    "Order Total Price": 770,
+    "Total Order Discount, %": 0.584
+  },
+  {
+    "Order Id": 10787,
+    "Order Total Price": 2765,
+    "Total Order Discount, %": 0.063
+  },
+  {
+    "Order Id": 10786,
+    "Order Total Price": 1926,
+    "Total Order Discount, %": 0.903
+  },
+  {
+    "Order Id": 10785,
+    "Order Total Price": 390,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10784,
+    "Order Total Price": 1656,
+    "Total Order Discount, %": 0.29
+  },
+  {
+    "Order Id": 10783,
+    "Order Total Price": 1450,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10782,
+    "Order Total Price": 13,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10781,
+    "Order Total Price": 1131,
+    "Total Order Discount, %": 0.407
+  },
+  {
+    "Order Id": 10780,
+    "Order Total Price": 720,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10779,
+    "Order Total Price": 1320,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10778,
+    "Order Total Price": 100,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10777,
+    "Order Total Price": 280,
+    "Total Order Discount, %": 1.429
+  },
+  {
+    "Order Id": 10776,
+    "Order Total Price": 7006,
+    "Total Order Discount, %": 0.125
+  },
+  {
+    "Order Id": 10775,
+    "Order Total Price": 228,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10774,
+    "Order Total Price": 876,
+    "Total Order Discount, %": 0.057
+  },
+  {
+    "Order Id": 10773,
+    "Order Total Price": 2253,
+    "Total Order Discount, %": 0.684
+  },
+  {
+    "Order Id": 10772,
+    "Order Total Price": 3607,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10771,
+    "Order Total Price": 352,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10770,
+    "Order Total Price": 315,
+    "Total Order Discount, %": 1.19
+  },
+  {
+    "Order Id": 10769,
+    "Order Total Price": 1720,
+    "Total Order Discount, %": 0.131
+  },
+  {
+    "Order Id": 10768,
+    "Order Total Price": 1508,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10767,
+    "Order Total Price": 28,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10766,
+    "Order Total Price": 2330,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10765,
+    "Order Total Price": 1680,
+    "Total Order Discount, %": 0.476
+  },
+  {
+    "Order Id": 10764,
+    "Order Total Price": 2540,
+    "Total Order Discount, %": 0.591
+  },
+  {
+    "Order Id": 10763,
+    "Order Total Price": 626,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10762,
+    "Order Total Price": 4352,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10761,
+    "Order Total Price": 634,
+    "Total Order Discount, %": 1.38
+  },
+  {
+    "Order Id": 10760,
+    "Order Total Price": 3308,
+    "Total Order Discount, %": 0.317
+  },
+  {
+    "Order Id": 10759,
+    "Order Total Price": 320,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10758,
+    "Order Total Price": 1640,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10757,
+    "Order Total Price": 3067,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10756,
+    "Order Total Price": 2501,
+    "Total Order Discount, %": 0.536
+  },
+  {
+    "Order Id": 10755,
+    "Order Total Price": 2620,
+    "Total Order Discount, %": 0.945
+  },
+  {
+    "Order Id": 10754,
+    "Order Total Price": 54,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10753,
+    "Order Total Price": 90,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10752,
+    "Order Total Price": 252,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10751,
+    "Order Total Price": 1697,
+    "Total Order Discount, %": 0.189
+  },
+  {
+    "Order Id": 10750,
+    "Order Total Price": 1890,
+    "Total Order Discount, %": 0.556
+  },
+  {
+    "Order Id": 10749,
+    "Order Total Price": 1080,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10748,
+    "Order Total Price": 2180,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10747,
+    "Order Total Price": 1930,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10746,
+    "Order Total Price": 2309,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10745,
+    "Order Total Price": 4536,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10744,
+    "Order Total Price": 900,
+    "Total Order Discount, %": 1.111
+  },
+  {
+    "Order Id": 10743,
+    "Order Total Price": 336,
+    "Total Order Discount, %": 0.417
+  },
+  {
+    "Order Id": 10742,
+    "Order Total Price": 3125,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10741,
+    "Order Total Price": 285,
+    "Total Order Discount, %": 1.053
+  },
+  {
+    "Order Id": 10740,
+    "Order Total Price": 1792,
+    "Total Order Discount, %": 1.049
+  },
+  {
+    "Order Id": 10739,
+    "Order Total Price": 240,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10738,
+    "Order Total Price": 51,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10737,
+    "Order Total Price": 144,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10736,
+    "Order Total Price": 1000,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10735,
+    "Order Total Price": 606,
+    "Total Order Discount, %": 0.363
+  },
+  {
+    "Order Id": 10734,
+    "Order Total Price": 1500,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10733,
+    "Order Total Price": 1463,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10732,
+    "Order Total Price": 360,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10731,
+    "Order Total Price": 1990,
+    "Total Order Discount, %": 0.176
+  },
+  {
+    "Order Id": 10730,
+    "Order Total Price": 504,
+    "Total Order Discount, %": 0.278
+  },
+  {
+    "Order Id": 10729,
+    "Order Total Price": 1840,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10728,
+    "Order Total Price": 1296,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10727,
+    "Order Total Price": 1710,
+    "Total Order Discount, %": 0.117
+  },
+  {
+    "Order Id": 10726,
+    "Order Total Price": 655,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10725,
+    "Order Total Price": 292,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10724,
+    "Order Total Price": 641,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10723,
+    "Order Total Price": 465,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10722,
+    "Order Total Price": 1628,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10721,
+    "Order Total Price": 950,
+    "Total Order Discount, %": 0.263
+  },
+  {
+    "Order Id": 10720,
+    "Order Total Price": 554,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10719,
+    "Order Total Price": 1114,
+    "Total Order Discount, %": 1.234
+  },
+  {
+    "Order Id": 10718,
+    "Order Total Price": 3448,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10717,
+    "Order Total Price": 1325,
+    "Total Order Discount, %": 0.215
+  },
+  {
+    "Order Id": 10716,
+    "Order Total Price": 711,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10715,
+    "Order Total Price": 1311,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10714,
+    "Order Total Price": 2963,
+    "Total Order Discount, %": 1.156
+  },
+  {
+    "Order Id": 10713,
+    "Order Total Price": 2876,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10712,
+    "Order Total Price": 1239,
+    "Total Order Discount, %": 0.012
+  },
+  {
+    "Order Id": 10711,
+    "Order Total Price": 4488,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10710,
+    "Order Total Price": 95,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10709,
+    "Order Total Price": 3424,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10708,
+    "Order Total Price": 179,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10707,
+    "Order Total Price": 1724,
+    "Total Order Discount, %": 0.244
+  },
+  {
+    "Order Id": 10706,
+    "Order Total Price": 1884,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10705,
+    "Order Total Price": 388,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10704,
+    "Order Total Price": 619,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10703,
+    "Order Total Price": 2545,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10702,
+    "Order Total Price": 330,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10701,
+    "Order Total Price": 3380,
+    "Total Order Discount, %": 0.43
+  },
+  {
+    "Order Id": 10700,
+    "Order Total Price": 2098,
+    "Total Order Discount, %": 1.115
+  },
+  {
+    "Order Id": 10699,
+    "Order Total Price": 120,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10698,
+    "Order Total Price": 3600,
+    "Total Order Discount, %": 0.129
+  },
+  {
+    "Order Id": 10697,
+    "Order Total Price": 1065,
+    "Total Order Discount, %": 1.784
+  },
+  {
+    "Order Id": 10696,
+    "Order Total Price": 996,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10695,
+    "Order Total Price": 652,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10694,
+    "Order Total Price": 4825,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10693,
+    "Order Total Price": 2307,
+    "Total Order Discount, %": 0.683
+  },
+  {
+    "Order Id": 10692,
+    "Order Total Price": 880,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10691,
+    "Order Total Price": 10148,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10690,
+    "Order Total Price": 1150,
+    "Total Order Discount, %": 1.087
+  },
+  {
+    "Order Id": 10689,
+    "Order Total Price": 630,
+    "Total Order Discount, %": 1.389
+  },
+  {
+    "Order Id": 10688,
+    "Order Total Price": 3514,
+    "Total Order Discount, %": 0.222
+  },
+  {
+    "Order Id": 10687,
+    "Order Total Price": 6204,
+    "Total Order Discount, %": 0.226
+  },
+  {
+    "Order Id": 10686,
+    "Order Total Price": 1635,
+    "Total Order Discount, %": 0.367
+  },
+  {
+    "Order Id": 10685,
+    "Order Total Price": 810,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10684,
+    "Order Total Price": 1780,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10683,
+    "Order Total Price": 63,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10682,
+    "Order Total Price": 398,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10681,
+    "Order Total Price": 1314,
+    "Total Order Discount, %": 0.32
+  },
+  {
+    "Order Id": 10680,
+    "Order Total Price": 1670,
+    "Total Order Discount, %": 1.647
+  },
+  {
+    "Order Id": 10679,
+    "Order Total Price": 660,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10678,
+    "Order Total Price": 5300,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10677,
+    "Order Total Price": 954,
+    "Total Order Discount, %": 0.597
+  },
+  {
+    "Order Id": 10676,
+    "Order Total Price": 524,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10675,
+    "Order Total Price": 1410,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10674,
+    "Order Total Price": 45,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10673,
+    "Order Total Price": 411,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10672,
+    "Order Total Price": 4224,
+    "Total Order Discount, %": 0.036
+  },
+  {
+    "Order Id": 10671,
+    "Order Total Price": 912,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10670,
+    "Order Total Price": 2308,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10669,
+    "Order Total Price": 570,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10668,
+    "Order Total Price": 695,
+    "Total Order Discount, %": 0.388
+  },
+  {
+    "Order Id": 10667,
+    "Order Total Price": 1928,
+    "Total Order Discount, %": 0.612
+  },
+  {
+    "Order Id": 10666,
+    "Order Total Price": 4674,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10665,
+    "Order Total Price": 1295,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10664,
+    "Order Total Price": 1515,
+    "Total Order Discount, %": 0.505
+  },
+  {
+    "Order Id": 10663,
+    "Order Total Price": 2020,
+    "Total Order Discount, %": 0.198
+  },
+  {
+    "Order Id": 10662,
+    "Order Total Price": 130,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10661,
+    "Order Total Price": 691,
+    "Total Order Discount, %": 1.505
+  },
+  {
+    "Order Id": 10660,
+    "Order Total Price": 1701,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10659,
+    "Order Total Price": 1292,
+    "Total Order Discount, %": 0.325
+  },
+  {
+    "Order Id": 10658,
+    "Order Total Price": 4640,
+    "Total Order Discount, %": 0.21
+  },
+  {
+    "Order Id": 10657,
+    "Order Total Price": 4410,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10656,
+    "Order Total Price": 661,
+    "Total Order Discount, %": 0.56
+  },
+  {
+    "Order Id": 10655,
+    "Order Total Price": 200,
+    "Total Order Discount, %": 2
+  },
+  {
+    "Order Id": 10654,
+    "Order Total Price": 666,
+    "Total Order Discount, %": 0.571
+  },
+  {
+    "Order Id": 10653,
+    "Order Total Price": 1190,
+    "Total Order Discount, %": 0.42
+  },
+  {
+    "Order Id": 10652,
+    "Order Total Price": 332,
+    "Total Order Discount, %": 0.151
+  },
+  {
+    "Order Id": 10651,
+    "Order Total Price": 528,
+    "Total Order Discount, %": 1.515
+  },
+  {
+    "Order Id": 10650,
+    "Order Total Price": 1815,
+    "Total Order Discount, %": 0.069
+  },
+  {
+    "Order Id": 10649,
+    "Order Total Price": 1445,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10648,
+    "Order Total Price": 390,
+    "Total Order Discount, %": 0.577
+  },
+  {
+    "Order Id": 10647,
+    "Order Total Price": 630,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10646,
+    "Order Total Price": 1943,
+    "Total Order Discount, %": 1.261
+  },
+  {
+    "Order Id": 10645,
+    "Order Total Price": 1545,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10644,
+    "Order Total Price": 1424,
+    "Total Order Discount, %": 0.176
+  },
+  {
+    "Order Id": 10643,
+    "Order Total Price": 1092,
+    "Total Order Discount, %": 0.87
+  },
+  {
+    "Order Id": 10642,
+    "Order Total Price": 880,
+    "Total Order Discount, %": 1.136
+  },
+  {
+    "Order Id": 10641,
+    "Order Total Price": 2030,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10640,
+    "Order Total Price": 945,
+    "Total Order Discount, %": 0.926
+  },
+  {
+    "Order Id": 10639,
+    "Order Total Price": 504,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10638,
+    "Order Total Price": 2741,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10637,
+    "Order Total Price": 2890,
+    "Total Order Discount, %": 0.147
+  },
+  {
+    "Order Id": 10636,
+    "Order Total Price": 628,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10635,
+    "Order Total Price": 1375,
+    "Total Order Discount, %": 0.182
+  },
+  {
+    "Order Id": 10634,
+    "Order Total Price": 5011,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10633,
+    "Order Total Price": 6451,
+    "Total Order Discount, %": 0.381
+  },
+  {
+    "Order Id": 10632,
+    "Order Total Price": 630,
+    "Total Order Discount, %": 0.397
+  },
+  {
+    "Order Id": 10631,
+    "Order Total Price": 64,
+    "Total Order Discount, %": 1.25
+  },
+  {
+    "Order Id": 10630,
+    "Order Total Price": 918,
+    "Total Order Discount, %": 0.065
+  },
+  {
+    "Order Id": 10629,
+    "Order Total Price": 2777,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10628,
+    "Order Total Price": 450,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10627,
+    "Order Total Price": 1260,
+    "Total Order Discount, %": 0.417
+  },
+  {
+    "Order Id": 10626,
+    "Order Total Price": 1516,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10625,
+    "Order Total Price": 479,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10624,
+    "Order Total Price": 1394,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10623,
+    "Order Total Price": 1423,
+    "Total Order Discount, %": 0.492
+  },
+  {
+    "Order Id": 10622,
+    "Order Total Price": 614,
+    "Total Order Discount, %": 0.586
+  },
+  {
+    "Order Id": 10621,
+    "Order Total Price": 765,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10620,
+    "Order Total Price": 60,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10619,
+    "Order Total Price": 1260,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10618,
+    "Order Total Price": 2705,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10617,
+    "Order Total Price": 1650,
+    "Total Order Discount, %": 0.273
+  },
+  {
+    "Order Id": 10616,
+    "Order Total Price": 5047,
+    "Total Order Discount, %": 0.045
+  },
+  {
+    "Order Id": 10615,
+    "Order Total Price": 120,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10614,
+    "Order Total Price": 464,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10613,
+    "Order Total Price": 368,
+    "Total Order Discount, %": 0.217
+  },
+  {
+    "Order Id": 10612,
+    "Order Total Price": 6375,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10611,
+    "Order Total Price": 808,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10610,
+    "Order Total Price": 399,
+    "Total Order Discount, %": 1.316
+  },
+  {
+    "Order Id": 10609,
+    "Order Total Price": 424,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10608,
+    "Order Total Price": 1064,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10607,
+    "Order Total Price": 6468,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10606,
+    "Order Total Price": 1410,
+    "Total Order Discount, %": 0.709
+  },
+  {
+    "Order Id": 10605,
+    "Order Total Price": 4320,
+    "Total Order Discount, %": 0.156
+  },
+  {
+    "Order Id": 10604,
+    "Order Total Price": 258,
+    "Total Order Discount, %": 0.62
+  },
+  {
+    "Order Id": 10603,
+    "Order Total Price": 1508,
+    "Total Order Discount, %": 0.083
+  },
+  {
+    "Order Id": 10602,
+    "Order Total Price": 65,
+    "Total Order Discount, %": 1.923
+  },
+  {
+    "Order Id": 10601,
+    "Order Total Price": 2285,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10600,
+    "Order Total Price": 478,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10599,
+    "Order Total Price": 490,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10598,
+    "Order Total Price": 2398,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10597,
+    "Order Total Price": 827,
+    "Total Order Discount, %": 1.137
+  },
+  {
+    "Order Id": 10596,
+    "Order Total Price": 1486,
+    "Total Order Discount, %": 0.794
+  },
+  {
+    "Order Id": 10595,
+    "Order Total Price": 6360,
+    "Total Order Discount, %": 0.845
+  },
+  {
+    "Order Id": 10594,
+    "Order Total Price": 558,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10593,
+    "Order Total Price": 2493,
+    "Total Order Discount, %": 0.361
+  },
+  {
+    "Order Id": 10592,
+    "Order Total Price": 555,
+    "Total Order Discount, %": 0.27
+  },
+  {
+    "Order Id": 10591,
+    "Order Total Price": 790,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10590,
+    "Order Total Price": 1140,
+    "Total Order Discount, %": 0.263
+  },
+  {
+    "Order Id": 10589,
+    "Order Total Price": 72,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10588,
+    "Order Total Price": 3920,
+    "Total Order Discount, %": 0.714
+  },
+  {
+    "Order Id": 10587,
+    "Order Total Price": 806,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10586,
+    "Order Total Price": 28,
+    "Total Order Discount, %": 2.143
+  },
+  {
+    "Order Id": 10585,
+    "Order Total Price": 150,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10584,
+    "Order Total Price": 650,
+    "Total Order Discount, %": 0.385
+  },
+  {
+    "Order Id": 10583,
+    "Order Total Price": 2416,
+    "Total Order Discount, %": 0.211
+  },
+  {
+    "Order Id": 10582,
+    "Order Total Price": 332,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10581,
+    "Order Total Price": 400,
+    "Total Order Discount, %": 2.5
+  },
+  {
+    "Order Id": 10580,
+    "Order Total Price": 1065,
+    "Total Order Discount, %": 0.254
+  },
+  {
+    "Order Id": 10579,
+    "Order Total Price": 328,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10578,
+    "Order Total Price": 480,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10577,
+    "Order Total Price": 574,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10576,
+    "Order Total Price": 839,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10575,
+    "Order Total Price": 2154,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10574,
+    "Order Total Price": 766,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10573,
+    "Order Total Price": 2087,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10572,
+    "Order Total Price": 1544,
+    "Total Order Discount, %": 0.24
+  },
+  {
+    "Order Id": 10571,
+    "Order Total Price": 645,
+    "Total Order Discount, %": 0.907
+  },
+  {
+    "Order Id": 10570,
+    "Order Total Price": 2595,
+    "Total Order Discount, %": 0.145
+  },
+  {
+    "Order Id": 10569,
+    "Order Total Price": 995,
+    "Total Order Discount, %": 0.704
+  },
+  {
+    "Order Id": 10568,
+    "Order Total Price": 155,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10567,
+    "Order Total Price": 3139,
+    "Total Order Discount, %": 0.637
+  },
+  {
+    "Order Id": 10566,
+    "Order Total Price": 2049,
+    "Total Order Discount, %": 0.388
+  },
+  {
+    "Order Id": 10565,
+    "Order Total Price": 719,
+    "Total Order Discount, %": 0.598
+  },
+  {
+    "Order Id": 10564,
+    "Order Total Price": 1302,
+    "Total Order Discount, %": 0.18
+  },
+  {
+    "Order Id": 10563,
+    "Order Total Price": 965,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10562,
+    "Order Total Price": 550,
+    "Total Order Discount, %": 0.545
+  },
+  {
+    "Order Id": 10561,
+    "Order Total Price": 2840,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10560,
+    "Order Total Price": 1255,
+    "Total Order Discount, %": 0.299
+  },
+  {
+    "Order Id": 10559,
+    "Order Total Price": 552,
+    "Total Order Discount, %": 0.272
+  },
+  {
+    "Order Id": 10558,
+    "Order Total Price": 2159,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10557,
+    "Order Total Price": 1150,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10556,
+    "Order Total Price": 840,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10555,
+    "Order Total Price": 3675,
+    "Total Order Discount, %": 0.778
+  },
+  {
+    "Order Id": 10554,
+    "Order Total Price": 1800,
+    "Total Order Discount, %": 0.222
+  },
+  {
+    "Order Id": 10553,
+    "Order Total Price": 1555,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10552,
+    "Order Total Price": 888,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10551,
+    "Order Total Price": 1800,
+    "Total Order Discount, %": 0.5
+  },
+  {
+    "Order Id": 10550,
+    "Order Total Price": 752,
+    "Total Order Discount, %": 0.319
+  },
+  {
+    "Order Id": 10549,
+    "Order Total Price": 4259,
+    "Total Order Discount, %": 0.715
+  },
+  {
+    "Order Id": 10548,
+    "Order Total Price": 280,
+    "Total Order Discount, %": 0.893
+  },
+  {
+    "Order Id": 10547,
+    "Order Total Price": 1908,
+    "Total Order Discount, %": 0.189
+  },
+  {
+    "Order Id": 10546,
+    "Order Total Price": 2800,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10545,
+    "Order Total Price": 210,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10544,
+    "Order Total Price": 420,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10543,
+    "Order Total Price": 1770,
+    "Total Order Discount, %": 0.847
+  },
+  {
+    "Order Id": 10542,
+    "Order Total Price": 483,
+    "Total Order Discount, %": 0.404
+  },
+  {
+    "Order Id": 10541,
+    "Order Total Price": 2185,
+    "Total Order Discount, %": 0.384
+  },
+  {
+    "Order Id": 10540,
+    "Order Total Price": 10215,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10539,
+    "Order Total Price": 363,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10538,
+    "Order Total Price": 140,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10537,
+    "Order Total Price": 1838,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10536,
+    "Order Total Price": 2110,
+    "Total Order Discount, %": 0.592
+  },
+  {
+    "Order Id": 10535,
+    "Order Total Price": 2155,
+    "Total Order Discount, %": 0.371
+  },
+  {
+    "Order Id": 10534,
+    "Order Total Price": 510,
+    "Total Order Discount, %": 0.784
+  },
+  {
+    "Order Id": 10533,
+    "Order Total Price": 2300,
+    "Total Order Discount, %": 0.161
+  },
+  {
+    "Order Id": 10532,
+    "Order Total Price": 798,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10531,
+    "Order Total Price": 110,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10530,
+    "Order Total Price": 4190,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10529,
+    "Order Total Price": 956,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10528,
+    "Order Total Price": 402,
+    "Total Order Discount, %": 0.398
+  },
+  {
+    "Order Id": 10527,
+    "Order Total Price": 1670,
+    "Total Order Discount, %": 0.479
+  },
+  {
+    "Order Id": 10526,
+    "Order Total Price": 1344,
+    "Total Order Discount, %": 0.424
+  },
+  {
+    "Order Id": 10525,
+    "Order Total Price": 840,
+    "Total Order Discount, %": 0.179
+  },
+  {
+    "Order Id": 10524,
+    "Order Total Price": 3187,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10523,
+    "Order Total Price": 2718,
+    "Total Order Discount, %": 0.235
+  },
+  {
+    "Order Id": 10522,
+    "Order Total Price": 2650,
+    "Total Order Discount, %": 0.642
+  },
+  {
+    "Order Id": 10521,
+    "Order Total Price": 232,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10520,
+    "Order Total Price": 205,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10519,
+    "Order Total Price": 2356,
+    "Total Order Discount, %": 0.055
+  },
+  {
+    "Order Id": 10518,
+    "Order Total Price": 4156,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10517,
+    "Order Total Price": 352,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10516,
+    "Order Total Price": 2655,
+    "Total Order Discount, %": 0.395
+  },
+  {
+    "Order Id": 10515,
+    "Order Total Price": 10586,
+    "Total Order Discount, %": 0.164
+  },
+  {
+    "Order Id": 10514,
+    "Order Total Price": 8648,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10513,
+    "Order Total Price": 2435,
+    "Total Order Discount, %": 0.862
+  },
+  {
+    "Order Id": 10512,
+    "Order Total Price": 626,
+    "Total Order Discount, %": 0.887
+  },
+  {
+    "Order Id": 10511,
+    "Order Total Price": 3000,
+    "Total Order Discount, %": 0.55
+  },
+  {
+    "Order Id": 10510,
+    "Order Total Price": 4752,
+    "Total Order Discount, %": 0.076
+  },
+  {
+    "Order Id": 10509,
+    "Order Total Price": 138,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10508,
+    "Order Total Price": 240,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10507,
+    "Order Total Price": 885,
+    "Total Order Discount, %": 0.508
+  },
+  {
+    "Order Id": 10506,
+    "Order Total Price": 462,
+    "Total Order Discount, %": 0.693
+  },
+  {
+    "Order Id": 10505,
+    "Order Total Price": 147,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10504,
+    "Order Total Price": 1403,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10503,
+    "Order Total Price": 2030,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10502,
+    "Order Total Price": 828,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10501,
+    "Order Total Price": 140,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10500,
+    "Order Total Price": 560,
+    "Total Order Discount, %": 0.179
+  },
+  {
+    "Order Id": 10499,
+    "Order Total Price": 1420,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10498,
+    "Order Total Price": 580,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10497,
+    "Order Total Price": 1370,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10496,
+    "Order Total Price": 200,
+    "Total Order Discount, %": 0.5
+  },
+  {
+    "Order Id": 10495,
+    "Order Total Price": 280,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10494,
+    "Order Total Price": 900,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10493,
+    "Order Total Price": 685,
+    "Total Order Discount, %": 0.511
+  },
+  {
+    "Order Id": 10492,
+    "Order Total Price": 880,
+    "Total Order Discount, %": 0.455
+  },
+  {
+    "Order Id": 10491,
+    "Order Total Price": 310,
+    "Total Order Discount, %": 1.065
+  },
+  {
+    "Order Id": 10490,
+    "Order Total Price": 3156,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10489,
+    "Order Total Price": 507,
+    "Total Order Discount, %": 0.74
+  },
+  {
+    "Order Id": 10488,
+    "Order Total Price": 1560,
+    "Total Order Discount, %": 0.256
+  },
+  {
+    "Order Id": 10487,
+    "Order Total Price": 929,
+    "Total Order Discount, %": 0.646
+  },
+  {
+    "Order Id": 10486,
+    "Order Total Price": 1263,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10485,
+    "Order Total Price": 1750,
+    "Total Order Discount, %": 0.743
+  },
+  {
+    "Order Id": 10484,
+    "Order Total Price": 388,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10483,
+    "Order Total Price": 685,
+    "Total Order Discount, %": 0.474
+  },
+  {
+    "Order Id": 10482,
+    "Order Total Price": 150,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10481,
+    "Order Total Price": 1464,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10480,
+    "Order Total Price": 768,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10479,
+    "Order Total Price": 10508,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10478,
+    "Order Total Price": 500,
+    "Total Order Discount, %": 0.2
+  },
+  {
+    "Order Id": 10477,
+    "Order Total Price": 658,
+    "Total Order Discount, %": 1.558
+  },
+  {
+    "Order Id": 10476,
+    "Order Total Price": 182,
+    "Total Order Discount, %": 0.055
+  },
+  {
+    "Order Id": 10475,
+    "Order Total Price": 1778,
+    "Total Order Discount, %": 1.156
+  },
+  {
+    "Order Id": 10474,
+    "Order Total Price": 1251,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10473,
+    "Order Total Price": 228,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10472,
+    "Order Total Price": 1076,
+    "Total Order Discount, %": 0.372
+  },
+  {
+    "Order Id": 10471,
+    "Order Total Price": 1320,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10470,
+    "Order Total Price": 1821,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10469,
+    "Order Total Price": 1122,
+    "Total Order Discount, %": 1.029
+  },
+  {
+    "Order Id": 10468,
+    "Order Total Price": 723,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10467,
+    "Order Total Price": 244,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10466,
+    "Order Total Price": 220,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10465,
+    "Order Total Price": 2747,
+    "Total Order Discount, %": 0.175
+  },
+  {
+    "Order Id": 10464,
+    "Order Total Price": 1839,
+    "Total Order Discount, %": 0.5
+  },
+  {
+    "Order Id": 10463,
+    "Order Total Price": 697,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10462,
+    "Order Total Price": 152,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10461,
+    "Order Total Price": 2048,
+    "Total Order Discount, %": 1.562
+  },
+  {
+    "Order Id": 10460,
+    "Order Total Price": 234,
+    "Total Order Discount, %": 2.671
+  },
+  {
+    "Order Id": 10459,
+    "Order Total Price": 1704,
+    "Total Order Discount, %": 0.106
+  },
+  {
+    "Order Id": 10458,
+    "Order Total Price": 3870,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10457,
+    "Order Total Price": 1584,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10456,
+    "Order Total Price": 656,
+    "Total Order Discount, %": 1.395
+  },
+  {
+    "Order Id": 10455,
+    "Order Total Price": 2665,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10454,
+    "Order Total Price": 420,
+    "Total Order Discount, %": 2.381
+  },
+  {
+    "Order Id": 10453,
+    "Order Total Price": 450,
+    "Total Order Discount, %": 0.889
+  },
+  {
+    "Order Id": 10452,
+    "Order Total Price": 2140,
+    "Total Order Discount, %": 0.234
+  },
+  {
+    "Order Id": 10451,
+    "Order Total Price": 4251,
+    "Total Order Discount, %": 0.56
+  },
+  {
+    "Order Id": 10450,
+    "Order Total Price": 536,
+    "Total Order Discount, %": 0.97
+  },
+  {
+    "Order Id": 10449,
+    "Order Total Price": 1835,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10448,
+    "Order Total Price": 450,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10447,
+    "Order Total Price": 909,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10446,
+    "Order Total Price": 284,
+    "Total Order Discount, %": 1.761
+  },
+  {
+    "Order Id": 10445,
+    "Order Total Price": 174,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10444,
+    "Order Total Price": 1037,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10443,
+    "Order Total Price": 534,
+    "Total Order Discount, %": 0.225
+  },
+  {
+    "Order Id": 10442,
+    "Order Total Price": 1830,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10441,
+    "Order Total Price": 1750,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10440,
+    "Order Total Price": 5807,
+    "Total Order Discount, %": 0.537
+  },
+  {
+    "Order Id": 10439,
+    "Order Total Price": 1076,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10438,
+    "Order Total Price": 565,
+    "Total Order Discount, %": 1.77
+  },
+  {
+    "Order Id": 10437,
+    "Order Total Price": 390,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10436,
+    "Order Total Price": 2204,
+    "Total Order Discount, %": 0.426
+  },
+  {
+    "Order Id": 10435,
+    "Order Total Price": 634,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10434,
+    "Order Total Price": 354,
+    "Total Order Discount, %": 0.763
+  },
+  {
+    "Order Id": 10433,
+    "Order Total Price": 840,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10432,
+    "Order Total Price": 490,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10431,
+    "Order Total Price": 2540,
+    "Total Order Discount, %": 1.28
+  },
+  {
+    "Order Id": 10430,
+    "Order Total Price": 5775,
+    "Total Order Discount, %": 0.398
+  },
+  {
+    "Order Id": 10429,
+    "Order Total Price": 1745,
+    "Total Order Discount, %": 0.501
+  },
+  {
+    "Order Id": 10428,
+    "Order Total Price": 200,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10427,
+    "Order Total Price": 665,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10426,
+    "Order Total Price": 339,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10425,
+    "Order Total Price": 470,
+    "Total Order Discount, %": 1.596
+  },
+  {
+    "Order Id": 10424,
+    "Order Total Price": 11479,
+    "Total Order Discount, %": 0.242
+  },
+  {
+    "Order Id": 10423,
+    "Order Total Price": 1020,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10422,
+    "Order Total Price": 50,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10421,
+    "Order Total Price": 1268,
+    "Total Order Discount, %": 0.343
+  },
+  {
+    "Order Id": 10420,
+    "Order Total Price": 1906,
+    "Total Order Discount, %": 0.262
+  },
+  {
+    "Order Id": 10419,
+    "Order Total Price": 2200,
+    "Total Order Discount, %": 0.182
+  },
+  {
+    "Order Id": 10418,
+    "Order Total Price": 1828,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10417,
+    "Order Total Price": 11280,
+    "Total Order Discount, %": 0.084
+  },
+  {
+    "Order Id": 10416,
+    "Order Total Price": 720,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10415,
+    "Order Total Price": 102,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10414,
+    "Order Total Price": 226,
+    "Total Order Discount, %": 0.398
+  },
+  {
+    "Order Id": 10413,
+    "Order Total Price": 2092,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10412,
+    "Order Total Price": 380,
+    "Total Order Discount, %": 0.526
+  },
+  {
+    "Order Id": 10411,
+    "Order Total Price": 1236,
+    "Total Order Discount, %": 1.197
+  },
+  {
+    "Order Id": 10410,
+    "Order Total Price": 802,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10409,
+    "Order Total Price": 324,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10408,
+    "Order Total Price": 1611,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10407,
+    "Order Total Price": 1200,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10406,
+    "Order Total Price": 1997,
+    "Total Order Discount, %": 0.396
+  },
+  {
+    "Order Id": 10405,
+    "Order Total Price": 400,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10404,
+    "Order Total Price": 1670,
+    "Total Order Discount, %": 0.299
+  },
+  {
+    "Order Id": 10403,
+    "Order Total Price": 994,
+    "Total Order Discount, %": 1.373
+  },
+  {
+    "Order Id": 10402,
+    "Order Total Price": 2695,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10401,
+    "Order Total Price": 3838,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10400,
+    "Order Total Price": 3049,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10399,
+    "Order Total Price": 1740,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10398,
+    "Order Total Price": 2700,
+    "Total Order Discount, %": 0.444
+  },
+  {
+    "Order Id": 10397,
+    "Order Total Price": 836,
+    "Total Order Discount, %": 0.502
+  },
+  {
+    "Order Id": 10396,
+    "Order Total Price": 1888,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10395,
+    "Order Total Price": 2332,
+    "Total Order Discount, %": 0.42
+  },
+  {
+    "Order Id": 10394,
+    "Order Total Price": 440,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10393,
+    "Order Total Price": 3320,
+    "Total Order Discount, %": 1.084
+  },
+  {
+    "Order Id": 10392,
+    "Order Total Price": 1450,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10391,
+    "Order Total Price": 90,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10390,
+    "Order Total Price": 2282,
+    "Total Order Discount, %": 0.543
+  },
+  {
+    "Order Id": 10389,
+    "Order Total Price": 1825,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10388,
+    "Order Total Price": 1280,
+    "Total Order Discount, %": 0.547
+  },
+  {
+    "Order Id": 10387,
+    "Order Total Price": 1059,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10386,
+    "Order Total Price": 170,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10385,
+    "Order Total Price": 860,
+    "Total Order Discount, %": 0.884
+  },
+  {
+    "Order Id": 10384,
+    "Order Total Price": 2225,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10383,
+    "Order Total Price": 895,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10382,
+    "Order Total Price": 2900,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10381,
+    "Order Total Price": 112,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10380,
+    "Order Total Price": 1420,
+    "Total Order Discount, %": 0.31
+  },
+  {
+    "Order Id": 10379,
+    "Order Total Price": 964,
+    "Total Order Discount, %": 0.456
+  },
+  {
+    "Order Id": 10378,
+    "Order Total Price": 102,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10377,
+    "Order Total Price": 1000,
+    "Total Order Discount, %": 0.6
+  },
+  {
+    "Order Id": 10376,
+    "Order Total Price": 420,
+    "Total Order Discount, %": 0.5
+  },
+  {
+    "Order Id": 10375,
+    "Order Total Price": 345,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10374,
+    "Order Total Price": 465,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10373,
+    "Order Total Price": 1730,
+    "Total Order Discount, %": 1.503
+  },
+  {
+    "Order Id": 10372,
+    "Order Total Price": 12286,
+    "Total Order Discount, %": 0.334
+  },
+  {
+    "Order Id": 10371,
+    "Order Total Price": 90,
+    "Total Order Discount, %": 1.333
+  },
+  {
+    "Order Id": 10370,
+    "Order Total Price": 1180,
+    "Total Order Discount, %": 0.445
+  },
+  {
+    "Order Id": 10369,
+    "Order Total Price": 2520,
+    "Total Order Discount, %": 0.179
+  },
+  {
+    "Order Id": 10368,
+    "Order Total Price": 1853,
+    "Total Order Discount, %": 0.286
+  },
+  {
+    "Order Id": 10367,
+    "Order Total Price": 829,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10366,
+    "Order Total Price": 135,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10365,
+    "Order Total Price": 408,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10364,
+    "Order Total Price": 955,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10363,
+    "Order Total Price": 440,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10362,
+    "Order Total Price": 1534,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10361,
+    "Order Total Price": 2241,
+    "Total Order Discount, %": 0.486
+  },
+  {
+    "Order Id": 10360,
+    "Order Total Price": 7383,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10359,
+    "Order Total Price": 3644,
+    "Total Order Discount, %": 0.283
+  },
+  {
+    "Order Id": 10358,
+    "Order Total Price": 450,
+    "Total Order Discount, %": 0.444
+  },
+  {
+    "Order Id": 10357,
+    "Order Total Price": 1366,
+    "Total Order Discount, %": 0.556
+  },
+  {
+    "Order Id": 10356,
+    "Order Total Price": 1108,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10355,
+    "Order Total Price": 500,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10354,
+    "Order Total Price": 564,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10353,
+    "Order Total Price": 10754,
+    "Total Order Discount, %": 0.115
+  },
+  {
+    "Order Id": 10352,
+    "Order Total Price": 160,
+    "Total Order Discount, %": 1.875
+  },
+  {
+    "Order Id": 10351,
+    "Order Total Price": 5726,
+    "Total Order Discount, %": 0.093
+  },
+  {
+    "Order Id": 10350,
+    "Order Total Price": 717,
+    "Total Order Discount, %": 0.46
+  },
+  {
+    "Order Id": 10349,
+    "Order Total Price": 144,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10348,
+    "Order Total Price": 385,
+    "Total Order Discount, %": 0.584
+  },
+  {
+    "Order Id": 10347,
+    "Order Total Price": 906,
+    "Total Order Discount, %": 0.927
+  },
+  {
+    "Order Id": 10346,
+    "Order Total Price": 1716,
+    "Total Order Discount, %": 0.21
+  },
+  {
+    "Order Id": 10345,
+    "Order Total Price": 2899,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10344,
+    "Order Total Price": 2870,
+    "Total Order Discount, %": 0.61
+  },
+  {
+    "Order Id": 10343,
+    "Order Total Price": 1600,
+    "Total Order Discount, %": 0.012
+  },
+  {
+    "Order Id": 10342,
+    "Order Total Price": 2280,
+    "Total Order Discount, %": 1.404
+  },
+  {
+    "Order Id": 10341,
+    "Order Total Price": 412,
+    "Total Order Discount, %": 0.328
+  },
+  {
+    "Order Id": 10340,
+    "Order Total Price": 2576,
+    "Total Order Discount, %": 0.14
+  },
+  {
+    "Order Id": 10339,
+    "Order Total Price": 3442,
+    "Total Order Discount, %": 0.102
+  },
+  {
+    "Order Id": 10338,
+    "Order Total Price": 935,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10337,
+    "Order Total Price": 2468,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10336,
+    "Order Total Price": 324,
+    "Total Order Discount, %": 0.556
+  },
+  {
+    "Order Id": 10335,
+    "Order Total Price": 2527,
+    "Total Order Discount, %": 0.681
+  },
+  {
+    "Order Id": 10334,
+    "Order Total Price": 148,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10333,
+    "Order Total Price": 950,
+    "Total Order Discount, %": 0.526
+  },
+  {
+    "Order Id": 10332,
+    "Order Total Price": 2238,
+    "Total Order Discount, %": 0.59
+  },
+  {
+    "Order Id": 10331,
+    "Order Total Price": 90,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10330,
+    "Order Total Price": 1950,
+    "Total Order Discount, %": 0.577
+  },
+  {
+    "Order Id": 10329,
+    "Order Total Price": 4818,
+    "Total Order Discount, %": 0.052
+  },
+  {
+    "Order Id": 10328,
+    "Order Total Price": 1176,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10327,
+    "Order Total Price": 2290,
+    "Total Order Discount, %": 1.223
+  },
+  {
+    "Order Id": 10326,
+    "Order Total Price": 988,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10325,
+    "Order Total Price": 1511,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10324,
+    "Order Total Price": 6134,
+    "Total Order Discount, %": 0.516
+  },
+  {
+    "Order Id": 10323,
+    "Order Total Price": 160,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10322,
+    "Order Total Price": 120,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10321,
+    "Order Total Price": 140,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10320,
+    "Order Total Price": 510,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10319,
+    "Order Total Price": 1172,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10318,
+    "Order Total Price": 244,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10317,
+    "Order Total Price": 280,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10316,
+    "Order Total Price": 2810,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10315,
+    "Order Total Price": 514,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10314,
+    "Order Total Price": 2345,
+    "Total Order Discount, %": 0.405
+  },
+  {
+    "Order Id": 10313,
+    "Order Total Price": 180,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10312,
+    "Order Total Price": 1612,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10311,
+    "Order Total Price": 269,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10310,
+    "Order Total Price": 335,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10309,
+    "Order Total Price": 1773,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10308,
+    "Order Total Price": 89,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10307,
+    "Order Total Price": 420,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10306,
+    "Order Total Price": 500,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10305,
+    "Order Total Price": 4145,
+    "Total Order Discount, %": 0.193
+  },
+  {
+    "Order Id": 10304,
+    "Order Total Price": 954,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10303,
+    "Order Total Price": 1260,
+    "Total Order Discount, %": 0.675
+  },
+  {
+    "Order Id": 10302,
+    "Order Total Price": 2692,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10301,
+    "Order Total Price": 750,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10300,
+    "Order Total Price": 620,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10299,
+    "Order Total Price": 345,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10298,
+    "Order Total Price": 3105,
+    "Total Order Discount, %": 0.564
+  },
+  {
+    "Order Id": 10297,
+    "Order Total Price": 1400,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10296,
+    "Order Total Price": 1059,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10295,
+    "Order Total Price": 120,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10294,
+    "Order Total Price": 1875,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10293,
+    "Order Total Price": 851,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10292,
+    "Order Total Price": 1300,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10291,
+    "Order Total Price": 568,
+    "Total Order Discount, %": 0.81
+  },
+  {
+    "Order Id": 10290,
+    "Order Total Price": 2165,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10289,
+    "Order Total Price": 483,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10288,
+    "Order Total Price": 90,
+    "Total Order Discount, %": 1.444
+  },
+  {
+    "Order Id": 10287,
+    "Order Total Price": 930,
+    "Total Order Discount, %": 0.887
+  },
+  {
+    "Order Id": 10286,
+    "Order Total Price": 2960,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10285,
+    "Order Total Price": 2166,
+    "Total Order Discount, %": 1.117
+  },
+  {
+    "Order Id": 10284,
+    "Order Total Price": 1456,
+    "Total Order Discount, %": 0.687
+  },
+  {
+    "Order Id": 10283,
+    "Order Total Price": 1395,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10282,
+    "Order Total Price": 158,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10281,
+    "Order Total Price": 87,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10280,
+    "Order Total Price": 608,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10279,
+    "Order Total Price": 465,
+    "Total Order Discount, %": 0.806
+  },
+  {
+    "Order Id": 10278,
+    "Order Total Price": 1496,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10277,
+    "Order Total Price": 1188,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10276,
+    "Order Total Price": 425,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10275,
+    "Order Total Price": 312,
+    "Total Order Discount, %": 0.288
+  },
+  {
+    "Order Id": 10274,
+    "Order Total Price": 536,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10273,
+    "Order Total Price": 2152,
+    "Total Order Discount, %": 0.307
+  },
+  {
+    "Order Id": 10272,
+    "Order Total Price": 1462,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10271,
+    "Order Total Price": 48,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10270,
+    "Order Total Price": 1375,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10269,
+    "Order Total Price": 680,
+    "Total Order Discount, %": 0.588
+  },
+  {
+    "Order Id": 10268,
+    "Order Total Price": 1102,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10267,
+    "Order Total Price": 4040,
+    "Total Order Discount, %": 0.316
+  },
+  {
+    "Order Id": 10266,
+    "Order Total Price": 360,
+    "Total Order Discount, %": 0.167
+  },
+  {
+    "Order Id": 10265,
+    "Order Total Price": 1170,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10264,
+    "Order Total Price": 725,
+    "Total Order Discount, %": 0.517
+  },
+  {
+    "Order Id": 10263,
+    "Order Total Price": 2500,
+    "Total Order Discount, %": 1.56
+  },
+  {
+    "Order Id": 10262,
+    "Order Total Price": 624,
+    "Total Order Discount, %": 0.385
+  },
+  {
+    "Order Id": 10261,
+    "Order Total Price": 440,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10260,
+    "Order Total Price": 1765,
+    "Total Order Discount, %": 0.737
+  },
+  {
+    "Order Id": 10259,
+    "Order Total Price": 101,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10258,
+    "Order Total Price": 2011,
+    "Total Order Discount, %": 1.203
+  },
+  {
+    "Order Id": 10257,
+    "Order Total Price": 1109,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10256,
+    "Order Total Price": 510,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10255,
+    "Order Total Price": 2485,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10254,
+    "Order Total Price": 627,
+    "Total Order Discount, %": 0.861
+  },
+  {
+    "Order Id": 10253,
+    "Order Total Price": 1428,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10252,
+    "Order Total Price": 3730,
+    "Total Order Discount, %": 0.087
+  },
+  {
+    "Order Id": 10251,
+    "Order Total Price": 682,
+    "Total Order Discount, %": 0.154
+  },
+  {
+    "Order Id": 10250,
+    "Order Total Price": 1805,
+    "Total Order Discount, %": 0.416
+  },
+  {
+    "Order Id": 10249,
+    "Order Total Price": 1851,
+    "Total Order Discount, %": 0
+  },
+  {
+    "Order Id": 10248,
+    "Order Total Price": 443,
+    "Total Order Discount, %": 0
+  }
+]
