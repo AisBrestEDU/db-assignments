@@ -2,36 +2,42 @@
 
 /********************************************************************************************
  *                                                                                          *
- * The goal of the task is to get basic knowledge of SQL functions and                      *
- * approaches to work with data in SQL.                                                     *
- * https://dev.mysql.com/doc/refman/5.7/en/function-reference.html                          *
+ * The goal of the task is to get basic knowledge of mongodb functions and                  *
+ * approaches to work with data in mongodb. Most of the queries should be implemented with  *
+ * aggregation pipelines.                                                                   *
+ * https://docs.mongodb.com/manual/reference/aggregation/                                   *
+ * https://docs.mongodb.com/manual/reference/operator/aggregation/                          *
  *                                                                                          *
- * The course do not includes basic syntax explanations. If you see the SQL first time,     *
- * you can find explanation and some trainings at W3S                                       *
- * https://www.w3schools.com/sql/sql_syntax.asp                                             *
+ * The course do not includes basic syntax explanations                                     *
+ * Start from scratch can be complex for the tasks, if it's the case, please check          *
+ * "MongoDB University". The M001 course starts quite often so you can finish it to get     *
+ * the basic understanding.                                                                 *
+ * https://university.mongodb.com/courses/M001/about                                        *
  *                                                                                          *
  ********************************************************************************************/
 
 
 /**
- *  Create a SQL query to return next data ordered by city and then by name:
+ *  Create a query to return next data ordered by city and then by name:
  * | Employy Id | Employee Full Name | Title | City |
  *
- * @return {array}
- *
+ * NOTES: if City is null - show city as "Unspecified"
  */
 async function task_1_1(db) {
     // The first task is example, please follow the style in the next functions.
-    const collection = await db.collection('employees').aggregate(
-        [
-            { $project: { _id: 0, EmployeeID:1, "Employee Full Name": { $concat: [ "$FirstName", " ", "$LastName" ]}, Title:1, City:1}},
-            { $sort:{ City: 1 }},
-            { $sort:{ "Employee Full Name":1 }},
-        ]
-    );
-    let res = await collection.toArray();
-    console.log(res);
-    return res;
+    const result = await db.collection('employees').aggregate([
+        {
+            $project: {
+                _id: 0,
+                EmployeeID: 1,
+                "Employee Full Name": {$concat: ["$FirstName", " ", "$LastName"]},
+                Title: 1,
+                City: {$ifNull: ['$City', "Unspecified"]}
+            }
+        },
+        {$sort: {City: 1, "Employee Full Name": 1}}
+    ]).toArray();
+    return result;
 }
 
 /**
