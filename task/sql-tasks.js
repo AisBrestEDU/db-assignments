@@ -99,7 +99,6 @@ async function task_1_6(db) {
  * Create a query to return all employees and full name of person to whom this employee reports to:
  * | EmployeeId | FullName | ReportsTo |
  *
- * Full Name - title of courtesy with full name.
  * Order data by EmployeeId.
  * Reports To - Full name. If the employee does not report to anybody leave "-" in the column.
  * @return {array}

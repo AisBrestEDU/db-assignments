@@ -1,0 +1,72 @@
+[
+  {
+    "ProductName": "Aniseed Syrup",
+    "UnitsInStock": 13,
+    "UnitsOnOrder": 70
+  },
+  {
+    "ProductName": "Chang",
+    "UnitsInStock": 17,
+    "UnitsOnOrder": 40
+  },
+  {
+    "ProductName": "Chocolade",
+    "UnitsInStock": 15,
+    "UnitsOnOrder": 70
+  },
+  {
+    "ProductName": "Gorgonzola Telino",
+    "UnitsInStock": 0,
+    "UnitsOnOrder": 70
+  },
+  {
+    "ProductName": "Gravad lax",
+    "UnitsInStock": 11,
+    "UnitsOnOrder": 50
+  },
+  {
+    "ProductName": "Longlife Tofu",
+    "UnitsInStock": 4,
+    "UnitsOnOrder": 20
+  },
+  {
+    "ProductName": "Louisiana Hot Spiced Okra",
+    "UnitsInStock": 4,
+    "UnitsOnOrder": 100
+  },
+  {
+    "ProductName": "Mascarpone Fabioli",
+    "UnitsInStock": 9,
+    "UnitsOnOrder": 40
+  },
+  {
+    "ProductName": "Maxilaku",
+    "UnitsInStock": 10,
+    "UnitsOnOrder": 60
+  },
+  {
+    "ProductName": "Queso Cabrales",
+    "UnitsInStock": 22,
+    "UnitsOnOrder": 30
+  },
+  {
+    "ProductName": "Rogede sild",
+    "UnitsInStock": 5,
+    "UnitsOnOrder": 70
+  },
+  {
+    "ProductName": "Scottish Longbreads",
+    "UnitsInStock": 6,
+    "UnitsOnOrder": 10
+  },
+  {
+    "ProductName": "Sir Rodney's Scones",
+    "UnitsInStock": 3,
+    "UnitsOnOrder": 40
+  },
+  {
+    "ProductName": "Wimmers gute Semmelknödel",
+    "UnitsInStock": 22,
+    "UnitsOnOrder": 80
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "CategoryName": "Beverages",
+    "TotalNumberOfProducts": 12
+  },
+  {
+    "CategoryName": "Condiments",
+    "TotalNumberOfProducts": 12
+  },
+  {
+    "CategoryName": "Confections",
+    "TotalNumberOfProducts": 13
+  },
+  {
+    "CategoryName": "Dairy Products",
+    "TotalNumberOfProducts": 10
+  },
+  {
+    "CategoryName": "Grains/Cereals",
+    "TotalNumberOfProducts": 7
+  },
+  {
+    "CategoryName": "Meat/Poultry",
+    "TotalNumberOfProducts": 6
+  },
+  {
+    "CategoryName": "Produce",
+    "TotalNumberOfProducts": 5
+  },
+  {
+    "CategoryName": "Seafood",
+    "TotalNumberOfProducts": 12
+  }
+]

@@ -1,7 +1,18 @@
 language: node_js
 services:
   - mysql #travis provides the service with mysql 5.7 on july 2020
+  - mongodb
 before_install:
+  ## install mongodb
+  - sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 4B7C549A058F8B6B
+  - echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb.list
+  - sudo apt update
+  - sudo apt install mongodb-org=4.2.8 mongodb-org-server=4.2.8 mongodb-org-shell=4.2.8 mongodb-org-mongos=4.2.8 mongodb-org-tools=4.2.8
+  - sudo systemctl enable mongod
+  - sudo systemctl restart mongod
+  - mongod --version
+  - mongorestore dumps/northwind_mongodb/
+  ## MySQL
   - wget https://repo.mysql.com//mysql-apt-config_0.8.10-1_all.deb
   - sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb
   - sudo apt-get update -q
@@ -9,10 +20,10 @@ before_install:
   - sudo systemctl restart mysql
   - sudo mysql_upgrade
   - mysql --version
-  #You can remove all steps above if you want to run tests on MySQL 5.7
+  # You can remove all steps above if you want to run tests on MySQL 5.7
   - sudo mysql -e "SET PASSWORD FOR 'root'@'localhost' = 'password';" # it should be "PASSWORD('password') for MySQL5.7
   - sudo mysql -ppassword -e "GRANT ALL ON northwind.* TO 'root'@'localhost';"
-  - sudo mysql -ppassword < northwind.sql
+  - sudo mysql -ppassword < dumps/northwind.sql
 node_js:
   - "10.19.0"
 script:

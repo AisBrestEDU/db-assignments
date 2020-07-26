@@ -1,0 +1,62 @@
+[
+  {
+    "EmployeeID": 1,
+    "FullName": "Ms.Nancy Davolio",
+    "ReportsTo": "-"
+  },
+  {
+    "EmployeeID": 2,
+    "FullName": "SalesAndrew Fuller",
+    "ReportsTo": "-"
+  },
+  {
+    "EmployeeID": 3,
+    "FullName": "Ms.Janet Leverling",
+    "ReportsTo": "Andrew Fuller"
+  },
+  {
+    "EmployeeID": 4,
+    "FullName": "Mrs.Margaret Peacock",
+    "ReportsTo": "Andrew Fuller"
+  },
+  {
+    "EmployeeID": 5,
+    "FullName": "Mr.Steven Buchanan",
+    "ReportsTo": "-"
+  },
+  {
+    "EmployeeID": 6,
+    "FullName": "Mr.Michael Suyama",
+    "ReportsTo": "-"
+  },
+  {
+    "EmployeeID": 7,
+    "FullName": "Mr.Robert King",
+    "ReportsTo": "-"
+  },
+  {
+    "EmployeeID": 8,
+    "FullName": "Ms.Laura Callahan",
+    "ReportsTo": "Andrew Fuller"
+  },
+  {
+    "EmployeeID": 9,
+    "FullName": "Ms.Anne Dodsworth",
+    "ReportsTo": "Steven Buchanan"
+  },
+  {
+    "EmployeeID": "Apt. 2A",
+    "FullName": "USAWA Seattle",
+    "ReportsTo": "-"
+  },
+  {
+    "EmployeeID": "Miner Rd.",
+    "FullName": "UKNULL London",
+    "ReportsTo": "-"
+  },
+  {
+    "EmployeeID": "Winchester Way",
+    "FullName": "UKNULL London",
+    "ReportsTo": "-"
+  }
+]
