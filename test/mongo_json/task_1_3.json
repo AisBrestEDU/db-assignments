@@ -1,0 +1,62 @@
+[
+  {
+    "CustomerID": "ANTON",
+    "CompanyName": "Antonio Moreno Taquería"
+  },
+  {
+    "CustomerID": "BSBEV",
+    "CompanyName": "B's Beverages"
+  },
+  {
+    "CustomerID": "CHOPS",
+    "CompanyName": "Chop-suey Chinese"
+  },
+  {
+    "CustomerID": "FOLKO",
+    "CompanyName": "Folk och fä HB"
+  },
+  {
+    "CustomerID": "GREAL",
+    "CompanyName": "Great Lakes Food Market"
+  },
+  {
+    "CustomerID": "ISLAT",
+    "CompanyName": "Island Trading"
+  },
+  {
+    "CustomerID": "KOENE",
+    "CompanyName": "Königlich Essen"
+  },
+  {
+    "CustomerID": "LETSS",
+    "CompanyName": "Let's Stop N Shop"
+  },
+  {
+    "CustomerID": "MORGK",
+    "CompanyName": "Morgenstern Gesundkost"
+  },
+  {
+    "CustomerID": "PRINI",
+    "CompanyName": "Princesa Isabel Vinhos"
+  },
+  {
+    "CustomerID": "QUICK",
+    "CompanyName": "QUICK-Stop"
+  },
+  {
+    "CustomerID": "RICSU",
+    "CompanyName": "Richter Supermarkt"
+  },
+  {
+    "CustomerID": "SAVEA",
+    "CompanyName": "Save-a-lot Markets"
+  },
+  {
+    "CustomerID": "THEBI",
+    "CompanyName": "The Big Cheese"
+  },
+  {
+    "CustomerID": "TORTU",
+    "CompanyName": "Tortuga Restaurante"
+  }
+]
