@@ -12,14 +12,13 @@ before_install:
   ## install mongodb
   - wget https://repo.mongodb.org/apt/ubuntu/dists/xenial/mongodb-org/4.2/multiverse/binary-amd64/mongodb-org-server_4.2.8_amd64.deb
   - sudo dpkg -i ./mongodb-org-server_4.2.8_amd64.deb
+  - sudo systemctl restart mongodb
   - mongo --version
+  - mongorestore dumps/northwind_mongodb/
   #You can remove all steps above if you want to run tests on MySQL 5.7
   - sudo mysql -e "SET PASSWORD FOR 'root'@'localhost' = 'password';" # it should be "PASSWORD('password') for MySQL5.7
   - sudo mysql -ppassword -e "GRANT ALL ON northwind.* TO 'root'@'localhost';"
   - sudo mysql -ppassword < dumps/northwind.sql
-before_script:
-  - sleep 15
-  - mongorestore dumps/northwind_mongodb/
 node_js:
   - "10.19.0"
 script:
