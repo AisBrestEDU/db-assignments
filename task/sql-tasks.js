@@ -173,8 +173,8 @@ async function task_1_7(db) {
 async function task_1_8(db) {
     let result = await db.query(`
         SELECT 
-            CategoryName,
-            COUNT(Products.ProductID) AS TotalNumberOfProducts
+            CategoryName as "CategoryName",
+            COUNT(Products.ProductID) as "TotalNumberOfProducts"
         FROM Categories
         LEFT JOIN Products ON Categories.CategoryID = Products.CategoryID
         GROUP BY Categories.CategoryID
@@ -421,7 +421,17 @@ async function task_1_19(db) {
  *
  */
 async function task_1_20(db) {
-    throw new Error("Not implemented");
+    let result = await db.query(`
+    SELECT 
+        e.EmployeeID as "EmployeeID",
+        CONCAT(e.FirstName, ' ', e.LastName ) as "Employee Full Name",
+        SUM(od.UnitPrice * od.Quantity ) as "Amount, $"
+    FROM Employees e JOIN Orders o ON e.EmployeeID = o.EmployeeID JOIN OrderDetails od ON o.OrderID = od.OrderID
+    GROUP BY e.EmployeeID
+    ORDER BY 3 DESC
+    LIMIT 1
+    `);
+    return result[0];
 }
 
 /**
@@ -431,7 +441,16 @@ async function task_1_20(db) {
  * @return {array}
  */
 async function task_1_21(db) {
-    throw new Error("Not implemented");
+    let result = await db.query(`
+    SELECT 
+        OrderID as "OrderID",
+        SUM(UnitPrice * Quantity ) as "Maximum Purchase Amount, $"
+    FROM OrderDetails
+    GROUP BY OrderID
+    ORDER BY 2 DESC
+    LIMIT 1
+    `);
+    return result[0];
 }
 
 /**
@@ -442,7 +461,24 @@ async function task_1_21(db) {
  * @return {array}
  */
 async function task_1_22(db) {
-    throw new Error("Not implemented");
+    let result = await db.query(`
+    SELECT DISTINCT
+        c.CompanyName as "CompanyName",
+        p.ProductName as "ProductName",
+        od.UnitPrice as "PricePerItem"
+    FROM Products p 
+    JOIN OrderDetails od ON p.ProductID = od.ProductID 
+    JOIN Orders o ON od.OrderID = o.OrderID 
+    JOIN Customers c ON o.CustomerID = c.CustomerID
+    WHERE od.UnitPrice = (SELECT 
+                            MAX(od2.UnitPrice)
+                        FROM Customers c1
+                        JOIN Orders o2 ON o2.CustomerID = c1.CustomerID 
+                        JOIN OrderDetails od2 ON o2.OrderID = od2.OrderID 
+                        WHERE c1.CompanyName = c.CompanyName) 
+                        ORDER BY od.UnitPrice DESC, c.CompanyName ASC, p.ProductName ASC 
+    `);
+    return result[0];
 }
 
 module.exports = {
