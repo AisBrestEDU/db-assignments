@@ -41,7 +41,7 @@ To start DB Assignments please follow the next steps:
 * Install [MySQL](https://dev.mysql.com/downloads/mysql/5.5.html). **That's important:** The tests checked on Mysql 5.7 and Mysql 8.0 only.
 * Default mysql user and password which we use for the tasks is "**root / password**", but you can override these via environmet variables. 
 Example for linux: `USER_NAME=root PASSWORD=password HOST=localhost npm test`.
-* [Restore **northwind.sql** dump](https://john-dugan.com/dump-and-restore-mysql-databases-in-windows/). To do that, in general case, you need to execute the command `mysql < [pathToTheFolder]/northwind.sql`.
+* [Restore **dumps/northwind.sql** dump](https://john-dugan.com/dump-and-restore-mysql-databases-in-windows/). To do that, in general case, you need to execute the command `mysql < [pathToTheFolder]/dumps/northwind.sql`.
 * To connect to database and edit queries you can use any GUI like [dbeaver](https://dbeaver.io/) or [MySQL Workbench](https://www.mysql.com/products/workbench/).
 * Open your favorite editor and complete tasks.
 * Open your terminal and use `npm test` command to run all tests. You can run single file by passing it as argument `npm test ./test/sql-tasks.js`.

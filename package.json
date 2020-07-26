@@ -10,9 +10,7 @@
   "license": "MIT",
   "devDependencies": {
     "mocha": "^8.0.1",
-    "mysql2": "^2.1.0"
-  },
-  "dependencies": {
+    "mysql2": "^2.1.0",
     "mongodb": "^3.5.9"
   }
 }
