@@ -220,10 +220,10 @@ async function task_1_10(db) {
  * Order by UnitPrice then by ProductName
  */
 async function task_1_11(db) {
-    const result = await db.collection('products').aggregate(
+    const result = await db.collection("products").aggregate([
         {
             $match:{
-                UnitPrice:{$gte: 5, $lte: 15}
+                UnitPrice: {$gte: 5, $lte: 15}
             }
         },
         {
@@ -233,8 +233,8 @@ async function task_1_11(db) {
                 UnitPrice:1
             }
         },
-        {$sort:{ UnitPrice: 1 , ProductName: 1 }}
-        ).toArray();
+        {$sort:{ UnitPrice: 1, ProductName: 1}}
+    ]).toArray();
     return result;
 }
 
@@ -245,7 +245,19 @@ async function task_1_11(db) {
  * Order products by price (asc) then by ProductName.
  */
 async function task_1_12(db) {
-    throw new Error("Not implemented");
+    const result = await db.collection("products").aggregate([
+        {
+            $project:{
+                _id:0,
+                ProductName:1,
+                UnitPrice:1
+            }
+        },
+        {$sort:{UnitPrice:-1}},
+        {$limit:20},
+        {$sort:{UnitPrice:1}}
+        ]).toArray();
+    return result;
 }
 
 /**
