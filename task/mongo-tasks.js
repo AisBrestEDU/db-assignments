@@ -57,6 +57,26 @@ async function task_1_1(db) {
  */
 async function task_1_2(db) {
     throw new Error("Not implemented");
+    const result = await db.collection("order-details").aggregate([
+        {
+            $group:{
+                _id:null,
+                OrderID: {"$addToSet": "$OrderID" },
+                "Order Total Price":{$sum:{ $multiply:["$UnitPrice","$Quantity"]}},
+                "Total Order Discount, %":{$sum:{ $multiply:["$Discount","$Quantity"]}}
+        }
+        },
+        {
+            $project:{
+                _id:0,
+                OrderID:1,
+                "Order Total Price":1,
+                "Total Order Discount, %":1
+            }
+        },
+        {$sort:{OrderID: -1}}
+        ]).toArray();
+    return result;
 }
 
 /**
@@ -66,7 +86,22 @@ async function task_1_2(db) {
  * HINT: check by string "NULL" values
  */
 async function task_1_3(db) {
-    throw new Error("Not implemented");
+    const result = await db.collection('customers').aggregate([
+        {
+            $match:{
+                Fax:"NULL"
+            }
+        },
+        {
+            $project:{
+                _id:0,
+                CustomerID:1,
+                CompanyName:1
+            }
+        },
+        {$sort:{CustomerID:1}}
+        ]).toArray();
+    return result;
 }
 
 /**
@@ -88,7 +123,23 @@ async function task_1_4(db) {
  * | ProductID | ProductName | QuantityPerUnit |
  */
 async function task_1_5(db) {
-    throw new Error("Not implemented");
+    const result = await db.collection("products").aggregate([
+        {
+            $match:{
+                ProductName:/^[A-F]/
+            }
+        },
+        {
+            $project:{
+                _id:0,
+                ProductID:1,
+                ProductName:1,
+                QuantityPerUnit:1
+            }
+        },
+        {$sort:{ "ProductName": 1}}
+        ]).toArray();
+    return result;
 }
 
 /**
@@ -144,7 +195,22 @@ async function task_1_9(db) {
  * order by ProductID
  */
 async function task_1_10(db) {
-    throw new Error("Not implemented");
+    const result = await db.collection('products').aggregate(
+        {
+            $match:{
+                Discontinued: 1
+            }
+        },
+        {
+            $project:{
+                _id:0,
+                ProductID:1,
+                ProductName:1
+            }
+        },
+        {$sort:{ "ProductID": 1}}
+        ).toArray();
+    return result;
 }
 
 /**
@@ -154,7 +220,22 @@ async function task_1_10(db) {
  * Order by UnitPrice then by ProductName
  */
 async function task_1_11(db) {
-    throw new Error("Not implemented");
+    const result = await db.collection('products').aggregate(
+        {
+            $match:{
+                UnitPrice:{$gte: 5, $lte: 15}
+            }
+        },
+        {
+            $project:{
+                _id:0,
+                ProductName:1,
+                UnitPrice:1
+            }
+        },
+        {$sort:{ UnitPrice: 1 , ProductName: 1 }}
+        ).toArray();
+    return result;
 }
 
 /**
