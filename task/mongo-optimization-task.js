@@ -5,6 +5,9 @@ const ObjectId = require('mongodb').ObjectID;
  * The goal of the task is to get basic knowledge of mongodb optimization approaches
  * Before implementing the task, please read what mongodb documentation say us about that:
  * https://docs.mongodb.com/manual/core/aggregation-pipeline-optimization/
+ *
+ * You will find a dump for the task in dumps/awesomedb_mongodb/awesomedb.zip
+ * To restore the dump unzip it and execute mongorestore
  ********************************************************************************************/
 
 /**
