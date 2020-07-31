@@ -18,7 +18,7 @@ async function before(db) {
 /**
  *  Query bellow could return correct response but this one is extremely slow and need a lot of resources.
  *  At the task you don't really need to involve in the logic of the query but you need to optimize it
- *  to get the result in less than 6 seconds.
+ *  to get the result in less than 6 seconds. (The best solution is 1-1.5 seconds)
  *
  *  HINTS which should allow you to execute the query. In priority order:
  *   1. $unwind is really big pain here - after the first $unwind all indexes will be lost.
