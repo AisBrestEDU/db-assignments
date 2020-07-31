@@ -14,6 +14,7 @@ before_install:
   - unzip dumps/awesomedb_mongodb/awesomedb.zip -d dumps/awesomedb_mongodb/ && ls dumps/awesomedb_mongodb/
   - rm dumps/awesomedb_mongodb/awesomedb.zip
   - mongorestore dumps/northwind_mongodb/
+  - unzip dumps/awesomedb_mongodb/
   - mongorestore dumps/awesomedb_mongodb/
   ## MySQL
   - wget https://repo.mysql.com//mysql-apt-config_0.8.10-1_all.deb
