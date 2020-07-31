@@ -11,7 +11,8 @@ before_install:
   - sudo systemctl enable mongod
   - sudo systemctl restart mongod
   - mongod --version
-  - unzip dumps/awesomedb_mongodb/awesomedb.zip && rm dumps/awesomedb_mongodb/awesomedb.zip dumps/awesomedb_mongodb/
+  - unzip dumps/awesomedb_mongodb/awesomedb.zip dumps/awesomedb_mongodb/
+  - rm dumps/awesomedb_mongodb/awesomedb.zip
   - mongorestore dumps/northwind_mongodb/
   - mongorestore dumps/awesomedb_mongodb/
   ## MySQL
