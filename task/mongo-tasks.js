@@ -222,10 +222,10 @@ async function task_1_17(db) {
 
 /**
  * Create a query to calcualte total orders count by each day in 1998:
- * | OrderDate | Total Number of Orders |
+ * | Order Date | Total Number of Orders |
  *
  * Order Date needs to be in the format '%Y-%m-%d'
- * Order by OrderDate
+ * Order by Order Date
  *
  * HINT: see $dateFromString, $dateToString
  *       https://docs.mongodb.com/manual/reference/operator/aggregation/dateToString/

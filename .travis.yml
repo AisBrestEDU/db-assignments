@@ -12,6 +12,8 @@ before_install:
   - sudo systemctl restart mongod
   - mongod --version
   - mongorestore dumps/northwind_mongodb/
+  - unzip dumps/awesomedb_mongodb/
+  - mongorestore dumps/awesomedb_mongodb/
   ## MySQL
   - wget https://repo.mysql.com//mysql-apt-config_0.8.10-1_all.deb
   - sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb
