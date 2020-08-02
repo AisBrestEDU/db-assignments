@@ -186,7 +186,7 @@ async function task_1_8(db) {
         FROM Categories
         JOIN Products ON Categories.CategoryID = Products.CategoryID
         GROUP BY Categories.CategoryName
-        ORDER BY Categories.CategoryID
+        ORDER BY Categories.CategoryName
     `);
     return result[0];
 }
