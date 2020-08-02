@@ -181,11 +181,11 @@ async function task_1_7(db) {
 async function task_1_8(db) {
     let result = await db.query(`
         SELECT 
-            CategoryName,
+            Categories.CategoryName,
             COUNT(*) as TotalNumberOfProducts
         FROM Categories
         JOIN Products ON Categories.CategoryID = Products.CategoryID
-        GROUP BY CategoryName
+        GROUP BY Categories.CategoryName
         ORDER BY Categories.CategoryID
     `);
     return result[0];
