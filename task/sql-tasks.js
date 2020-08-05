@@ -230,7 +230,7 @@ async function task_1_17(db) {
  * Create a SQL query to calcualte total orders count by each day in 1998:
  * | OrderDate | Total Number of Orders |
  *
- * Order Date needs to be in the format '%Y-%m-%d %T'
+ * OrderDate needs to be in the format '%Y-%m-%d %T'
  * @return {array}
  *
  */
