@@ -15,8 +15,13 @@ const ObjectId = require('mongodb').ObjectID;
  * Test timeout is increased to 60sec for the function.
  * */
 async function before(db) {
-    await db.collection('opportunities').createIndex({'initiativeId': 1});
-}
+    await db.collection('opportunities').createIndex({
+	 	'initiativeId': 1,
+ 		'contacts.questions.category_id': 1,
+ 		'contacts.datePublished': 1,
+ 	}, {sparse: true});
+ 	await db.collection('clientCriteria').createIndex({'value': 1, 'versions.initiativeId': 1}, {sparse: true});
+ }
 
 /**
  *  Query bellow could return correct response but this one is extremely slow and need a lot of resources.
@@ -43,17 +48,55 @@ async function task_3_1(db) {
         {
             "$match" : {
                 "initiativeId" : ObjectId("58af4da0b310d92314627290"),
+   
                 "contacts.questions.category_id" : {
-                    "$in" : [
-                        105,
-                        147
-                    ]
+                    "$in" : [ 105, 147 ]
                 },
-                "contacts" : {
+   
+                "contacts.datePublished": {
+                    "$ne": "null"
+                },
+   
+                "contacts.shortListedVendors" : {
                     "$elemMatch" : {
-                        "datePublished" : {
-                            "$ne" : null
+                        "$or" : [
+                        {
+                            "name" : "ADP",
+                            "is_selected" : true
+                        },
+                        {
+                            "value" : 50,
+                            "is_selected" : true
                         }
+                        ]
+                    }
+                },
+            }
+        },
+        {
+            "$project": {
+                "contacts.id": 1,
+                "contacts.datePublished": 1,
+                "contacts.win_vendor": 1,
+                "contacts.shortListedVendors.name": 1,
+                "contacts.shortListedVendors.is_selected": 1,
+                "contacts.shortListedVendors.value": 1,
+   
+                "contacts.questions.criteria_value": 1,
+                "contacts.questions.label": 1,
+                "contacts.questions.raw_text" : 1,
+                "contacts.questions.id" : 1,
+                "contacts.questions.category_id" : 1,
+                "contacts.questions.answers": 1
+            }
+        },
+        {
+            "$project": {
+                "contacts" : { 
+                    "$filter": {
+                        input: "$contacts",
+                        as: "contact",
+                        cond: { $ne: [ "$$contact.datePublished", null ] }
                     }
                 }
             }
@@ -63,30 +106,33 @@ async function task_3_1(db) {
         },
         {
             "$match" : {
-                "contacts.datePublished" : {
-                    "$ne" : null
+                "contacts.shortListedVendors" : {
+                    "$elemMatch" : {
+                        "$or" : [
+                        {
+                            "name" : "ADP",
+                            "is_selected" : true
+                        },
+                        {
+                            "value" : 50,
+                            "is_selected" : true
+                        }
+                        ]
+                    }
                 }
             }
         },
         {
-            "$match" : {
-                "contacts.shortListedVendors" : {
-                    "$elemMatch" : {
-                        "$or" : [
-                            {
-                                "name" : "ADP",
-                                "is_selected" : true
-                            },
-                            {
-                                "value" : {
-                                    "$in" : [
-                                        50
-                                    ],
-                                    "$lt" : 9000
-                                },
-                                "is_selected" : true
-                            }
-                        ]
+            "$project": {
+                "contacts.id": 1,
+                "contacts.win_vendor": 1,
+                "contacts.questions" : { 
+                    "$filter": {
+                        input: "$contacts.questions",
+                        as: "question",
+                        cond: { 
+                            $in: ["$$question.category_id", [105, 147]]
+                        }
                     }
                 }
             }
@@ -96,154 +142,145 @@ async function task_3_1(db) {
         },
         {
             "$match" : {
-                "contacts.questions.category_id" : {
-                    "$in" : [
-                        105,
-                        147
-                    ]
-                }
-            }
-        },
-        {
-            "$match" : {
                 "$nor" : [
-                    {
-                        "contacts.questions.category_id" : 105,
-                        "contacts.questions.answers" : {
-                            "$elemMatch" : {
-                                "primary_answer_value" : {
-                                    "$gte" : 9000
-                                },
-                                "loopInstances" : {
-                                    "$elemMatch" : {
-                                        "is_selected" : true,
-                                        "$or" : [
-                                            {
-                                                "loop_instance" : {
-                                                    "$in" : [
-                                                        50
-                                                    ]
-                                                }
-                                            },
-                                            {
-                                                "loop_text" : "ADP"
-                                            }
-                                        ]
+                {
+                    "contacts.questions.category_id" : 105,
+                    "contacts.questions.answers" : {
+                        "$elemMatch" : {
+                            "primary_answer_value" : {
+                                "$gte" : 9000
+                            },
+                            "loopInstances" : {
+                                "$elemMatch" : {
+                                    "is_selected" : true,
+                                    "$or" : [
+                                    {
+                                        "loop_instance": 50
+                                    },
+                                    {
+                                        "loop_text" : "ADP"
                                     }
+                                    ]
                                 }
                             }
                         }
                     }
+                }
                 ]
+            }
+        },
+        {
+            $project: {
+                "contacts.id": 1,
+                "contacts.win_vendor": 1,
+                "contacts.questions.criteria_value": 1,
+                "contacts.questions.label": 1,
+                "contacts.questions.raw_text" : 1,
+                "contacts.questions.id" : 1,
+                "contacts.questions.category_id" : 1,
+                "contacts.questions.answers": { 
+                    "$filter": {
+                        input: "$contacts.questions.answers",
+                        as: "answer",
+                        cond: { 
+                            $lt: ["$$answer.primary_answer_value", 9000]
+                        }
+                    }
+                }
             }
         },
         {
             "$unwind" : "$contacts.questions.answers"
         },
         {
-            "$match" : {
-                "contacts.questions.answers.primary_answer_value" : {
-                    "$lt" : 9000
-                }
-            }
-        },
-        {
             "$unwind" : "$contacts.questions.answers.loopInstances"
-        },
-        {
-            "$project" : {
-                "_id" : 1,
-                "contacts.id" : 1,
-                "contacts.questions.criteria_value" : 1,
-                "criteria_value" : {
-                    "$ifNull" : [
-                        "$contacts.questions.criteria_value",
-                        "$contacts.questions.answers.criteria_value"
-                    ]
-                },
-                "contacts.questions.label" : 1,
-                "contacts.questions.raw_text" : 1,
-                "contacts.questions.id" : 1,
-                "contacts.questions.answers" : 1,
-                "contacts.questions.category_id" : 1,
-                "contacts.win_vendor" : 1,
-                "clientWinner" : "$contacts.win_vendor.is_client",
-                "competitorWinner" : {
-                    "$eq" : [
-                        {
-                            "$cmp" : [
-                                {
-                                    "$and" : [
-                                        {
-                                            "$eq" : [
-                                                "$clientWinner",
-                                                false
-                                            ]
-                                        },
-                                        {
-                                            "$or" : [
-                                                {
-                                                    "$eq" : [
-                                                        "$contacts.questions.answers.loopInstances.loop_instance",
-                                                        "$contacts.win_vendor.value"
-                                                    ]
-                                                },
-                                                {
-                                                    "$eq" : [
-                                                        "$contacts.questions.category_id",
-                                                        147
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                true
-                            ]
-                        },
-                        0
-                    ]
-                }
-            }
         },
         {
             "$match" : {
                 "$or" : [
+                {
+                    "contacts.questions.answers.loopInstances.loop_instance" : 50
+                },
+                {
+                    "contacts.questions.answers.loopInstances.loop_text" : "ADP"
+                },
+                {
+                    "contacts.win_vendor.is_client" : false,
+                    "contacts.questions.category_id" : 147,
+                    "$or" : [
                     {
-                        "contacts.questions.answers.loopInstances.loop_instance" : {
-                            "$in" : [
-                                50
-                            ]
-                        }
+                        "contacts.win_vendor.value" : 50
                     },
                     {
-                        "contacts.questions.answers.loopInstances.loop_text" : "ADP"
-                    },
-                    {
-                        "clientWinner" : false,
-                        "contacts.questions.category_id" : 147,
-                        "$or" : [
-                            {
-                                "contacts.win_vendor.value" : {
-                                    "$in" : [
-                                        50
-                                    ]
-                                }
-                            },
-                            {
-                                "contacts.win_vendor.name" : "ADP"
-                            }
-                        ]
+                        "contacts.win_vendor.name" : "ADP"
                     }
+                    ]
+                }
                 ]
+            }
+        },
+        {
+            "$project" : {
+                "contacts.id" : 1,
+                "criteria_value" : {
+                    "$ifNull" : [
+                    "$contacts.questions.criteria_value",
+                    "$contacts.questions.answers.criteria_value"
+                    ]
+                },
+                "contacts.questions.id" : 1,
+                "contacts.questions.answers" : 1,
+                "contacts.questions.category_id" : 1,
             }
         },
         {
             "$lookup" : {
                 "from" : "clientCriteria",
-                "localField" : "criteria_value",
-                "foreignField" : "value",
-                "as" : "criteria"
+                "as" : "criteria",
+                "let" : { "criteria_value" : "$criteria_value" },
+                "pipeline" : [
+                {
+                    $match: {
+                        $expr: {
+                            $eq: ["$$criteria_value", "$value"]
+                        }
+                    }
+                },
+                {
+                    $match: {
+                        "versions.initiativeId": ObjectId("58af4da0b310d92314627290")
+                    }
+                },
+                {
+                    $project: {
+                        _id: 0,
+                        label: 1,
+                        definition: 1,
+                        versions: { 
+                            "$filter": {
+                                input: "$versions",
+                                as: "version",
+                                cond: { 
+                                    $eq: ["$$version.initiativeId", ObjectId("58af4da0b310d92314627290")]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    $match: {
+                        versions: {$not: {$size: 0}}
+                    }
+                },
+                {
+                    $project: {
+                        _id: 0,
+                        label: 1,
+                        definition: 1,
+                        "versions.definition": 1
+                    }
+                }
+                ]
             }
         },
         {
@@ -251,11 +288,6 @@ async function task_3_1(db) {
         },
         {
             "$unwind" : "$criteria.versions"
-        },
-        {
-            "$match" : {
-                "criteria.versions.initiativeId" : ObjectId("58af4da0b310d92314627290")
-            }
         },
         {
             "$group" : {
@@ -278,8 +310,8 @@ async function task_3_1(db) {
                         "text" : "$criteria.label",
                         "definition" : {
                             "$ifNull" : [
-                                "$criteria.versions.definition",
-                                "$criteria.definition"
+                            "$criteria.versions.definition",
+                            "$criteria.definition"
                             ]
                         }
                     }
@@ -289,7 +321,7 @@ async function task_3_1(db) {
                 }
             }
         },
-        {$unwind: '$answers'},
+        { $unwind: '$answers' },
         {
             $sort: {
                 'answer_text': 1,
@@ -297,7 +329,7 @@ async function task_3_1(db) {
                 'answers.answer_value': 1
             }
         }
-    ], {allowDiskUse:true}).toArray();
+        ], {allowDiskUse:true}).toArray();   
     return result;
 }
 
