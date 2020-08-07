@@ -28,6 +28,6 @@ before_install:
   - sudo mysql -ppassword -e "GRANT ALL ON northwind.* TO 'root'@'localhost';"
   - sudo mysql -ppassword < dumps/northwind.sql
 node_js:
-  - "10.19.0"
+  - "14.2"
 script:
   - npm run test
