@@ -39,11 +39,20 @@ async function before(db) {
  *   8. That's possible to rewrite a few last steps to merge a few pipeline steps in one.
  */
 async function task_3_1(db) {
-    db.collection('opportunities').createIndex({ "contacts.datePublished": 1 });
+    db.collection('opportunities').createIndex({ "contacts.datePublished": 1, "contacts.questions.category_id" : 1, "initiativeId" : 1});
+    // db.collection('opportunities').createIndex({ "contacts.questions.criteria_value" : 1});
     db.collection('clientCriteria').createIndex({ value: 1, "versions.initiativeId": 1 });
+
     const result = await db.collection('opportunities').aggregate([
         {
             "$match": {
+                "contacts": {
+                    "$elemMatch": {
+                        "datePublished": {
+                            "$ne": null
+                        }
+                    }
+                },
                 "initiativeId": ObjectId("58af4da0b310d92314627290"),
                 "contacts.questions.category_id": {
                     "$in": [
@@ -51,13 +60,6 @@ async function task_3_1(db) {
                         147
                     ]
                 },
-                "contacts": {
-                    "$elemMatch": {
-                        "datePublished": {
-                            "$ne": null
-                        }
-                    }
-                }
             }
         },
         {
@@ -71,13 +73,6 @@ async function task_3_1(db) {
         },
         {
             "$unwind": "$contacts"
-        },
-        {
-            "$match": {
-                "contacts.datePublished": {
-                    "$ne": null
-                }
-            }
         },
         {
             "$match": {
@@ -119,17 +114,12 @@ async function task_3_1(db) {
         },
         {
             "$match": {
-                "contacts.questions.category_id": {
+                $and: [{ "contacts.questions.category_id": {
                     "$in": [
                         105,
                         147
                     ]
-                }
-            }
-        },
-        {
-            "$match": {
-                "$nor": [
+                } }, { "$nor": [
                     {
                         "contacts.questions.category_id": 105,
                         "contacts.questions.answers": {
@@ -157,11 +147,14 @@ async function task_3_1(db) {
                             }
                         }
                     }
-                ]
+                ] }],
             }
         },
         {
             "$unwind": "$contacts.questions.answers"
+        },
+        {
+            "$unwind": "$contacts.questions.answers.loopInstances"
         },
         {
             "$match": {
@@ -169,9 +162,6 @@ async function task_3_1(db) {
                     "$lt": 9000
                 }
             }
-        },
-        {
-            "$unwind": "$contacts.questions.answers.loopInstances"
         },
         {
             "$match": {
@@ -189,18 +179,6 @@ async function task_3_1(db) {
                     {
                         "clientWinner": false,
                         "contacts.questions.category_id": 147,
-                        "$or": [
-                            {
-                                "contacts.win_vendor.value": {
-                                    "$in": [
-                                        50
-                                    ]
-                                }
-                            },
-                            {
-                                "contacts.win_vendor.name": "ADP"
-                            }
-                        ]
                     }
                 ]
             }
@@ -283,7 +261,7 @@ async function task_3_1(db) {
         },
         {
             "$group": {
-                "_id": "$contacts.questions.answers.primary_answer_value",
+                "_id" : "$contacts.questions.answers.primary_answer_value", 
                 "answer_value": {
                     "$first": "$contacts.questions.answers.primary_answer_value"
                 },
@@ -318,10 +296,10 @@ async function task_3_1(db) {
             $sort: {
                 'answer_text': 1,
                 'answers.question_id': 1,
-                'answers.answer_value': 1
             }
         }
     ], { allowDiskUse: true }).toArray();
+    //console.log(result);
     return result;
 }
 
