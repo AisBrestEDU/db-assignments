@@ -601,6 +601,8 @@ async function task_1_18(db) {
  *       - do not hesitate to "ensureIndex" in "before" function at the top if needed https://docs.mongodb.com/manual/reference/method/db.collection.ensureIndex/
  */
 async function task_1_19(db) {
+    db.collection('orders').createIndex({"OrderID": 1});
+    db.collection('customers').createIndex({"CustomerID": -1});
     const result = await db.collection('order-details').aggregate([
         {
                 $project: {
@@ -609,12 +611,12 @@ async function task_1_19(db) {
                 }
         },
         {
-                $lookup:{
-                    from: "orders",
-                    localField: "OrderID",
-                    foreignField: "OrderID",
-                    as: "Order"
-                }
+            $lookup:{
+                from: "orders",
+                localField: "OrderID",
+                foreignField: "OrderID",
+                as: "Order"
+            }
         },
         {
             $lookup:{
@@ -626,13 +628,6 @@ async function task_1_19(db) {
         },
         {$unwind : "$Order"},
         {$unwind : "$Customer"},
-        {
-            $project:{
-                Customer : 1,
-                TotalOrderPrice : 1,
-                CompanyName : "$Customer.CompanyName"
-            }
-        },
         {
             $group : {
                 _id : {
@@ -750,63 +745,9 @@ async function task_1_21(db) {
  *       https://docs.mongodb.com/manual/reference/operator/aggregation/lookup/#join-conditions-and-uncorrelated-sub-queries
  */
 async function task_1_22(db) {
-    // const result = await db.collection('orders').aggregate([
-    //     {
-    //         $group : {
-    //             _id : "$CustomerID"
-    //         }
-    //     },
-    //     { $lookup: {
-    //         "from": "orders",
-    //         "let": { "customerID": "$_id" },
-    //         "pipeline": [
-    //             {$match:{$expr:{$eq:["$CustomerID", "$$customerID"]}} },
-    //             {
-    //                 $lookup:{
-    //                     from: "order-details",
-    //                     localField: "OrderID",
-    //                     foreignField: "OrderID",
-    //                     as: "OrderDetail"
-    //                 }
-    //             },
-    //             {$unwind : "$OrderDetail"},
-    //             {
-    //                 $project : {
-    //                     CustomerID : "$CustomerID",
-    //                     CompanyName : "$ShipName",
-    //                     ProductID : "$OrderDetail.ProductID",
-    //                     Price : "$OrderDetail.UnitPrice",
-    //                 }
-    //             },
-    //             {$sort : {Price : -1}},
-    //             {$limit : 1}
-    //             ],
-    //             "as": "MaxOrder"
-    //       }
-    //     },
-    //     { $unwind : "$MaxOrder"},
-    //     {
-    //         $lookup:{
-    //             from: "products",
-    //             localField: "MaxOrder.ProductID",
-    //             foreignField: "ProductID",
-    //             as: "Product"
-    //         }
-    //     },
-    //     {$unwind : "$Product"},
-    //     {
-    //         $project : {
-    //             _id : 0,
-    //             CustomerID : "$MaxOrder.CustomerID",
-    //             CompanyName: "$MaxOrder.CompanyName",
-    //             ProductName : "$Product.ProductName",
-    //             PricePerItem : "$MaxOrder.Price"
-    //         }
-    //     },
-    //     {
-    //         $sort : {PricePerItem : -1, CompanyName : 1, ProductName : 1}
-    //     }
-    // ]).toArray();
+    
+    db.collection('orders').createIndex({"CustomerID": 1});
+    db.collection('customers').createIndex({"CustomerID": 1});
     const result = await db.collection('orders').aggregate([
         {
             $group : {
