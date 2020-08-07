@@ -185,9 +185,7 @@ async function task_3_1(db) {
         },
         {
             "$project": {
-                "_id": 1,
                 "contacts.id": 1,
-                "contacts.questions.criteria_value": 1,
                 "criteria_value": {
                     "$ifNull": [
                         "$contacts.questions.criteria_value",
@@ -199,44 +197,6 @@ async function task_3_1(db) {
                 "contacts.questions.id": 1,
                 "contacts.questions.answers": 1,
                 "contacts.questions.category_id": 1,
-                "contacts.win_vendor": 1,
-                "clientWinner": "$contacts.win_vendor.is_client",
-                "competitorWinner": {
-                    "$eq": [
-                        {
-                            "$cmp": [
-                                {
-                                    "$and": [
-                                        {
-                                            "$eq": [
-                                                "$clientWinner",
-                                                false
-                                            ]
-                                        },
-                                        {
-                                            "$or": [
-                                                {
-                                                    "$eq": [
-                                                        "$contacts.questions.answers.loopInstances.loop_instance",
-                                                        "$contacts.win_vendor.value"
-                                                    ]
-                                                },
-                                                {
-                                                    "$eq": [
-                                                        "$contacts.questions.category_id",
-                                                        147
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                true
-                            ]
-                        },
-                        0
-                    ]
-                }
             }
         },
         {
