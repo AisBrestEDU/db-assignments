@@ -39,9 +39,10 @@ async function before(db) {
  *   8. That's possible to rewrite a few last steps to merge a few pipeline steps in one.
  */
 async function task_3_1(db) {
-    db.collection('opportunities').createIndex({ "contacts.datePublished": 1, "contacts.questions.category_id" : 1, "initiativeId" : 1});
+    db.collection('opportunities').createIndex({"contacts.datePublished": 1});
+    db.collection('opportunities').createIndex({"contacts.questions.category_id" : 1});
     db.collection('clientCriteria').createIndex({ value: 1, "versions.initiativeId": 1 });
-
+    
     const result = await db.collection('opportunities').aggregate([
         {
             "$match": {
@@ -244,7 +245,7 @@ async function task_3_1(db) {
                 'answers.question_id': 1,
             }
         }
-    ], { allowDiskUse: true }).toArray();
+    ], { allowDiskUse: false }).toArray();
     return result;
 }
 
