@@ -154,14 +154,14 @@ async function task_3_1(db) {
             "$unwind": "$contacts.questions.answers"
         },
         {
-            "$unwind": "$contacts.questions.answers.loopInstances"
-        },
-        {
             "$match": {
                 "contacts.questions.answers.primary_answer_value": {
                     "$lt": 9000
                 }
             }
+        },
+        {
+            "$unwind": "$contacts.questions.answers.loopInstances"
         },
         {
             "$match": {
@@ -258,8 +258,8 @@ async function task_3_1(db) {
                 'answers.question_id': 1,
             }
         }
-    ], { allowDiskUse: true }).toArray();
-    //console.log(result);
+    ], { allowDiskUse: false }).toArray();
+    // console.log(result);
     return result;
 }
 
