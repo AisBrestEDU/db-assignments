@@ -40,7 +40,6 @@ async function before(db) {
  */
 async function task_3_1(db) {
     db.collection('opportunities').createIndex({ "contacts.datePublished": 1, "contacts.questions.category_id" : 1, "initiativeId" : 1});
-    // db.collection('opportunities').createIndex({ "contacts.questions.criteria_value" : 1});
     db.collection('clientCriteria').createIndex({ value: 1, "versions.initiativeId": 1 });
 
     const result = await db.collection('opportunities').aggregate([
@@ -61,18 +60,6 @@ async function task_3_1(db) {
                     ]
                 },
             }
-        },
-        {
-            $project: {
-                "contacts.shortListedVendors": 1,
-                "contacts.questions": 1,
-                "contacts.id": 1,
-                "contacts.win_vendor": 1,
-                "contacts.datePublished": 1
-            }
-        },
-        {
-            "$unwind": "$contacts"
         },
         {
             "$match": {
@@ -108,6 +95,9 @@ async function task_3_1(db) {
                 "contacts.questions.id": 1,
                 "contacts.win_vendor": 1
             }
+        },
+        {
+            "$unwind": "$contacts"
         },
         {
             "$unwind": "$contacts.questions"
