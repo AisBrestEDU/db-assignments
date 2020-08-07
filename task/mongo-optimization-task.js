@@ -52,17 +52,13 @@ async function task_3_1(db) {
                         }
                     }
                 },
-                "initiativeId": ObjectId("58af4da0b310d92314627290"),
                 "contacts.questions.category_id": {
                     "$in": [
                         105,
                         147
                     ]
                 },
-            }
-        },
-        {
-            "$match": {
+                "initiativeId": ObjectId("58af4da0b310d92314627290"),
                 "contacts.shortListedVendors": {
                     "$elemMatch": {
                         "$or": [
@@ -248,8 +244,7 @@ async function task_3_1(db) {
                 'answers.question_id': 1,
             }
         }
-    ], { allowDiskUse: false }).toArray();
-    // console.log(result);
+    ], { allowDiskUse: true }).toArray();
     return result;
 }
 
