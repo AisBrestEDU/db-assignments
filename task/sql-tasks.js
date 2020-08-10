@@ -48,7 +48,7 @@ async function task_1_2(db) {
         OrderID as "Order Id",
         SUM(UnitPrice * Quantity) as "Order Total Price",
         ROUND(SUM(Discount * Quantity) / SUM(UnitPrice * Quantity) * 100, 3) as "Total Order Discount, %"
-    FROM orderdetails
+    FROM Orderdetails
     GROUP BY OrderID
     ORDER BY OrderID DESC;
     `);
@@ -153,8 +153,8 @@ async function task_1_7(db) {
         FirstEmp.EmployeeID as "EmployeeId",
         CONCAT(FirstEmp.FirstName, " ", FirstEmp.LastName) AS "FullName",
         IF(FirstEmp.ReportsTo is NULL, '-', CONCAT(SecEmp.FirstName, " ", SecEmp.LastName)) AS "ReportsTo"
-    FROM employees AS FirstEmp
-    LEFT OUTER JOIN employees AS SecEmp ON SecEmp.EmployeeID = FirstEmp.ReportsTo
+    FROM Employees AS FirstEmp
+    LEFT OUTER JOIN Employees AS SecEmp ON SecEmp.EmployeeID = FirstEmp.ReportsTo
     ORDER BY FirstEmp.EmployeeID;
     `);
     return result[0];
@@ -254,7 +254,7 @@ async function task_1_12(db) {
         FROM Products
         ORDER BY UnitPrice DESC, ProductName LIMIT 20
     ) AS MainTable
-    ORDER BY MainTable.UnitPrice;
+    ORDER BY MainTable.UnitPrice, MainTable.ProductName;
     `);
     return result[0];
 }
