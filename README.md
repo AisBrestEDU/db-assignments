@@ -12,7 +12,7 @@ The database is quite popular for Teaching Cases. You'll find the DB scheme in t
  
 ![Northwind database schema](Northwind_A4_size_for_Print.png "Northwind database schema")
 
-## DB Assignments  [![Build Status](https://travis-ci.org/AisBrestEdu/db-assignments.svg?branch=master)](https://travis-ci.org/AisBrestEdu/db-assignments)
+## DB Assignments  [![Build Status](https://travis-ci.org/trigsen/db-assignments.svg?branch=master)](https://travis-ci.org/trigsen/db-assignments)
 
 To start DB Assignments please follow the next steps:
 *  [Fork this repo](#user-content-how-to-fork-this-repo)
@@ -35,7 +35,7 @@ To start DB Assignments please follow the next steps:
   git commit -m "Update the links"
   git push origin master
 ```
-* Open https://github.com/AisBrestEdu/db-assignments and test the build icon. Now it will run all tests and update status once you push changes to github. Keep this icon green!
+* Open https://github.com/trigsen/db-assignments and test the build icon. Now it will run all tests and update status once you push changes to github. Keep this icon green!
 
 
 ### How to setup work environment
