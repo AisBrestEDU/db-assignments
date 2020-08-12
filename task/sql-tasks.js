@@ -134,7 +134,7 @@ async function task_1_6(db) {
         ProductName as "ProductName",
         CategoryName as "CategoryName",
         CompanyName as "SupplierCompanyName"
-    from northwind.products 
+    from Products 
        join Categories on Products.CategoryID = Categories.CategoryID
        join Suppliers on Products.SupplierID = Suppliers.SupplierID
     order by 1, 3
