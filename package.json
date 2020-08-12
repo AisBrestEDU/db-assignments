@@ -9,8 +9,8 @@
   "author": "ilya mokin",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^8.0.1",
-    "mysql2": "^2.1.0",
-    "mongodb": "^3.5.9"
+    "mocha": "^8.1.1",
+    "mongodb": "^3.5.9",
+    "mysql2": "^2.1.0"
   }
 }
