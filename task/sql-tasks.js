@@ -50,7 +50,7 @@ async function task_1_2(db) {
         OrderID as "Order Id",
         sum(UnitPrice * Quantity) as "Order Total Price",
         ROUND(SUM(Discount * Quantity)/SUM(UnitPrice * Quantity) * 100,3) as "Total Order Discount, %"    
-    FROM northwind.orderdetails
+    FROM OrderDetails
     group by OrderID
     order by OrderID desc
     `);
@@ -70,7 +70,7 @@ async function task_1_3(db) {
     select
         CustomerID as "CustomerId",
         CompanyName as "CompanyName"
-    from northwind.customers
+    from Customers
     where Country = "USA" and Fax is null;
     `);
     return result[0];
@@ -92,7 +92,7 @@ async function task_1_4(db) {
         CustomerID as "Customer Id",
         count(CustomerID) as "Total number of Orders",
         round(count(*) / sum(count(*)) over() * 100, 5) as "% of all orders"    
-    FROM northwind.orders
+    FROM Orders
     group by CustomerID
     order by 3 desc, CustomerID asc
     `);
@@ -112,7 +112,7 @@ async function task_1_5(db) {
         ProductID as "ProductId",
         ProductName as "ProductName",
         QuantityPerUnit as "QuantityPerUnit"
-from northwind.products
+from Products
 	where ProductName between "A" and "G"
     order by ProductName
     `);
@@ -135,8 +135,8 @@ async function task_1_6(db) {
         CategoryName as "CategoryName",
         CompanyName as "SupplierCompanyName"
     from northwind.products 
-       join northwind.categories on northwind.products.CategoryID = northwind.categories.CategoryID
-       join northwind.suppliers on northwind.products.SupplierID = northwind.suppliers.SupplierID
+       join Categories on Products.CategoryID = Categories.CategoryID
+       join Suppliers on Products.SupplierID = Suppliers.SupplierID
     order by 1, 3
     
     `);
@@ -160,8 +160,8 @@ async function task_1_7(db) {
         concat( e2.FirstName, " ", e2.LastName) as "FullName",
         coalesce(concat( e1.FirstName, " ", e1.LastName), '-') as "ReportsTo"
     from 
-       northwind.employees e1
-           right join northwind.employees e2 on e1.EmployeeID = e2.ReportsTo
+       Employees e1
+           right join Employees e2 on e1.EmployeeID = e2.ReportsTo
        order by e2.EmployeeID
     `);
     return result[0];
@@ -180,7 +180,7 @@ async function task_1_8(db) {
 select 
 	c.CategoryName,
     count(p.CategoryID) as "TotalNumberOfProducts"
-from northwind.products p join northwind.categories c
+from Products p join Categories c
 	on p.CategoryID = c.CategoryID
     group by c.CategoryName
     order by 1
@@ -201,7 +201,7 @@ async function task_1_9(db) {
     SELECT 
 	CustomerID,
     ContactName
- FROM northwind.customers
+ FROM Customers
  where ContactName like 'F%___n%'
     `);
     return result[0];
@@ -219,7 +219,7 @@ async function task_1_10(db) {
     SELECT 
         ProductID,
         ProductName
-    FROM northwind.products
+    FROM Products
         where Discontinued > 0
     `);
     return result[0];
@@ -239,7 +239,7 @@ async function task_1_11(db) {
     SELECT 
 	    ProductName,
         UnitPrice
-    FROM northwind.products
+    FROM Products
 	    where UnitPrice between 5 and 15
         order by UnitPrice, ProductName
     `);
@@ -260,7 +260,7 @@ async function task_1_12(db) {
     SELECT 	
 	ProductName,
     UnitPrice
- FROM (select * from northwind.products order by UnitPrice desc limit 20) T
+ FROM (select * from Products order by UnitPrice desc limit 20) T
     order by UnitPrice asc, ProductName asc
     `);
     return result[0];
@@ -278,7 +278,7 @@ async function task_1_13(db) {
     SELECT
 	count(ProductName) as "TotalOfCurrentProducts",
 	sum(Discontinued) as "TotalOfDiscontinuedProducts"
- FROM northwind.products;
+ FROM Products;
     `);
     return result[0];
 }
@@ -296,7 +296,7 @@ async function task_1_14(db) {
 	ProductName,
 	UnitsOnOrder,
 	UnitsInStock
-FROM northwind.products
+FROM Products
 	where UnitsInStock < UnitsOnOrder
     `);
     return result[0];
@@ -312,19 +312,19 @@ FROM northwind.products
 async function task_1_15(db) {
     let result = await db.query(`
     select 
-(select count(*) from northwind.orders where year(OrderDate) = 1997 and month(OrderDate) = 1)  as "January",
-(select count(*) from northwind.orders where year(OrderDate) = 1997 and month(OrderDate) = 2) as "February",
-(select count(*) from northwind.orders where year(OrderDate) = 1997 and month(OrderDate) = 3) as "March",
-(select count(*) from northwind.orders where year(OrderDate) = 1997 and month(OrderDate) = 4) as "April",
-(select count(*) from northwind.orders where year(OrderDate) = 1997 and month(OrderDate) = 5) as "May",
-(select count(*) from northwind.orders where year(OrderDate) = 1997 and month(OrderDate) = 6) as "June",
-(select count(*) from northwind.orders where year(OrderDate) = 1997 and month(OrderDate) = 7) as "July",
-(select count(*) from northwind.orders where year(OrderDate) = 1997 and month(OrderDate) = 8) as "August",
-(select count(*) from northwind.orders where year(OrderDate) = 1997 and month(OrderDate) = 9) as "September",
-(select count(*) from northwind.orders where year(OrderDate) = 1997 and month(OrderDate) = 10) as "October",
-(select count(*) from northwind.orders where year(OrderDate) = 1997 and month(OrderDate) = 11) as "November",
-(select count(*) from northwind.orders where year(OrderDate) = 1997 and month(OrderDate) = 12) as "December"
-from northwind.orders group by 1,2,3,4,5,6,7,8,9,10,11,12
+(select count(*) from Orders where year(OrderDate) = 1997 and month(OrderDate) = 1)  as "January",
+(select count(*) from Orders where year(OrderDate) = 1997 and month(OrderDate) = 2) as "February",
+(select count(*) from Orders where year(OrderDate) = 1997 and month(OrderDate) = 3) as "March",
+(select count(*) from Orders where year(OrderDate) = 1997 and month(OrderDate) = 4) as "April",
+(select count(*) from Orders where year(OrderDate) = 1997 and month(OrderDate) = 5) as "May",
+(select count(*) from Orders where year(OrderDate) = 1997 and month(OrderDate) = 6) as "June",
+(select count(*) from Orders where year(OrderDate) = 1997 and month(OrderDate) = 7) as "July",
+(select count(*) from Orders where year(OrderDate) = 1997 and month(OrderDate) = 8) as "August",
+(select count(*) from Orders where year(OrderDate) = 1997 and month(OrderDate) = 9) as "September",
+(select count(*) from Orders where year(OrderDate) = 1997 and month(OrderDate) = 10) as "October",
+(select count(*) from Orders where year(OrderDate) = 1997 and month(OrderDate) = 11) as "November",
+(select count(*) from Orders where year(OrderDate) = 1997 and month(OrderDate) = 12) as "December"
+from Orders group by 1,2,3,4,5,6,7,8,9,10,11,12
     `);
     return result[0];
 }
@@ -342,7 +342,7 @@ SELECT
 	OrderID,
 	CustomerID,
     ShipCountry
-FROM northwind.orders
+FROM Orders
 	where ShipPostalCode is not null
     `);
     return result[0];
@@ -361,8 +361,8 @@ async function task_1_17(db) {
     let result = await db.query(`
     SELECT c.CategoryName,
 		avg(p.UnitPrice) as "AvgPrice"
-FROM northwind.products p
-	join northwind.categories c on c.CategoryID = p.CategoryID
+FROM Products p
+	join Categories c on c.CategoryID = p.CategoryID
     group by 1
     order by 2 desc, 1
         `);
@@ -383,7 +383,7 @@ async function task_1_18(db) {
 *,
 count(T.OrderDate) as "Total Number of Orders"
 from (SELECT date_format(OrderDate, '%Y-%m-%d %T') as "OrderDate"
-FROM northwind.orders where year(OrderDate) = 1998 and month(OrderDate) between 1 and 12 and day(OrderDate) between 1 and 31) T
+FROM Orders where year(OrderDate) = 1998 and month(OrderDate) between 1 and 12 and day(OrderDate) between 1 and 31) T
 group by 1
         `);
         return result[0];
@@ -403,9 +403,9 @@ async function task_1_19(db) {
 o.CustomerID,
 c.CompanyName,
 sum(od.Quantity*od.UnitPrice) as "TotalOrdersAmount, $"
-FROM northwind.orders o
-	join northwind.customers c on c.CustomerID = o.CustomerID
-    join northwind.orderdetails od on od.OrderID = o.OrderID
+FROM Orders o
+	join Customers c on c.CustomerID = o.CustomerID
+    join OrderDetails od on od.OrderID = o.OrderID
 group by 1
 having sum(od.Quantity*od.UnitPrice) > 10000
 order by 3 desc, 1 desc
@@ -427,9 +427,9 @@ async function task_1_20(db) {
 e.EmployeeID,
 concat(e.FirstName, " ", e.LastName) as "Employee Full Name",
 sum(od.UnitPrice*od.Quantity) as "Amount, $"
-FROM northwind.employees e
-	join northwind.orders o on o.EmployeeID = e.EmployeeID
-    join northwind.orderdetails od on od.OrderID = o.OrderID
+FROM Employees e
+	join Orders o on o.EmployeeID = e.EmployeeID
+    join OrderDetails od on od.OrderID = o.OrderID
 group by 1
 order by 3 desc limit 1
         `);
@@ -447,7 +447,7 @@ async function task_1_21(db) {
     SELECT
     OrderID,
     sum(UnitPrice*Quantity) as "Maximum Purchase Amount, $"
-FROM northwind.orderdetails
+FROM OrderDetails
 group by 1
 order by 2 desc limit 1
         `);
@@ -465,19 +465,19 @@ async function task_1_22(db) {
     let result = await db.query(`
     SELECT
 	distinct
-            customers.CompanyName,
-            products.ProductName,
-            orderdetails.UnitPrice as "PricePerItem"
-        FROM northwind.customers 
-        JOIN northwind.orders ON customers.CustomerID=orders.CustomerID
-        JOIN northwind.orderdetails ON orders.OrderID=orderdetails.OrderID
-        JOIN northwind.products ON orderdetails.ProductID=products.ProductID
-        WHERE orderdetails.UnitPrice = (SELECT
+            Customers.CompanyName,
+            Products.ProductName,
+            OrderDetails.UnitPrice as "PricePerItem"
+        FROM Customers 
+        JOIN Orders ON Customers.CustomerID=Orders.CustomerID
+        JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
+        JOIN Products ON OrderDetails.ProductID=Products.ProductID
+        WHERE OrderDetails.UnitPrice = (SELECT
                     MAX(od.UnitPrice)
-                FROM northwind.customers  as c
-                JOIN northwind.orders as o ON o.CustomerID=c.CustomerID
-                JOIN northwind.orderdetails  as od ON od.OrderID=o.OrderID
-                WHERE customers.CompanyName=c.CompanyName
+                FROM Customers as c
+                JOIN Orders as o ON o.CustomerID=c.CustomerID
+                JOIN OrderDetails as od ON od.OrderID=o.OrderID
+                WHERE Customers.CompanyName=c.CompanyName
                 )
 		
         ORDER BY 3 DESC, 1, 2;
