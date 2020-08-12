@@ -152,12 +152,11 @@ async function task_1_6(db) {
 async function task_1_7(db) {
     let result = await db.query(`
         SELECT
-            DISTINCT a.EmployeeID AS 'EmployeeId',
-            CONCAT(a.FirstName, ' ', a.LastName) AS 'FullName',
-            IF(a.reportsTo, CONCAT(b.FirstName, ' ', b.LastName), '-') AS 'ReportsTo'
-        FROM Employees a, Employees b
-        WHERE b.EmployeeID = a.reportsTo OR a.reportsTo IS NULL
-        ORDER BY EmployeeId;
+            e.EmployeeID AS 'EmployeeId',
+            CONCAT(e.FirstName, ' ', e.LastName) AS 'FullName',
+            IF(e.reportsTo, CONCAT(rep.FirstName, ' ', rep.LastName), '-') AS 'ReportsTo'
+        FROM Employees e
+        LEFT JOIN Employees rep ON e.ReportsTo = rep.EmployeeID;
     `);
     return result[0];
 }
@@ -468,22 +467,24 @@ async function task_1_21(db) {
 async function task_1_22(db) {
     let result = await db.query(`
         SELECT DISTINCT
-            ac.CompanyName,
-            Products.ProductName AS 'ProductName',
-            OrderDetails.UnitPrice AS 'PricePerItem'
-        FROM Customers ac
-            INNER JOIN Orders ON Orders.CustomerID = ac.CustomerID
-            INNER JOIN OrderDetails ON OrderDetails.OrderID = Orders.OrderID
-            INNER JOIN Products ON Products.ProductID = OrderDetails.ProductID
-        WHERE OrderDetails.UnitPrice = (
-            SELECT 
-                MAX(OrderDetails.UnitPrice) 
-            FROM Customers bc
-                INNER JOIN Orders ON Orders.CustomerID = bc.CustomerID
-                INNER JOIN OrderDetails ON OrderDetails.OrderID = Orders.OrderID
-            WHERE bc.CompanyName = ac.CompanyName
-		)
-        ORDER BY PricePerItem DESC, CompanyName, ProductName;
+            c.CompanyName,
+            p.ProductName,
+            od.UnitPrice AS 'PricePerItem'
+        FROM Customers c
+            INNER JOIN Orders o ON c.CustomerID = o.CustomerID
+            INNER JOIN OrderDetails od ON od.OrderID = o.OrderID
+            INNER JOIN Products p ON p.ProductID = od.ProductID
+            INNER JOIN (
+                SELECT 
+                    cust.CustomerID,
+                    MAX(ordDet.UnitPrice) AS 'MaxPrice'
+                FROM Customers cust
+                    INNER JOIN Orders ord ON cust.CustomerID = ord.CustomerID
+                    INNER JOIN OrderDetails ordDet ON ordDet.OrderID = ord.OrderID
+                    GROUP BY cust.CustomerID
+                ) sub 
+            ON sub.CustomerID = c.CustomerID AND sub.MaxPrice = od.UnitPrice
+        ORDER BY od.UnitPrice DESC, c.CompanyName, p.ProductName;
     `);
     return result[0];
 }
