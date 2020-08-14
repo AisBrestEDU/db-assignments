@@ -58,15 +58,23 @@ async function task_1_1(db) {
 async function task_1_2(db) {
     const result = await db.collection('order-details').aggregate([
         {
-            $project: {
-                "Order ID": "$OrderID",
-                "Order Total Price": {$sum: {$multiply: ["$Quantity", "$UnitPrice"]}},
-                "Total Order Discount, %": {$sum: {$multiply: ["$Quantity", "$Discount", 100]}}
-            }
-        },
-        {$sort: {"Order Id": -1}}
-    ]).toArray();
-    return result;
+            $group: {
+                _id: "$OrderID",	                
+                "Order Total Price": { $sum: { $multiply: ["$UnitPrice", "$Quantity"] } },	            
+                "Total Discount": { $sum: { $multiply: ["$Discount", "$Quantity"] } }	          
+            }	            
+        },	      
+        {	       
+            $project: {	         
+                "Order Id": "$_id",	                
+                _id: 0,	                
+                "Order Total Price": { $round: ["$Order Total Price", 3] },	              
+                "Total Order Discount, %": { $round: [{ $multiply: [{ $divide: ["$Total Discount", "$Order Total Price"] }, 100] }, 3] }	               
+            }	            
+        },	        
+        { $sort: {"Order Id": -1	}	  }	        
+    ]).toArray();	    
+    return result;	   
 }
 
 /**
