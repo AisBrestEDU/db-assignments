@@ -56,7 +56,17 @@ async function task_1_1(db) {
  *  - Round all values to MAX 3 decimal places
  */
 async function task_1_2(db) {
-    throw new Error("Not implemented");
+    const result = await db.collection('order-details').aggregate([
+        {
+            $project: {
+                "Order ID": "$OrderID",
+                "Order Total Price": {$sum: {$multiply: ["$Quantity", "$UnitPrice"]}},
+                "Total Order Discount, %": {$sum: {$multiply: ["$Quantity", "$Discount", 100]}}
+            }
+        },
+        {$sort: {"Order Id": -1}}
+    ]).toArray();
+    return result;
 }
 
 /**
