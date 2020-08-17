@@ -626,51 +626,40 @@ async function task_1_21(db) {
  */
 async function task_1_22(db) {
     const result = await db.collection('orders').aggregate([
-        {
-            $lookup: {
-                from: "order-details",
-                localField: "OrderID",
-                foreignField: "OrderID",
-                as: "OD"
-            }
-        },
-        {$unwind: "$OD"},
-        {$sort: {"OD.UnitPrice": -1}},
-        {
-            $group: {
-                _id: "$CustomerID",
-                PricePerItem: {$first: "$OD.UnitPrice"},
-                ProductID: {$first: "$OD.ProductID"}
-            }
-        },
-        {
-            $lookup: {
-                from: "customers",
-                localField: "_id",
-                foreignField: "CustomerID",
-                as: "C"
-            }
-        },
-        {$unwind: "$C"},
-        {
-            $lookup: {
-                from: 'products',
-                localField: "ProductID",
-                foreignField: "ProductID",
-                as: "P"
-            }
-        },
-        {$unwind: "$P"},
-        {
-            $project: {
-                _id: 0,
-                CustomerID: "$_id",
-                CompanyName: "$C.CompanyName",
-                ProductName: "$P.ProductName",
-                PricePerItem: 1
-            }
-        },
-        {$sort: {PricePerItem: -1, CompanyName: 1, ProductName: 1}}
+        {$lookup:{
+            from:"order-details",
+            localField:"OrderID",
+            foreignField:"OrderID",
+            as:"OD"}},
+        {$unwind:"$OD"},
+        {$sort:{"OD.UnitPrice":-1}},
+        {$group:{
+            _id:"$CustomerID",
+            "ProductID":{$first:"$OD.ProductID"},
+            "UnitPrice":{$first:"$OD.UnitPrice"}}},
+        {$lookup:{
+            from:"customers",
+            localField:"_id",
+            foreignField:"CustomerID",
+            as:"C"}},
+        {$lookup:{
+            from:"products",
+            localField:"ProductID",
+            foreignField:"ProductID",
+            as:"P"}},
+        {$project:{
+            _id:0,
+            "CustomerID":"$_id",
+            "CompanyName":{$reduce:{
+                input:"$C.CompanyName",
+                initialValue:"",
+                in:"$$this"}},
+            "ProductName":{$reduce:{
+                input:"$P.ProductName",
+                initialValue:"",
+                in:"$$this"}},
+            "PricePerItem":"$UnitPrice"}},
+        {$sort:{"PricePerItem":-1,"CompanyName":1,"ProductName":1}}
     ]).toArray();
     return result;
 }
