@@ -661,6 +661,8 @@ async function task_1_19(db) {
  * | EmployeeID | Employee Full Name | Amount, $ |
  */
 async function task_1_20(db) {
+    db.collection('orders').createIndex({"EmployeeID": 1});
+    db.collection('order-details').createIndex({"OrderID": 1});
     const result = await db.collection('employees').aggregate([
         {
             $project: {
@@ -745,7 +747,6 @@ async function task_1_21(db) {
  *       https://docs.mongodb.com/manual/reference/operator/aggregation/lookup/#join-conditions-and-uncorrelated-sub-queries
  */
 async function task_1_22(db) {
-    
     db.collection('orders').createIndex({"CustomerID": 1, "OrderID" : 1});
     db.collection('products').createIndex({"ProductID": 1});
     db.collection('customers').createIndex({"CustomerID": 1});
