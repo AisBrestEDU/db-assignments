@@ -746,8 +746,10 @@ async function task_1_21(db) {
  */
 async function task_1_22(db) {
     
-    db.collection('orders').createIndex({"CustomerID": 1});
+    db.collection('orders').createIndex({"CustomerID": 1, "OrderID" : 1});
+    db.collection('products').createIndex({"ProductID": 1});
     db.collection('customers').createIndex({"CustomerID": 1});
+    db.collection('order-details').createIndex({"OrderID": 1});
     const result = await db.collection('orders').aggregate([
         {
             $group : {
@@ -778,10 +780,16 @@ async function task_1_22(db) {
                 {$sort : {Price : -1}},
                 {$limit : 1},
                 {
-                    $lookup:{
+                    $lookup: {
                         from: "customers",
-                        localField: "CustomerID",
-                        foreignField: "CustomerID",
+                        let: { customerID: "$CustomerID"},
+                        pipeline: [
+                            {
+                                $match: {
+                                    "$expr": { "$eq": ["$CustomerID", "$$customerID"] } 
+                                }
+                            },
+                        ],
                         as: "Customer"
                     }
                 },
@@ -792,10 +800,16 @@ async function task_1_22(db) {
         },
         { $unwind : "$MaxOrder"},
         {
-            $lookup:{
+            $lookup: {
                 from: "products",
-                localField: "MaxOrder.ProductID",
-                foreignField: "ProductID",
+                let: { productID: "$MaxOrder.ProductID"},
+                pipeline: [
+                    {
+                        $match: {
+                            "$expr": { "$eq": ["$ProductID", "$$productID"] } 
+                        }
+                    },
+                ],
                 as: "Product"
             }
         },
