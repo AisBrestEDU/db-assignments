@@ -496,7 +496,7 @@ async function task_1_22(db) {
                 ON Orders.CustomerID = c.CustomerID
             INNER JOIN OrderDetails
                 ON Orders.OrderID = OrderDetails.OrderID
-            WHERE c.CompanyName = Customers.CompanyName)
+            WHERE c.CustomerID = Customers.CustomerID)
         ORDER BY \`PricePerItem\` DESC, CompanyName, \`ProductName\`;
     `);
     return result[0];
