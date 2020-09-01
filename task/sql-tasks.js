@@ -479,26 +479,27 @@ async function task_1_21(db) {
 async function task_1_22(db) {
     let result = await db.query(`
         SELECT
-            DISTINCT Info.CompanyName,
+            Info.CompanyName,
             Info.ProductName,
             Info.UnitPrice as PricePerItem
         FROM(
             SELECT
+                DISTINCT Customers.CustomerID as CustomerID,
                 CompanyName,
                 ProductName,
                 OrderDetails.UnitPrice
             FROM Customers
-            JOIN Orders ON Customers.CustomerID = Orders.CustomerID
-            JOIN OrderDetails ON Orders.OrderID = OrderDetails.OrderID
-            JOIN Products ON OrderDetails.ProductID = Products.ProductID
+            INNER JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+            INNER JOIN OrderDetails ON Orders.OrderID = OrderDetails.OrderID
+            INNER JOIN Products ON OrderDetails.ProductID = Products.ProductID
         ) as Info
         WHERE Info.UnitPrice = (
             SELECT
                 MAX(OrderDetails.UnitPrice)
             FROM Customers
-            JOIN Orders ON Customers.CustomerID = Orders.CustomerID
-            JOIN OrderDetails ON Orders.OrderID = OrderDetails.OrderID
-            WHERE CompanyName = Info.CompanyName
+            INNER JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+            INNER JOIN OrderDetails ON Orders.OrderID = OrderDetails.OrderID
+            WHERE Customers.CustomerID = Info.CustomerID
         )
         ORDER BY PricePerItem DESC, CompanyName, ProductName
     `);
