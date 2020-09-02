@@ -322,19 +322,20 @@ async function task_1_14(db) {
 async function task_1_15(db) {
     let result = await db.query(`
         SELECT
-            COUNT(IF(OrderDate LIKE "1997-01%", 1, NULL)) as January,
-            COUNT(IF(OrderDate LIKE "1997-02%", 1, NULL)) as February,
-            COUNT(IF(OrderDate LIKE "1997-03%", 1, NULL)) as March,
-            COUNT(IF(OrderDate LIKE "1997-04%", 1, NULL)) as April,
-            COUNT(IF(OrderDate LIKE "1997-05%", 1, NULL)) as May,
-            COUNT(IF(OrderDate LIKE "1997-06%", 1, NULL)) as June,
-            COUNT(IF(OrderDate LIKE "1997-07%", 1, NULL)) as July,
-            COUNT(IF(OrderDate LIKE "1997-08%", 1, NULL)) as August,
-            COUNT(IF(OrderDate LIKE "1997-09%", 1, NULL)) as September,
-            COUNT(IF(OrderDate LIKE "1997-10%", 1, NULL)) as October,
-            COUNT(IF(OrderDate LIKE "1997-11%", 1, NULL)) as November,
-            COUNT(IF(OrderDate LIKE "1997-12%", 1, NULL)) as December
+            COUNT(IF(MONTH(OrderDate) = 1 , 1, NULL)) as January,
+            COUNT(IF(MONTH(OrderDate) = 2, 1, NULL)) as February,
+            COUNT(IF(MONTH(OrderDate) = 3, 1, NULL)) as March,
+            COUNT(IF(MONTH(OrderDate) = 4, 1, NULL)) as April,
+            COUNT(IF(MONTH(OrderDate) = 5, 1, NULL)) as May,
+            COUNT(IF(MONTH(OrderDate) = 6, 1, NULL)) as June,
+            COUNT(IF(MONTH(OrderDate) = 7, 1, NULL)) as July,
+            COUNT(IF(MONTH(OrderDate) = 8, 1, NULL)) as August,
+            COUNT(IF(MONTH(OrderDate) = 9, 1, NULL)) as September,
+            COUNT(IF(MONTH(OrderDate) = 10, 1, NULL)) as October,
+            COUNT(IF(MONTH(OrderDate) = 11, 1, NULL)) as November,
+            COUNT(IF(MONTH(OrderDate) = 12, 1, NULL)) as December
         FROM Orders
+        WHERE YEAR(OrderDate) = 1997
     `);
     return result[0];
 }
