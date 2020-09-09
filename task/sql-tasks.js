@@ -174,8 +174,7 @@ async function task_1_8(db) {
             COUNT(P.CategoryID) as "TotalNumberOfProducts"
         FROM Categories as C
         JOIN Products as P ON P.CategoryID = C.CategoryID
-        GROUP BY C.CategoryID
-        ORDER BY C.CategoryID;
+        GROUP BY C.CategoryID;  
   `);
   return result[0];
 }
@@ -464,6 +463,7 @@ async function task_1_21(db) {
  */
 async function task_1_22(db) {
   let result = await db.query(`
+<<<<<<< HEAD
         SELECT DISTINCT
             C.CompanyName,
             P.ProductName,
@@ -496,6 +496,11 @@ async function task_1_22(db) {
   //                             JOIN Orders as ONew ON ODNew.OrderID = ONew.OrderID
   //                             JOIN Customers as CNew ON ONew.CustomerID = CNew.CustomerID
   // throw new Error("Not implemented");
+=======
+  
+  `);
+  return result[0];
+>>>>>>> parent of 62b8768... Update 1-8
 }
 
 module.exports = {
