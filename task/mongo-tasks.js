@@ -603,12 +603,13 @@ async function task_1_18(db) {
 async function task_1_19(db) {
     db.collection('orders').createIndex({"OrderID": 1});
     db.collection('customers').createIndex({"CustomerID": -1});
+    db.collection('order-details').createIndex({"Quantity": 1, "UnitPrice" : 1});
     const result = await db.collection('order-details').aggregate([
         {
-                $project: {
-                    OrderID : 1,
-                    TotalOrderPrice : {$multiply : ["$Quantity", "$UnitPrice"]}
-                }
+            $project: {
+                OrderID : 1,
+                TotalOrderPrice : {$multiply : ["$Quantity", "$UnitPrice"]}
+            }
         },
         {
             $lookup:{
