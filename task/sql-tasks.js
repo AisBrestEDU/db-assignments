@@ -463,6 +463,7 @@ async function task_1_21(db) {
  */
 async function task_1_22(db) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   let result = await db.query(`
 <<<<<<< HEAD
         SELECT DISTINCT
@@ -498,6 +499,9 @@ async function task_1_22(db) {
   //                             JOIN Customers as CNew ON ONew.CustomerID = CNew.CustomerID
   // throw new Error("Not implemented");
 =======
+=======
+  let result = await.db.query(`
+>>>>>>> parent of d5818a1... Update sql-tasks.js
   
   `);
   return result[0];
