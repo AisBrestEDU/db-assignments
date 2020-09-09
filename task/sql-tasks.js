@@ -462,6 +462,7 @@ async function task_1_21(db) {
  * @return {array}
  */
 async function task_1_22(db) {
+<<<<<<< HEAD
   let result = await db.query(`
 <<<<<<< HEAD
         SELECT DISTINCT
@@ -501,6 +502,14 @@ async function task_1_22(db) {
   `);
   return result[0];
 >>>>>>> parent of 62b8768... Update 1-8
+=======
+  // let result = await db.query(`
+  //       SELECT
+            
+  // `);
+  // return result[0];
+  throw new Error("Not implemented");
+>>>>>>> parent of 0ee2334... Update sql-tasks.js
 }
 
 module.exports = {
