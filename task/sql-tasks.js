@@ -463,12 +463,39 @@ async function task_1_21(db) {
  * @return {array}
  */
 async function task_1_22(db) {
-  // let result = await db.query(`
-  //       SELECT
+  let result = await db.query(`
+        SELECT DISTINCT
+            C.CompanyName,
+            P.ProductName,
+            OD.UnitPrice as "PricePerItem"
+        FROM Customers as C
+        JOIN Orders as O ON O.CustomerID = C.CustomerID        
+        JOIN OrderDetails as OD ON OD.OrderID = O.OrderID
+        JOIN Products as P ON OD.ProductID = P.ProductID
+        WHERE OD.UnitPrice = (SELECT
+                                MAX(ODNew.UnitPrice)
+                              FROM Customers as CNew
+                              JOIN Orders as ONew ON ONew.CustomerID = CNew.CustomerID 
+                              JOIN OrderDetails as ODNew ON ONew.OrderID = ODNew.OrderID 
+                              WHERE CNew.CompanyName = C.CompanyName)
+        ORDER BY PricePerItem DESC, CompanyName, ProductName
+
+                             
+
+
             
-  // `);
-  // return result[0];
-  throw new Error("Not implemented");
+  `);
+  return result[0];
+
+  
+  // FROM Customers c1
+  // JOIN Orders o2 ON o2.CustomerID = c1.CustomerID 
+  // JOIN OrderDetails od2 ON o2.OrderID = od2.OrderID )
+
+  // FROM OrderDetails as ODNew
+  //                             JOIN Orders as ONew ON ODNew.OrderID = ONew.OrderID
+  //                             JOIN Customers as CNew ON ONew.CustomerID = CNew.CustomerID
+  // throw new Error("Not implemented");
 }
 
 module.exports = {
