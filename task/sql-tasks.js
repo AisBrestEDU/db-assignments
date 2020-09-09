@@ -447,6 +447,7 @@ async function task_1_22(db) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   let result = await db.query(`
 <<<<<<< HEAD
         SELECT DISTINCT
@@ -500,6 +501,14 @@ async function task_1_22(db) {
 =======
     throw new Error("Not implemented");
 >>>>>>> parent of 530b303... Update sql-tasks.js
+=======
+  // let result = await db.query(`
+  //       SELECT
+            
+  // `);
+  // return result[0];
+  throw new Error("Not implemented");
+>>>>>>> parent of 0ee2334... Update sql-tasks.js
 }
 
 module.exports = {
