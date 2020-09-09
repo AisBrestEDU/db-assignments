@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /********************************************************************************************
  *                                                                                          *
@@ -12,6 +12,7 @@
  *                                                                                          *
  ********************************************************************************************/
 
+
 /**
  *  Create a SQL query to return next data ordered by city and then by name:
  * | Employy Id | Employee Full Name | Title | City |
@@ -20,8 +21,8 @@
  *
  */
 async function task_1_1(db) {
-  // The first task is example, please follow the style in the next functions.
-  let result = await db.query(`
+    // The first task is example, please follow the style in the next functions.
+    let result = await db.query(`
         SELECT
            EmployeeID as "Employee Id",
            CONCAT(FirstName, ' ', LastName) AS "Employee Full Name",
@@ -30,7 +31,7 @@ async function task_1_1(db) {
         FROM Employees
         ORDER BY City, "Employee Full Name"
     `);
-  return result[0];
+    return result[0];
 }
 
 /**
@@ -42,16 +43,7 @@ async function task_1_1(db) {
  *
  */
 async function task_1_2(db) {
-  let result = await db.query(`
-        SELECT
-            OrderID as "Order Id",
-            SUM(Quantity * UnitPrice) AS "Order Total Price",
-            ROUND( SUM( Quantity * Discount) / SUM( Quantity * UnitPrice) * 100, 3) as "Total Order Discount, %"
-        FROM OrderDetails 
-        GROUP BY OrderID
-        ORDER BY OrderID DESC;
-    `);
-  return result[0];
+    throw new Error("Not implemented");
 }
 
 /**
@@ -62,13 +54,7 @@ async function task_1_2(db) {
  *
  */
 async function task_1_3(db) {
-  let result = await db.query(`
-    SELECT
-        CustomerId as "CustomerId",
-        CompanyName as "CompanyName"
-    FROM Customers WHERE Country = 'USA' and Fax is NULL
-    `);
-    return result[0];
+    throw new Error("Not implemented");
 }
 
 /**
@@ -81,16 +67,7 @@ async function task_1_3(db) {
  *
  */
 async function task_1_4(db) {
-  let result = await db.query(`
-    SELECT 
-        CustomerID as "Customer Id",
-        COUNT(*) as "Total number of Orders",
-        ROUND(COUNT(*)/(SELECT COUNT(*) FROM Orders)*100, 5) as "% of all orders"
-    FROM Orders 
-    GROUP BY CustomerID 
-    ORDER BY COUNT(*)/(SELECT COUNT(*) FROM Orders)*100 DESC, CustomerID;      
-  `);
-  return result[0]; 
+    throw new Error("Not implemented");
 }
 
 /**
@@ -101,16 +78,7 @@ async function task_1_4(db) {
  *
  */
 async function task_1_5(db) {
-  let result = await db.query(`
-    SELECT 
-        ProductId,
-        ProductName,
-        QuantityPerUnit
-    FROM Products
-    WHERE ProductName RLIKE '^[A-F]'
-    ORDER BY ProductName;
-  `);
-  return result[0];
+    throw new Error("Not implemented");
 }
 
 /**
@@ -123,17 +91,7 @@ async function task_1_5(db) {
  *
  */
 async function task_1_6(db) {
-  let result = await db.query(`
-    SELECT 
-        P.ProductName,
-        C.CategoryName,
-        S.CompanyName as "SupplierCompanyName"
-    FROM Products as P
-    JOIN Suppliers as S ON S.SupplierID=P.SupplierID
-    JOIN Categories as C ON C.CategoryID = P.CategoryID
-    ORDER BY ProductName, SupplierCompanyName;
-  `);
-  return result[0];
+    throw new Error("Not implemented");
 }
 
 /**
@@ -147,16 +105,7 @@ async function task_1_6(db) {
  *
  */
 async function task_1_7(db) {
-  let result = await db.query(`
-    SELECT 
-        empF.EmployeeID as "EmployeeId",
-        CONCAT(empF.FirstName, ' ', empF.LastName) as "FullName",
-        IFNULL(CONCAT(emp.FirstName, ' ', emp.LastName), "-") as "ReportsTo"
-    FROM Employees as empF
-    LEFT JOIN Employees as emp ON empF.ReportsTo = emp.EmployeeID
-    ORDER BY EmployeeId;
-  `);
-  return result[0];
+    throw new Error("Not implemented");
 }
 
 /**
@@ -168,15 +117,7 @@ async function task_1_7(db) {
  *
  */
 async function task_1_8(db) {
-  let result = await db.query(`
-        SELECT
-            C.CategoryName as "CategoryName",
-            COUNT(P.CategoryID) as "TotalNumberOfProducts"
-        FROM Categories as C
-        JOIN Products as P ON P.CategoryID = C.CategoryID
-        GROUP BY C.CategoryID;  
-  `);
-  return result[0];
+    throw new Error("Not implemented");
 }
 
 /**
@@ -188,14 +129,7 @@ async function task_1_8(db) {
  *
  */
 async function task_1_9(db) {
-  let result = await db.query(`
-        SELECT 
-            CustomerID,
-            ContactName
-        FROM Customers
-        WHERE ContactName LIKE 'F__n%';
-  `);
-  return result[0];
+    throw new Error("Not implemented");
 }
 
 /**
@@ -206,6 +140,7 @@ async function task_1_9(db) {
  *
  */
 async function task_1_10(db) {
+<<<<<<< HEAD
   let result = await db.query(`
         SELECT
             ProductID,
@@ -214,6 +149,9 @@ async function task_1_10(db) {
         WHERE Discontinued = 1;  
   `);
   return result[0];
+=======
+    throw new Error("Not implemented");
+>>>>>>> parent of 530b303... Update sql-tasks.js
 }
 
 /**
@@ -226,6 +164,7 @@ async function task_1_10(db) {
  *
  */
 async function task_1_11(db) {
+<<<<<<< HEAD
   let result = await db.query(`
         SELECT
           ProductName,
@@ -235,6 +174,9 @@ async function task_1_11(db) {
         ORDER BY UnitPrice, ProductName;
   `);
   return result[0];
+=======
+    throw new Error("Not implemented");
+>>>>>>> parent of 530b303... Update sql-tasks.js
 }
 
 /**
@@ -247,6 +189,7 @@ async function task_1_11(db) {
  *
  */
 async function task_1_12(db) {
+<<<<<<< HEAD
   let result = await db.query(`
         SELECT * FROM(
           SELECT
@@ -257,6 +200,9 @@ async function task_1_12(db) {
         ORDER BY UnitPrice, ProductName
   `);
   return result[0];
+=======
+    throw new Error("Not implemented");
+>>>>>>> parent of 530b303... Update sql-tasks.js
 }
 
 /**
@@ -267,6 +213,7 @@ async function task_1_12(db) {
  *
  */
 async function task_1_13(db) {
+<<<<<<< HEAD
   let result = await db.query(`
         SELECT
             COUNT(ProductID) as "TotalOfCurrentProducts",
@@ -276,6 +223,9 @@ async function task_1_13(db) {
         FROM Products;
   `);
   return result[0];
+=======
+    throw new Error("Not implemented");
+>>>>>>> parent of 530b303... Update sql-tasks.js
 }
 
 /**
@@ -286,6 +236,7 @@ async function task_1_13(db) {
  *
  */
 async function task_1_14(db) {
+<<<<<<< HEAD
   let result = await db.query(`
         SELECT
             ProductName,
@@ -296,6 +247,9 @@ async function task_1_14(db) {
   
   `);
   return result[0];
+=======
+    throw new Error("Not implemented");
+>>>>>>> parent of 530b303... Update sql-tasks.js
 }
 
 /**
@@ -306,6 +260,7 @@ async function task_1_14(db) {
  *
  */
 async function task_1_15(db) {
+<<<<<<< HEAD
   let result = await db.query(`
         SELECT
             SUM(MONTH(OrderDate) = 1) as January,
@@ -324,6 +279,9 @@ async function task_1_15(db) {
         WHERE YEAR(OrderDate) = 1997;
   `);
   return result[0];
+=======
+    throw new Error("Not implemented");
+>>>>>>> parent of 530b303... Update sql-tasks.js
 }
 
 /**
@@ -334,6 +292,7 @@ async function task_1_15(db) {
  *
  */
 async function task_1_16(db) {
+<<<<<<< HEAD
   let result = await db.query(`
           SELECT
               OrderID,
@@ -343,6 +302,9 @@ async function task_1_16(db) {
           WHERE ShipPostalCode IS NOT NULL;  
   `);
   return result[0];
+=======
+    throw new Error("Not implemented");
+>>>>>>> parent of 530b303... Update sql-tasks.js
 }
 
 /**
@@ -355,6 +317,7 @@ async function task_1_16(db) {
  *
  */
 async function task_1_17(db) {
+<<<<<<< HEAD
   let result = await db.query(`
           SELECT
               C.CategoryName,
@@ -365,6 +328,9 @@ async function task_1_17(db) {
           ORDER BY AvgPrice DESC, CategoryName;
   `);
   return result[0];
+=======
+    throw new Error("Not implemented");
+>>>>>>> parent of 530b303... Update sql-tasks.js
 }
 
 /**
@@ -376,6 +342,7 @@ async function task_1_17(db) {
  *
  */
 async function task_1_18(db) {
+<<<<<<< HEAD
   let result = await db.query(`
           SELECT
               DATE_FORMAT(OrderDate, '%Y-%m-%d %T') as "OrderDate" ,
@@ -385,6 +352,9 @@ async function task_1_18(db) {
           GROUP BY OrderDate;
   `);
   return result[0];  
+=======
+    throw new Error("Not implemented");
+>>>>>>> parent of 530b303... Update sql-tasks.js
 }
 
 /**
@@ -396,6 +366,7 @@ async function task_1_18(db) {
  *
  */
 async function task_1_19(db) {
+<<<<<<< HEAD
   let result = await db.query(`
         SELECT
             C.CustomerID,
@@ -409,6 +380,9 @@ async function task_1_19(db) {
         ORDER BY \`TotalOrdersAmount, $\` DESC, CustomerID
   `);
   return result[0];
+=======
+    throw new Error("Not implemented");
+>>>>>>> parent of 530b303... Update sql-tasks.js
 }
 
 /**
@@ -420,6 +394,7 @@ async function task_1_19(db) {
  *
  */
 async function task_1_20(db) {
+<<<<<<< HEAD
   let result = await db.query(`
         SELECT
             E.EmployeeID as "EmployeeID",
@@ -433,6 +408,9 @@ async function task_1_20(db) {
         LIMIT 1;
   `);
   return result[0];
+=======
+    throw new Error("Not implemented");
+>>>>>>> parent of 530b303... Update sql-tasks.js
 }
 
 /**
@@ -442,6 +420,7 @@ async function task_1_20(db) {
  * @return {array}
  */
 async function task_1_21(db) {
+<<<<<<< HEAD
   let result = await db.query(`
         SELECT
             OrderID,
@@ -452,6 +431,9 @@ async function task_1_21(db) {
         LIMIT 1    
   `);
   return result[0];
+=======
+    throw new Error("Not implemented");
+>>>>>>> parent of 530b303... Update sql-tasks.js
 }
 
 /**
@@ -462,6 +444,7 @@ async function task_1_21(db) {
  * @return {array}
  */
 async function task_1_22(db) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   let result = await db.query(`
@@ -514,29 +497,32 @@ async function task_1_22(db) {
   // return result[0];
   throw new Error("Not implemented");
 >>>>>>> parent of 0ee2334... Update sql-tasks.js
+=======
+    throw new Error("Not implemented");
+>>>>>>> parent of 530b303... Update sql-tasks.js
 }
 
 module.exports = {
-  task_1_1: task_1_1,
-  task_1_2: task_1_2,
-  task_1_3: task_1_3,
-  task_1_4: task_1_4,
-  task_1_5: task_1_5,
-  task_1_6: task_1_6,
-  task_1_7: task_1_7,
-  task_1_8: task_1_8,
-  task_1_9: task_1_9,
-  task_1_10: task_1_10,
-  task_1_11: task_1_11,
-  task_1_12: task_1_12,
-  task_1_13: task_1_13,
-  task_1_14: task_1_14,
-  task_1_15: task_1_15,
-  task_1_16: task_1_16,
-  task_1_17: task_1_17,
-  task_1_18: task_1_18,
-  task_1_19: task_1_19,
-  task_1_20: task_1_20,
-  task_1_21: task_1_21,
-  task_1_22: task_1_22,
+    task_1_1: task_1_1,
+    task_1_2: task_1_2,
+    task_1_3: task_1_3,
+    task_1_4: task_1_4,
+    task_1_5: task_1_5,
+    task_1_6: task_1_6,
+    task_1_7: task_1_7,
+    task_1_8: task_1_8,
+    task_1_9: task_1_9,
+    task_1_10: task_1_10,
+    task_1_11: task_1_11,
+    task_1_12: task_1_12,
+    task_1_13: task_1_13,
+    task_1_14: task_1_14,
+    task_1_15: task_1_15,
+    task_1_16: task_1_16,
+    task_1_17: task_1_17,
+    task_1_18: task_1_18,
+    task_1_19: task_1_19,
+    task_1_20: task_1_20,
+    task_1_21: task_1_21,
+    task_1_22: task_1_22
 };
