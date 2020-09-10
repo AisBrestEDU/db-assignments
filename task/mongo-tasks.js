@@ -601,6 +601,9 @@ async function task_1_18(db) {
  *       - do not hesitate to "ensureIndex" in "before" function at the top if needed https://docs.mongodb.com/manual/reference/method/db.collection.ensureIndex/
  */
 async function task_1_19(db) {
+    db.collection('orders').createIndex({"CustomerID": 1});
+    db.collection('customers').createIndex({"CustomerID": 1, "CompanyName" : 1});
+    db.collection('order-details').createIndex({"OrderID" : 1,"Quantity": 1, "UnitPrice" : 1});
     const result = await db.collection('customers').aggregate([
         {
             $project : {
@@ -617,6 +620,7 @@ async function task_1_19(db) {
                 as: "Order"
             }
         },
+        {$unwind : "$Order"},
         {
             $lookup:{
                 from: "order-details",
