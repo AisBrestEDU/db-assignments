@@ -604,7 +604,7 @@ async function task_1_19(db) {
     const result = await db.collection('customers').aggregate([
         {
             $project : {
-                _id : 1,
+                _id : 0,
                 CustomerID : 1,
                 CompanyName : 1,
             }
