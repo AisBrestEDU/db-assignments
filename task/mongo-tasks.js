@@ -602,40 +602,40 @@ async function task_1_18(db) {
  */
 async function task_1_19(db) {
     db.collection('orders').createIndex({"OrderID": 1});
-    db.collection('customers').createIndex({"CustomerID": -1});
+    db.collection('customers').createIndex({"CustomerID": 1, "CompanyName" : 1});
     db.collection('order-details').createIndex({"Quantity": 1, "UnitPrice" : 1});
-    const result = await db.collection('order-details').aggregate([
+    const result = await db.collection('customers').aggregate([
         {
-            $project: {
-                OrderID : 1,
-                TotalOrderPrice : {$multiply : ["$Quantity", "$UnitPrice"]}
+            $project : {
+                _id : 1,
+                CustomerID : 1,
+                CompanyName : 1,
             }
         },
         {
             $lookup:{
                 from: "orders",
-                localField: "OrderID",
-                foreignField: "OrderID",
+                localField: "CustomerID",
+                foreignField: "CustomerID",
                 as: "Order"
             }
         },
         {
             $lookup:{
-                from: "customers",
-                localField: "Order.CustomerID",
-                foreignField: "CustomerID",
-                as: "Customer"
+                from: "order-details",
+                localField: "Order.OrderID",
+                foreignField: "OrderID",
+                as: "OrderDetail"
             }
         },
-        {$unwind : "$Order"},
-        {$unwind : "$Customer"},
+        {$unwind : "$OrderDetail"},
         {
             $group : {
                 _id : {
-                    CustomerID : "$Customer.CustomerID",
-                    CompanyName : "$Customer.CompanyName"
+                    CustomerID : "$CustomerID",
+                    CompanyName : "$CompanyName"
                 },
-                "TotalOrdersAmount, $" : {$sum : "$TotalOrderPrice"}
+                "TotalOrdersAmount, $" : {$sum : {$multiply : ["$OrderDetail.Quantity", "$OrderDetail.UnitPrice"]}}
             }
         },
         {
