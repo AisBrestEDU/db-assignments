@@ -60,7 +60,11 @@ async function task_1_2(db) {
 }
 
 /**
+<<<<<<< HEAD
  *  Create a query to return all customers from USA without Fax, order by CustomerID:
+=======
+ *  Create a query to return all customers without Fax, order by CustomerID:
+>>>>>>> d447374934e9973894de32a611107e5304d2cd1a
  * | CustomerID | CompanyName |
  *
  * HINT: check by string "NULL" values

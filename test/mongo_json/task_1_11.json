@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "ProductID": 3,
     "ProductName": "Aniseed Syrup"
   },
@@ -94,5 +95,101 @@
   {
     "ProductID": 47,
     "ProductName": "Zaanse koeken"
+=======
+    "ProductName": "Konbu",
+    "UnitPrice": 6
+  },
+  {
+    "ProductName": "Filo Mix",
+    "UnitPrice": 7
+  },
+  {
+    "ProductName": "Tourtière",
+    "UnitPrice": 7.45
+  },
+  {
+    "ProductName": "Rhönbräu Klosterbier",
+    "UnitPrice": 7.75
+  },
+  {
+    "ProductName": "Tunnbröd",
+    "UnitPrice": 9
+  },
+  {
+    "ProductName": "Teatime Chocolate Biscuits",
+    "UnitPrice": 9.2
+  },
+  {
+    "ProductName": "Rogede sild",
+    "UnitPrice": 9.5
+  },
+  {
+    "ProductName": "Zaanse koeken",
+    "UnitPrice": 9.5
+  },
+  {
+    "ProductName": "Jack's New England Clam Chowder",
+    "UnitPrice": 9.65
+  },
+  {
+    "ProductName": "Aniseed Syrup",
+    "UnitPrice": 10
+  },
+  {
+    "ProductName": "Longlife Tofu",
+    "UnitPrice": 10
+  },
+  {
+    "ProductName": "Sir Rodney's Scones",
+    "UnitPrice": 10
+  },
+  {
+    "ProductName": "Spegesild",
+    "UnitPrice": 12
+  },
+  {
+    "ProductName": "Gorgonzola Telino",
+    "UnitPrice": 12.5
+  },
+  {
+    "ProductName": "Scottish Longbreads",
+    "UnitPrice": 12.5
+  },
+  {
+    "ProductName": "Chocolade",
+    "UnitPrice": 12.75
+  },
+  {
+    "ProductName": "Original Frankfurter grüne Soße",
+    "UnitPrice": 13
+  },
+  {
+    "ProductName": "Escargots de Bourgogne",
+    "UnitPrice": 13.25
+  },
+  {
+    "ProductName": "Laughing Lumberjack Lager",
+    "UnitPrice": 14
+  },
+  {
+    "ProductName": "NuNuCa Nuß-Nougat-Creme",
+    "UnitPrice": 14
+  },
+  {
+    "ProductName": "Sasquatch Ale",
+    "UnitPrice": 14
+  },
+  {
+    "ProductName": "Singaporean Hokkien Fried Mee",
+    "UnitPrice": 14
+  },
+  {
+    "ProductName": "Outback Lager",
+    "UnitPrice": 15
+  },
+  {
+    "ProductName": "Röd Kaviar",
+    "UnitPrice": 15
+>>>>>>> d447374934e9973894de32a611107e5304d2cd1a
   }
 ]
