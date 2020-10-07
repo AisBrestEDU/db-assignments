@@ -95,12 +95,12 @@ async function task_1_4(db) {
         SELECT
            CustomerID AS 'Customer Id',
            count(DISTINCT OrderID) AS 'Total number of Orders',
-           truncate(count(distinct OrderID) / (
+           ROUND(count(distinct OrderID) / (
                SELECT
-                   count(distinct OrderID) / 1000
+                   count(distinct OrderID)
                FROM
                    OrderDetails
-           ) / 10, 5) AS '% of all orders'
+           ) * 100, 5) AS '% of all orders'
        FROM
            Orders
            JOIN OrderDetails USING(OrderID)
@@ -204,13 +204,15 @@ async function task_1_7(db) {
 async function task_1_8(db) {
     let result = await db.query(`
         SELECT
-            CategoryName,
+            CategoryName as CategoryName,
             count(ProductName) AS TotalNumberOfProducts
         FROM
             Categories
             JOIN Products USING(CategoryID)
         GROUP BY
-            CategoryName    
+            CategoryName
+        ORDER BY
+            CategoryName
     `)
     return result[0]
 }
@@ -510,13 +512,13 @@ async function task_1_20(db) {
         SELECT
             EmployeeID,
             CONCAT(FirstName, ' ', LastName) AS 'Employee Full Name',
-            sum(UnitPrice * Quantity) AS 'Amount, $'
+            SUM(UnitPrice * Quantity) AS 'Amount, $'
         FROM
             Orders
             JOIN Employees USING(EmployeeID)
             JOIN OrderDetails USING(OrderID)
         GROUP BY
-            2
+            EmployeeID
         ORDER BY
             3 DESC
         LIMIT
@@ -559,7 +561,7 @@ async function task_1_22(db) {
         SELECT
             DISTINCT CompanyName,
             ProductName,
-            CAST(OrderDetails.UnitPrice as int) AS PricePerItem
+            OrderDetails.UnitPrice AS PricePerItem
         FROM
             Orders
             JOIN Customers USING(CustomerID)
