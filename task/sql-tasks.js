@@ -103,7 +103,6 @@ async function task_1_4(db) {
            ) * 100, 5) AS '% of all orders'
        FROM
            Orders
-           JOIN OrderDetails USING(OrderID)
        GROUP BY
            CustomerID
        ORDER BY
@@ -326,10 +325,10 @@ async function task_1_12(db) {
 async function task_1_13(db) {
     let result = await db.query(`
         SELECT
-            count(*) AS TotalOfCurrentProducts,
+            count(ProductID) AS TotalOfCurrentProducts,
             (
                 SELECT
-                    count(*)
+                    count(ProductID)
                 FROM
                     Products
                 WHERE
@@ -371,31 +370,23 @@ async function task_1_14(db) {
  */
 async function task_1_15(db) {
     let result = await db.query(`
-        SELECT
-            sum(IF(monthName = 'January', total, 0)) AS January,
-            sum(IF(monthName = 'February', total, 0)) AS February,
-            sum(IF(monthName = 'March', total, 0)) AS March,
-            sum(IF(monthName = 'April', total, 0)) AS April,
-            sum(IF(monthName = 'May', total, 0)) AS May,
-            sum(IF(monthName = 'June', total, 0)) AS June,
-            sum(IF(monthName = 'July', total, 0)) AS July,
-            sum(IF(monthName = 'August', total, 0)) AS August,
-            sum(IF(monthName = 'September', total, 0)) AS September,
-            sum(IF(monthName = 'October', total, 0)) AS October,
-            sum(IF(monthName = 'November', total, 0)) AS November,
-            sum(IF(monthName = 'December', total, 0)) AS December
+        SELECT 
+            COUNT(IF(MONTHNAME(OrderDate) = 'January', 1, NULL)) AS January,
+            COUNT(IF(MONTHNAME(OrderDate) = 'February', 1, NULL)) AS February,
+            COUNT(IF(MONTHNAME(OrderDate) = 'March', 1, NULL)) AS March,
+            COUNT(IF(MONTHNAME(OrderDate) = 'April', 1, NULL)) AS April,
+            COUNT(IF(MONTHNAME(OrderDate) = 'May', 1, NULL)) AS May,
+            COUNT(IF(MONTHNAME(OrderDate) = 'June', 1, NULL)) AS June,
+            COUNT(IF(MONTHNAME(OrderDate) = 'July', 1, NULL)) AS July,
+            COUNT(IF(MONTHNAME(OrderDate) = 'August', 1, NULL)) AS August,
+            COUNT(IF(MONTHNAME(OrderDate) = 'September', 1, NULL)) AS September,
+            COUNT(IF(MONTHNAME(OrderDate) = 'October', 1, NULL)) AS October,
+            COUNT(IF(MONTHNAME(OrderDate) = 'November', 1, NULL)) AS November,
+            COUNT(IF(MONTHNAME(OrderDate) = 'December', 1, NULL)) AS December
         FROM
-            (
-                SELECT
-                    count(DISTINCT OrderID) AS total,
-                    MONTHNAME(OrderDate) AS monthName
-                FROM
-                    Orders
-                WHERE
-                    YEAR(OrderDate) = 1997
-                GROUP BY
-                    2
-            ) query
+            Orders
+        WHERE
+            YEAR(OrderDate) = 1997
     `)
     return result[0]
 }
